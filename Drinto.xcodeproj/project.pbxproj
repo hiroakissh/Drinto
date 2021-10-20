@@ -10,10 +10,11 @@
 		13B39101E2DE005EDA5D1524 /* Pods_Drinto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E14AB1D710732C76E09061 /* Pods_Drinto.framework */; };
 		539DE6CF271FC9D800720AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6CE271FC9D800720AF7 /* AppDelegate.swift */; };
 		539DE6D1271FC9D800720AF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6D0271FC9D800720AF7 /* SceneDelegate.swift */; };
-		539DE6D3271FC9D800720AF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6D2271FC9D800720AF7 /* ViewController.swift */; };
 		539DE6D6271FC9D800720AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539DE6D4271FC9D800720AF7 /* Main.storyboard */; };
 		539DE6D8271FC9DA00720AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539DE6D7271FC9DA00720AF7 /* Assets.xcassets */; };
 		539DE6DB271FC9DA00720AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539DE6D9271FC9DA00720AF7 /* LaunchScreen.storyboard */; };
+		539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */; };
+		539DE6E8271FCE0600720AF7 /* FirestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6E7271FCE0600720AF7 /* FirestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +22,12 @@
 		539DE6CB271FC9D800720AF7 /* Drinto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drinto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		539DE6CE271FC9D800720AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		539DE6D0271FC9D800720AF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		539DE6D2271FC9D800720AF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		539DE6D5271FC9D800720AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		539DE6D7271FC9DA00720AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		539DE6DA271FC9DA00720AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		539DE6DC271FC9DA00720AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		539DE6E7271FCE0600720AF7 /* FirestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestViewController.swift; sourceTree = "<group>"; };
 		8516DFE818CC14F70192E3F3 /* Pods-Drinto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinto.release.xcconfig"; path = "Target Support Files/Pods-Drinto/Pods-Drinto.release.xcconfig"; sourceTree = "<group>"; };
 		9514E30A35C50A1483D3C152 /* Pods-Drinto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinto.debug.xcconfig"; path = "Target Support Files/Pods-Drinto/Pods-Drinto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,15 +73,40 @@
 		539DE6CD271FC9D800720AF7 /* Drinto */ = {
 			isa = PBXGroup;
 			children = (
+				539DE6E4271FCCF900720AF7 /* View */,
+				539DE6E3271FCCF100720AF7 /* Model */,
+				539DE6E2271FCCE400720AF7 /* Controller */,
+				539DE6D4271FC9D800720AF7 /* Main.storyboard */,
+				539DE6D9271FC9DA00720AF7 /* LaunchScreen.storyboard */,
 				539DE6CE271FC9D800720AF7 /* AppDelegate.swift */,
 				539DE6D0271FC9D800720AF7 /* SceneDelegate.swift */,
-				539DE6D2271FC9D800720AF7 /* ViewController.swift */,
-				539DE6D4271FC9D800720AF7 /* Main.storyboard */,
 				539DE6D7271FC9DA00720AF7 /* Assets.xcassets */,
-				539DE6D9271FC9DA00720AF7 /* LaunchScreen.storyboard */,
 				539DE6DC271FC9DA00720AF7 /* Info.plist */,
 			);
 			path = Drinto;
+			sourceTree = "<group>";
+		};
+		539DE6E2271FCCE400720AF7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */,
+				539DE6E7271FCE0600720AF7 /* FirestViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		539DE6E3271FCCF100720AF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		539DE6E4271FCCF900720AF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5BBADC3F61010B31AD952E8C /* Pods */ = {
@@ -88,7 +115,6 @@
 				9514E30A35C50A1483D3C152 /* Pods-Drinto.debug.xcconfig */,
 				8516DFE818CC14F70192E3F3 /* Pods-Drinto.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,7 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				539DE6D3271FC9D800720AF7 /* ViewController.swift in Sources */,
+				539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */,
+				539DE6E8271FCE0600720AF7 /* FirestViewController.swift in Sources */,
 				539DE6CF271FC9D800720AF7 /* AppDelegate.swift in Sources */,
 				539DE6D1271FC9D800720AF7 /* SceneDelegate.swift in Sources */,
 			);
