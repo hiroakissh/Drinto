@@ -73,8 +73,9 @@
 		539DE6CD271FC9D800720AF7 /* Drinto */ = {
 			isa = PBXGroup;
 			children = (
-				539DE6E3271FCCF100720AF7 /* Model */,
-				539DE6E4271FCCF900720AF7 /* View */,
+				53D129F22827A38300DA7E91 /* View */,
+				53D129F12827A37D00DA7E91 /* Model */,
+				53D129F02827A36E00DA7E91 /* Presenter */,
 				539DE6E2271FCCE400720AF7 /* Controller */,
 				539DE6D4271FC9D800720AF7 /* Main.storyboard */,
 				539DE6D9271FC9DA00720AF7 /* LaunchScreen.storyboard */,
@@ -95,14 +96,21 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		539DE6E3271FCCF100720AF7 /* Model */ = {
+		53D129F02827A36E00DA7E91 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		53D129F12827A37D00DA7E91 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		539DE6E4271FCCF900720AF7 /* View */ = {
+		53D129F22827A38300DA7E91 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
