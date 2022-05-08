@@ -76,7 +76,6 @@
 				53D129F22827A38300DA7E91 /* View */,
 				53D129F12827A37D00DA7E91 /* Model */,
 				53D129F02827A36E00DA7E91 /* Presenter */,
-				539DE6E2271FCCE400720AF7 /* Controller */,
 				539DE6D4271FC9D800720AF7 /* Main.storyboard */,
 				539DE6D9271FC9DA00720AF7 /* LaunchScreen.storyboard */,
 				539DE6CE271FC9D800720AF7 /* AppDelegate.swift */,
@@ -85,15 +84,6 @@
 				539DE6DC271FC9DA00720AF7 /* Info.plist */,
 			);
 			path = Drinto;
-			sourceTree = "<group>";
-		};
-		539DE6E2271FCCE400720AF7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */,
-				539DE6E7271FCE0600720AF7 /* FirestViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		53D129F02827A36E00DA7E91 /* Presenter */ = {
@@ -113,6 +103,8 @@
 		53D129F22827A38300DA7E91 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */,
+				539DE6E7271FCE0600720AF7 /* FirestViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
