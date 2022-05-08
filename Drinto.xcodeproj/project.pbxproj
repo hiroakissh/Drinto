@@ -73,8 +73,8 @@
 		539DE6CD271FC9D800720AF7 /* Drinto */ = {
 			isa = PBXGroup;
 			children = (
-				539DE6E4271FCCF900720AF7 /* View */,
 				539DE6E3271FCCF100720AF7 /* Model */,
+				539DE6E4271FCCF900720AF7 /* View */,
 				539DE6E2271FCCE400720AF7 /* Controller */,
 				539DE6D4271FC9D800720AF7 /* Main.storyboard */,
 				539DE6D9271FC9DA00720AF7 /* LaunchScreen.storyboard */,
