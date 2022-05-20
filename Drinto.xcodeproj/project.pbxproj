@@ -8,17 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		13B39101E2DE005EDA5D1524 /* Pods_Drinto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E14AB1D710732C76E09061 /* Pods_Drinto.framework */; };
+		53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */; };
+		53287B9C283774F400C2B96D /* DrinkNewaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9B283774F400C2B96D /* DrinkNewaViewController.swift */; };
+		53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9D2837750500C2B96D /* MyPageViewController.swift */; };
+		53287BA02837751400C2B96D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9F2837751400C2B96D /* MapViewController.swift */; };
+		53287BA22837757000C2B96D /* AddDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA12837757000C2B96D /* AddDrinkViewController.swift */; };
+		53287BA42837758B00C2B96D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA32837758B00C2B96D /* SignInViewController.swift */; };
+		53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA52837759E00C2B96D /* SignUpViewController.swift */; };
+		53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA7283775F900C2B96D /* TopPageViewController.swift */; };
 		539DE6CF271FC9D800720AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6CE271FC9D800720AF7 /* AppDelegate.swift */; };
 		539DE6D1271FC9D800720AF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6D0271FC9D800720AF7 /* SceneDelegate.swift */; };
 		539DE6D6271FC9D800720AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539DE6D4271FC9D800720AF7 /* Main.storyboard */; };
 		539DE6D8271FC9DA00720AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539DE6D7271FC9DA00720AF7 /* Assets.xcassets */; };
 		539DE6DB271FC9DA00720AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539DE6D9271FC9DA00720AF7 /* LaunchScreen.storyboard */; };
 		539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */; };
-		539DE6E8271FCE0600720AF7 /* FirestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6E7271FCE0600720AF7 /* FirestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46E14AB1D710732C76E09061 /* Pods_Drinto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drinto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkmemoryViewController.swift; sourceTree = "<group>"; };
+		53287B9B283774F400C2B96D /* DrinkNewaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewaViewController.swift; sourceTree = "<group>"; };
+		53287B9D2837750500C2B96D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		53287B9F2837751400C2B96D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		53287BA12837757000C2B96D /* AddDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkViewController.swift; sourceTree = "<group>"; };
+		53287BA32837758B00C2B96D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		53287BA52837759E00C2B96D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		53287BA7283775F900C2B96D /* TopPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
 		539DE6CB271FC9D800720AF7 /* Drinto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drinto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		539DE6CE271FC9D800720AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		539DE6D0271FC9D800720AF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +42,6 @@
 		539DE6DA271FC9DA00720AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		539DE6DC271FC9DA00720AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		539DE6E7271FCE0600720AF7 /* FirestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestViewController.swift; sourceTree = "<group>"; };
 		8516DFE818CC14F70192E3F3 /* Pods-Drinto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinto.release.xcconfig"; path = "Target Support Files/Pods-Drinto/Pods-Drinto.release.xcconfig"; sourceTree = "<group>"; };
 		9514E30A35C50A1483D3C152 /* Pods-Drinto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinto.debug.xcconfig"; path = "Target Support Files/Pods-Drinto/Pods-Drinto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +118,14 @@
 			isa = PBXGroup;
 			children = (
 				539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */,
-				539DE6E7271FCE0600720AF7 /* FirestViewController.swift */,
+				53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */,
+				53287B9B283774F400C2B96D /* DrinkNewaViewController.swift */,
+				53287B9D2837750500C2B96D /* MyPageViewController.swift */,
+				53287B9F2837751400C2B96D /* MapViewController.swift */,
+				53287BA12837757000C2B96D /* AddDrinkViewController.swift */,
+				53287BA32837758B00C2B96D /* SignInViewController.swift */,
+				53287BA52837759E00C2B96D /* SignUpViewController.swift */,
+				53287BA7283775F900C2B96D /* TopPageViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,10 +254,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53287BA42837758B00C2B96D /* SignInViewController.swift in Sources */,
+				53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */,
 				539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */,
-				539DE6E8271FCE0600720AF7 /* FirestViewController.swift in Sources */,
+				53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */,
+				53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */,
+				53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */,
+				53287B9C283774F400C2B96D /* DrinkNewaViewController.swift in Sources */,
 				539DE6CF271FC9D800720AF7 /* AppDelegate.swift in Sources */,
 				539DE6D1271FC9D800720AF7 /* SceneDelegate.swift in Sources */,
+				53287BA02837751400C2B96D /* MapViewController.swift in Sources */,
+				53287BA22837757000C2B96D /* AddDrinkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
