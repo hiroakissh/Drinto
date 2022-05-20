@@ -34,6 +34,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signUpButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ngr-qy-9ys"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNV-6q-nlg">
                                 <rect key="frame" x="40" y="746" width="334" height="1"/>
@@ -52,6 +55,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                     <color key="baseForegroundColor" name="MainColor1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="guestLoginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VvN-6D-tVd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bd7-3Y-esK">
                                 <rect key="frame" x="80" y="596" width="254" height="50"/>
@@ -64,6 +70,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="sigInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUC-1n-F1g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -87,9 +96,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="SignInButton" destination="bd7-3Y-esK" id="8ck-t6-1AQ"/>
-                        <outlet property="SignUpButton" destination="3Lt-H7-vHo" id="vyh-rD-I1a"/>
-                        <outlet property="getSignInButton" destination="WD3-Ce-TGI" id="KgP-dL-dAM"/>
+                        <outlet property="getSignInButton" destination="WD3-Ce-TGI" id="P4d-Qy-fre"/>
+                        <outlet property="signInButton" destination="bd7-3Y-esK" id="g8t-jo-BHm"/>
+                        <outlet property="signUpButton" destination="3Lt-H7-vHo" id="gBk-o8-8I2"/>
+                        <segue destination="8hG-6m-VUd" kind="presentation" identifier="SignIn" modalPresentationStyle="fullScreen" id="ARR-1z-Mc6"/>
+                        <segue destination="lZy-uz-0dU" kind="presentation" identifier="SignUp" modalPresentationStyle="fullScreen" id="qM6-VM-Xga"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -121,6 +132,7 @@
                         <viewLayoutGuide key="safeArea" id="hOV-U7-hAv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Xur-Gu-jOB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYW-3b-rLH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

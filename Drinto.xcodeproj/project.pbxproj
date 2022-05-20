@@ -202,6 +202,7 @@
 				539DE6C8271FC9D800720AF7 /* Frameworks */,
 				539DE6C9271FC9D800720AF7 /* Resources */,
 				2A3845B0E7687D6ADECEED29 /* [CP] Embed Pods Frameworks */,
+				53DAECD5283784EE0069D744 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -275,6 +276,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Drinto/Pods-Drinto-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		53DAECD5283784EE0069D744 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		7CDBABAAEC11572865B5EBC4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

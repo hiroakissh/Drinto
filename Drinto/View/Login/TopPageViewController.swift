@@ -9,8 +9,8 @@ import UIKit
 
 class TopPageViewController: UIViewController {
 
-    @IBOutlet private weak var SignInButton: UIButton!
-    @IBOutlet private weak var SignUpButton: UIButton!
+    @IBOutlet private weak var signInButton: UIButton!
+    @IBOutlet private weak var signUpButton: UIButton!
     @IBOutlet private weak var getSignInButton: UIButton!
 
     override func viewDidLoad() {
@@ -20,7 +20,18 @@ class TopPageViewController: UIViewController {
     }
 
     func settingUI() {
-        SignInButton.layer.cornerRadius = 15.0
-        SignUpButton.layer.cornerRadius = 15.0
+        signInButton.layer.cornerRadius = 15.0
+        signUpButton.layer.cornerRadius = 15.0
+    }
+
+    @IBAction private func sigInButtonAction(_ sender: Any) {
+        performSegue(withIdentifier: "SignIn", sender: nil)
+    }
+
+    @IBAction private func signUpButtonAction(_ sender: Any) {
+        performSegue(withIdentifier: "SignUp", sender: nil)
+    }
+
+    @IBAction private func guestLoginButtonAction(_ sender: Any) {
     }
 }
