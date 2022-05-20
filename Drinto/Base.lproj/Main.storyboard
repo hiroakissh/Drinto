@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Firest View Controller-->
+        <!--Top Page View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirestViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TopPageViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-3001" y="1243"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="PxG-mC-uJQ">
             <objects>
-                <viewController id="lZy-uz-0dU" sceneMemberID="viewController">
+                <viewController id="lZy-uz-0dU" customClass="SignUpViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VKt-yA-qw6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="-1942" y="1557"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="D2W-tl-MdU">
             <objects>
-                <viewController id="8hG-6m-VUd" sceneMemberID="viewController">
+                <viewController id="8hG-6m-VUd" customClass="SignInViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v0l-DG-wtc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,7 +56,7 @@
         <!--Item 2-->
         <scene sceneID="0yr-ce-XqC">
             <objects>
-                <viewController id="nXv-mj-Ghl" sceneMemberID="viewController">
+                <viewController id="nXv-mj-Ghl" customClass="DrinkNewsViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eRJ-5t-diS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
         <!--Item-->
         <scene sceneID="ZTL-kt-wzR">
             <objects>
-                <viewController id="4T9-M0-9eM" sceneMemberID="viewController">
+                <viewController id="4T9-M0-9eM" customClass="AddDrinkViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qal-il-g67">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,7 @@
         <!--Item 1-->
         <scene sceneID="GYh-Hf-Xjp">
             <objects>
-                <viewController id="edf-hR-ShN" sceneMemberID="viewController">
+                <viewController id="edf-hR-ShN" customClass="DrinkmemoryViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wa9-Tz-o3I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ak6-U9-pwC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="612" y="-74"/>
+            <point key="canvasLocation" x="649" y="-135"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="0mo-N8-CLH">
@@ -125,7 +125,7 @@
         <!--Item-->
         <scene sceneID="dpW-iy-l84">
             <objects>
-                <viewController id="aYY-O7-oSL" sceneMemberID="viewController">
+                <viewController id="aYY-O7-oSL" customClass="MapViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DuH-eJ-M0K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +141,7 @@
         <!--Item-->
         <scene sceneID="kMN-SR-XA9">
             <objects>
-                <viewController id="CTT-cu-Vbe" sceneMemberID="viewController">
+                <viewController id="CTT-cu-Vbe" customClass="MyPageViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oNC-eJ-XsP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

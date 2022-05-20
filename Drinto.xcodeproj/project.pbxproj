@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		13B39101E2DE005EDA5D1524 /* Pods_Drinto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E14AB1D710732C76E09061 /* Pods_Drinto.framework */; };
 		53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */; };
-		53287B9C283774F400C2B96D /* DrinkNewaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9B283774F400C2B96D /* DrinkNewaViewController.swift */; };
+		53287B9C283774F400C2B96D /* DrinkNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9B283774F400C2B96D /* DrinkNewsViewController.swift */; };
 		53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9D2837750500C2B96D /* MyPageViewController.swift */; };
 		53287BA02837751400C2B96D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9F2837751400C2B96D /* MapViewController.swift */; };
 		53287BA22837757000C2B96D /* AddDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA12837757000C2B96D /* AddDrinkViewController.swift */; };
@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		46E14AB1D710732C76E09061 /* Pods_Drinto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drinto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkmemoryViewController.swift; sourceTree = "<group>"; };
-		53287B9B283774F400C2B96D /* DrinkNewaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewaViewController.swift; sourceTree = "<group>"; };
+		53287B9B283774F400C2B96D /* DrinkNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsViewController.swift; sourceTree = "<group>"; };
 		53287B9D2837750500C2B96D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		53287B9F2837751400C2B96D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		53287BA12837757000C2B96D /* AddDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkViewController.swift; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 			children = (
 				539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */,
 				53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */,
-				53287B9B283774F400C2B96D /* DrinkNewaViewController.swift */,
+				53287B9B283774F400C2B96D /* DrinkNewsViewController.swift */,
 				53287B9D2837750500C2B96D /* MyPageViewController.swift */,
 				53287B9F2837751400C2B96D /* MapViewController.swift */,
 				53287BA12837757000C2B96D /* AddDrinkViewController.swift */,
@@ -260,7 +260,7 @@
 				53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */,
 				53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */,
 				53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */,
-				53287B9C283774F400C2B96D /* DrinkNewaViewController.swift in Sources */,
+				53287B9C283774F400C2B96D /* DrinkNewsViewController.swift in Sources */,
 				539DE6CF271FC9D800720AF7 /* AppDelegate.swift in Sources */,
 				539DE6D1271FC9D800720AF7 /* SceneDelegate.swift in Sources */,
 				53287BA02837751400C2B96D /* MapViewController.swift in Sources */,

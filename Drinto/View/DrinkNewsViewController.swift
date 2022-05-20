@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DrinkNewaViewController: UIViewController {
+class DrinkNewsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
