@@ -66,6 +66,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		53287BA92837775C00C2B96D /* Drinkmemory */ = {
+			isa = PBXGroup;
+			children = (
+				53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */,
+			);
+			path = Drinkmemory;
+			sourceTree = "<group>";
+		};
+		53287BAA2837777300C2B96D /* DrinkNews */ = {
+			isa = PBXGroup;
+			children = (
+				53287B9B283774F400C2B96D /* DrinkNewsViewController.swift */,
+			);
+			path = DrinkNews;
+			sourceTree = "<group>";
+		};
+		53287BAB2837777C00C2B96D /* DrinkMap */ = {
+			isa = PBXGroup;
+			children = (
+				53287B9F2837751400C2B96D /* MapViewController.swift */,
+			);
+			path = DrinkMap;
+			sourceTree = "<group>";
+		};
+		53287BAC2837778500C2B96D /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				53287B9D2837750500C2B96D /* MyPageViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		53287BAD2837779600C2B96D /* AddDrink */ = {
+			isa = PBXGroup;
+			children = (
+				53287BA12837757000C2B96D /* AddDrinkViewController.swift */,
+			);
+			path = AddDrink;
+			sourceTree = "<group>";
+		};
+		53287BAE283777B900C2B96D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				53287BA32837758B00C2B96D /* SignInViewController.swift */,
+				53287BA52837759E00C2B96D /* SignUpViewController.swift */,
+				53287BA7283775F900C2B96D /* TopPageViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		539DE6C2271FC9D800720AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -117,15 +167,13 @@
 		53D129F22827A38300DA7E91 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				53287BAE283777B900C2B96D /* Login */,
+				53287BAD2837779600C2B96D /* AddDrink */,
+				53287BAC2837778500C2B96D /* Account */,
+				53287BAB2837777C00C2B96D /* DrinkMap */,
+				53287BAA2837777300C2B96D /* DrinkNews */,
+				53287BA92837775C00C2B96D /* Drinkmemory */,
 				539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */,
-				53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */,
-				53287B9B283774F400C2B96D /* DrinkNewsViewController.swift */,
-				53287B9D2837750500C2B96D /* MyPageViewController.swift */,
-				53287B9F2837751400C2B96D /* MapViewController.swift */,
-				53287BA12837757000C2B96D /* AddDrinkViewController.swift */,
-				53287BA32837758B00C2B96D /* SignInViewController.swift */,
-				53287BA52837759E00C2B96D /* SignUpViewController.swift */,
-				53287BA7283775F900C2B96D /* TopPageViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
