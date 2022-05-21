@@ -7,11 +7,24 @@
 
 import UIKit
 
-class DrinkmemoryViewController: UIViewController {
+class DrinkMemoryViewController: UIViewController {
+    @IBOutlet private weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+}
 
-        // Do any additional setup after loading the view.
+extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let drinkCell = tableView.dequeueReusableCell(withIdentifier: "DrinkCell", for: indexPath)
+
+        return drinkCell
     }
 }
