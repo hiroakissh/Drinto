@@ -33,5 +33,6 @@ class TopPageViewController: UIViewController {
     }
 
     @IBAction private func guestLoginButtonAction(_ sender: Any) {
+        performSegue(withIdentifier: "GuestLogin", sender: nil)
     }
 }

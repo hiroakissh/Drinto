@@ -14,4 +14,8 @@ class SignInViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+
+    @IBAction private func guestLoginAction(_ sender: Any) {
+        performSegue(withIdentifier: "Login", sender: nil)
+    }
 }
