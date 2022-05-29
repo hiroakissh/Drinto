@@ -12,7 +12,7 @@
 		5324315E2839A07A005A8170 /* DrinkMemoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */; };
 		532431632839A0AB005A8170 /* DrinkNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532431612839A0AB005A8170 /* DrinkNewsTableViewCell.swift */; };
 		532431642839A0AB005A8170 /* DrinkNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532431622839A0AB005A8170 /* DrinkNewsTableViewCell.xib */; };
-		53287B9A283774E300C2B96D /* DrinkMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B99283774E300C2B96D /* DrinkMemoryViewController.swift */; };
+		53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */; };
 		53287B9C283774F400C2B96D /* DrinkNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9B283774F400C2B96D /* DrinkNewsViewController.swift */; };
 		53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9D2837750500C2B96D /* MyPageViewController.swift */; };
 		53287BA02837751400C2B96D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9F2837751400C2B96D /* MapViewController.swift */; };
@@ -35,7 +35,7 @@
 		5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkMemoryTableViewCell.xib; sourceTree = "<group>"; };
 		532431612839A0AB005A8170 /* DrinkNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsTableViewCell.swift; sourceTree = "<group>"; };
 		532431622839A0AB005A8170 /* DrinkNewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkNewsTableViewCell.xib; sourceTree = "<group>"; };
-		53287B99283774E300C2B96D /* DrinkMemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryViewController.swift; sourceTree = "<group>"; };
+		53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkmemoryViewController.swift; sourceTree = "<group>"; };
 		53287B9B283774F400C2B96D /* DrinkNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsViewController.swift; sourceTree = "<group>"; };
 		53287B9D2837750500C2B96D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		53287B9F2837751400C2B96D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +79,9 @@
 		531E83602842F8E30036FE76 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				531E83672842F95D0036FE76 /* DrinkMemory */,
+				531E83652842F9360036FE76 /* DrinkNews */,
+				531E83632842F91C0036FE76 /* Login */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -86,8 +89,53 @@
 		531E83612842F8EA0036FE76 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				531E83662842F9510036FE76 /* DrinkMemory */,
+				531E83642842F92B0036FE76 /* DrinkNews */,
+				531E83622842F9080036FE76 /* Login */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		531E83622842F9080036FE76 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		531E83632842F91C0036FE76 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		531E83642842F92B0036FE76 /* DrinkNews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DrinkNews;
+			sourceTree = "<group>";
+		};
+		531E83652842F9360036FE76 /* DrinkNews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DrinkNews;
+			sourceTree = "<group>";
+		};
+		531E83662842F9510036FE76 /* DrinkMemory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DrinkMemory;
+			sourceTree = "<group>";
+		};
+		531E83672842F95D0036FE76 /* DrinkMemory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DrinkMemory;
 			sourceTree = "<group>";
 		};
 		5324315F2839A081005A8170 /* DrinkmemoryCell */ = {
@@ -108,13 +156,13 @@
 			path = DeinkNewsCell;
 			sourceTree = "<group>";
 		};
-		53287BA92837775C00C2B96D /* Drinkmemory */ = {
+		53287BA92837775C00C2B96D /* DrinkMemory */ = {
 			isa = PBXGroup;
 			children = (
-				53287B99283774E300C2B96D /* DrinkMemoryViewController.swift */,
+				53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */,
 				5324315F2839A081005A8170 /* DrinkmemoryCell */,
 			);
-			path = Drinkmemory;
+			path = DrinkMemory;
 			sourceTree = "<group>";
 		};
 		53287BAA2837777300C2B96D /* DrinkNews */ = {
@@ -202,7 +250,7 @@
 				53287BAC2837778500C2B96D /* Account */,
 				53287BAB2837777C00C2B96D /* DrinkMap */,
 				53287BAA2837777300C2B96D /* DrinkNews */,
-				53287BA92837775C00C2B96D /* Drinkmemory */,
+				53287BA92837775C00C2B96D /* DrinkMemory */,
 				539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */,
 				53287BAF2837782000C2B96D /* LaunchViewController.swift */,
 			);
@@ -358,7 +406,7 @@
 				53287BA42837758B00C2B96D /* SignInViewController.swift in Sources */,
 				53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */,
 				539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */,
-				53287B9A283774E300C2B96D /* DrinkMemoryViewController.swift in Sources */,
+				53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */,
 				53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */,
 				53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */,
 				53287B9C283774F400C2B96D /* DrinkNewsViewController.swift in Sources */,
