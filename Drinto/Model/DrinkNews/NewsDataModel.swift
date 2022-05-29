@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class NewsDataModel {
+    var url: String
+    var title: String
+
+    init(url: String, title: String) {
+        self.url = url
+        self.title = title
+    }
+}
