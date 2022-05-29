@@ -8,7 +8,6 @@
 import UIKit
 
 class DrinkNewsViewController: UIViewController {
-
     @IBOutlet private weak var tableView: UITableView!
 
     override func viewDidLoad() {
