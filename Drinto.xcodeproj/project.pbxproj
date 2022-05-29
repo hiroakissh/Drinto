@@ -76,6 +76,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		531E83592842F69F0036FE76 /* DrinkNewsModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DrinkNewsModel;
+			sourceTree = "<group>";
+		};
+		531E835A2842F6BC0036FE76 /* DrinkNewsPresenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DrinkNewsPresenter;
+			sourceTree = "<group>";
+		};
 		5324315F2839A081005A8170 /* DrinkmemoryCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +197,7 @@
 		53D129F02827A36E00DA7E91 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				531E835A2842F6BC0036FE76 /* DrinkNewsPresenter */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -190,6 +205,7 @@
 		53D129F12827A37D00DA7E91 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				531E83592842F69F0036FE76 /* DrinkNewsModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
