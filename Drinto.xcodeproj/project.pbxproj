@@ -76,6 +76,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		531E83602842F8E30036FE76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		531E83612842F8EA0036FE76 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		5324315F2839A081005A8170 /* DrinkmemoryCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +181,8 @@
 		539DE6CD271FC9D800720AF7 /* Drinto */ = {
 			isa = PBXGroup;
 			children = (
+				531E83612842F8EA0036FE76 /* Presenter */,
+				531E83602842F8E30036FE76 /* Model */,
 				53D129F22827A38300DA7E91 /* View */,
 				539DE6D4271FC9D800720AF7 /* Main.storyboard */,
 				539DE6D9271FC9DA00720AF7 /* LaunchScreen.storyboard */,
