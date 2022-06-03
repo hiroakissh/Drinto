@@ -372,18 +372,27 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-o6-Z5H">
-                                <rect key="frame" x="20" y="156" width="445" height="31"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LMA-DQ-oXh">
+                                <rect key="frame" x="0.0" y="123" width="414" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="MainColor1"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                </segments>
-                            </segmentedControl>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-o6-Z5H">
+                                        <rect key="frame" x="8" y="24" width="445" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="MainColor1"/>
+                                        <segments>
+                                            <segment title="全て"/>
+                                            <segment title="コーヒー"/>
+                                            <segment title="紅茶"/>
+                                            <segment title="日本茶"/>
+                                            <segment title="中国茶"/>
+                                            <segment title="その他"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="OJo-g5-Bso"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="eAZ-ac-bkG"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ec5-po-xdY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
