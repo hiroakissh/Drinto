@@ -10,11 +10,22 @@ import UIKit
 class DrinkNewsViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
 
+    var newsDataModel = NewsDataModel()
+
+    var newsData: [NewsData] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        newsDataModel.getNewsFromNewsAPI(completionHandler: { newsData in
+            print(newsData)
+        })
+
         tableView.dataSource = self
         tableView.delegate = self
+    }
+
+    func loadData() {
     }
 }
 extension DrinkNewsViewController: UITableViewDataSource, UITableViewDelegate {
@@ -28,3 +39,5 @@ extension DrinkNewsViewController: UITableViewDataSource, UITableViewDelegate {
         return drinkNewsCell
     }
 }
+
+// 84b4753e4e64481280f134d01ddfe9af
