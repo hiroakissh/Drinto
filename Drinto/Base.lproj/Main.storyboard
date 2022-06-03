@@ -190,19 +190,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lunch" translatesAutoresizingMaskIntoConstraints="NO" id="u0V-d6-ZqP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Lunch" translatesAutoresizingMaskIntoConstraints="NO" id="u0V-d6-ZqP">
                                 <rect key="frame" x="87" y="97" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="E-mail" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CMx-Nd-uNH">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="E-mail" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CMx-Nd-uNH">
                                 <rect key="frame" x="159" y="278" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KMD-a9-eYG">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KMD-a9-eYG">
                                 <rect key="frame" x="159" y="349" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -216,16 +213,15 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ss0-DY-Zub">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ss0-DY-Zub">
                                 <rect key="frame" x="40" y="687" width="334" height="1"/>
                                 <color key="backgroundColor" name="MainColor5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="BJo-JP-JdY"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcj-oB-aHo">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcj-oB-aHo">
                                 <rect key="frame" x="77" y="614" width="268" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ゲストとしてログイン">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
@@ -234,9 +230,8 @@
                                     <action selector="guestLoginAction:" destination="8hG-6m-VUd" eventType="touchUpInside" id="piU-ee-5Te"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rs-AG-OBh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rs-AG-OBh">
                                 <rect key="frame" x="146" y="731" width="122" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="MainColor2"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="新規登録">
@@ -247,6 +242,17 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hOV-U7-hAv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ss0-DY-Zub" firstAttribute="centerX" secondItem="KMD-a9-eYG" secondAttribute="centerX" id="FfX-vc-p3O"/>
+                            <constraint firstItem="Ss0-DY-Zub" firstAttribute="centerX" secondItem="u0V-d6-ZqP" secondAttribute="centerX" id="Prx-Xe-8ch"/>
+                            <constraint firstItem="Ss0-DY-Zub" firstAttribute="centerX" secondItem="5Rs-AG-OBh" secondAttribute="centerX" id="VG8-YW-hdQ"/>
+                            <constraint firstItem="Ss0-DY-Zub" firstAttribute="leading" secondItem="v0l-DG-wtc" secondAttribute="leadingMargin" constant="20" id="YiZ-A2-qEC"/>
+                            <constraint firstItem="Ss0-DY-Zub" firstAttribute="centerX" secondItem="v0l-DG-wtc" secondAttribute="centerX" id="aE3-n7-U5t"/>
+                            <constraint firstItem="Ss0-DY-Zub" firstAttribute="top" secondItem="dcj-oB-aHo" secondAttribute="bottom" constant="30" id="f5f-wW-wIq"/>
+                            <constraint firstItem="Ss0-DY-Zub" firstAttribute="centerX" secondItem="CMx-Nd-uNH" secondAttribute="centerX" id="p8r-xL-6Rd"/>
+                            <constraint firstItem="Ss0-DY-Zub" firstAttribute="top" secondItem="v0l-DG-wtc" secondAttribute="top" constant="687" id="sCA-wg-6fL"/>
+                            <constraint firstItem="5Rs-AG-OBh" firstAttribute="top" secondItem="Ss0-DY-Zub" secondAttribute="bottom" constant="43" id="yfH-oa-juY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xur-Gu-jOB"/>
                     <connections>
@@ -474,7 +480,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jGO-Cg-YZ1"/>
+        <segue reference="K8P-y3-fbK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Icon" width="1024" height="1024"/>
