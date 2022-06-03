@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		13B39101E2DE005EDA5D1524 /* Pods_Drinto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E14AB1D710732C76E09061 /* Pods_Drinto.framework */; };
-		531E83692842FB610036FE76 /* NewsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531E83682842FB610036FE76 /* NewsDataModel.swift */; };
 		5324315D2839A07A005A8170 /* DrinkMemoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */; };
 		5324315E2839A07A005A8170 /* DrinkMemoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */; };
 		532431632839A0AB005A8170 /* DrinkNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532431612839A0AB005A8170 /* DrinkNewsTableViewCell.swift */; };
@@ -32,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		46E14AB1D710732C76E09061 /* Pods_Drinto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drinto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		531E83682842FB610036FE76 /* NewsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataModel.swift; sourceTree = "<group>"; };
 		5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryTableViewCell.swift; sourceTree = "<group>"; };
 		5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkMemoryTableViewCell.xib; sourceTree = "<group>"; };
 		532431612839A0AB005A8170 /* DrinkNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 		531E83652842F9360036FE76 /* DrinkNews */ = {
 			isa = PBXGroup;
 			children = (
-				531E83682842FB610036FE76 /* NewsDataModel.swift */,
 			);
 			path = DrinkNews;
 			sourceTree = "<group>";
@@ -409,7 +406,6 @@
 				53287BA42837758B00C2B96D /* SignInViewController.swift in Sources */,
 				53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */,
 				539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */,
-				531E83692842FB610036FE76 /* NewsDataModel.swift in Sources */,
 				53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */,
 				53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */,
 				53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */,
