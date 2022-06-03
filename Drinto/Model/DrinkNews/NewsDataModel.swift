@@ -52,7 +52,6 @@ class NewsDataModel {
                 let jsonDecoder = JSONDecoder()
                 do {
                     let jsonDecoderData = try jsonDecoder.decode(NewsData.self, from: data)
-                    print(jsonDecoderData.totalResults)
                     completionHandler(jsonDecoderData)
                 } catch {
                     print("Decode Error")

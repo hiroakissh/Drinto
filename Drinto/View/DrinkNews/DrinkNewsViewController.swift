@@ -12,13 +12,21 @@ class DrinkNewsViewController: UIViewController {
 
     var newsDataModel = NewsDataModel()
 
-    var newsData: [NewsData] = []
+    var newsData = [NewsData]()
+    var newsTotalCount = 1
+    var newsDataTest: [Article] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        newsDataModel.getNewsFromNewsAPI(completionHandler: { newsData in
-            print(newsData)
+        newsDataModel.getNewsFromNewsAPI(completionHandler: { newsDataFromAPI in
+            self.newsData = [newsDataFromAPI]
+            self.newsTotalCount = newsDataFromAPI.totalResults
+            self.newsDataTest = newsDataFromAPI.articles
+            print(self.newsDataTest[0].title)
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         })
 
         tableView.dataSource = self
@@ -26,16 +34,21 @@ class DrinkNewsViewController: UIViewController {
     }
 
     func loadData() {
+        print(NewsData.self)
     }
 }
 extension DrinkNewsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return newsDataTest.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let drinkNewsCell = tableView.dequeueReusableCell(withIdentifier: "DrinkNewsCell", for: indexPath)
-
+        if newsDataTest.count == 0 {
+            drinkNewsCell.textLabel?.text = "データを取得中"
+        } else {
+            drinkNewsCell.textLabel?.text = newsDataTest[indexPath.row].title
+        }
         return drinkNewsCell
     }
 }
