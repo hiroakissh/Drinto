@@ -10,7 +10,7 @@ import UIKit
 class DrinkNewsViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
 
-    var newsDataModel = NewsDataModel()
+    var fetchNewsDataModel = FetchDrinkNewsData()
 
     var newsData = [NewsData]()
     var newsTotalCount = 1
@@ -19,7 +19,7 @@ class DrinkNewsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        newsDataModel.getNewsFromNewsAPI(completionHandler: { newsDataFromAPI in
+        fetchNewsDataModel.getNewsFromNewsAPI(completionHandler: { newsDataFromAPI in
             self.newsData = [newsDataFromAPI]
             self.newsTotalCount = newsDataFromAPI.totalResults
             self.newsDataTest = newsDataFromAPI.articles
