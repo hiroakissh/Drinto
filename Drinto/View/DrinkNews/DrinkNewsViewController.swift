@@ -19,7 +19,7 @@ class DrinkNewsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        fetchNewsDataModel.getNewsFromNewsAPI(completionHandler: { newsDataFromAPI in
+        fetchNewsDataModel.getNewsFromNewsAPI(completion: { newsDataFromAPI in
             self.newsData = [newsDataFromAPI]
             self.newsTotalCount = newsDataFromAPI.totalResults
             self.newsDataTest = newsDataFromAPI.articles
