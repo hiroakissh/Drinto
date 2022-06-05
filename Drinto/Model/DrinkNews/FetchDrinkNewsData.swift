@@ -17,32 +17,6 @@ class FetchDrinkNewsData: NewsAPIDataModelInput {
     let sort = "popularity"
     var category = "tea"
 
-    func getNewsFromNewsAPI(completion: @escaping(NewsData) -> Void) {
-        let newsURLString = "\(urlHead)q=\(category)&apiKey=\(apiKey)"
-        print(newsURLString)
-        guard let url = URL(string: newsURLString) else { return }
-        let urlRequest = URLRequest(url: url)
-        let session = URLSession(configuration: .default)
-
-        let task = session.dataTask(with: urlRequest) { data, _, error in
-            if error != nil {
-                print("Error")
-                print(error.debugDescription)
-            }
-            if let data = data {
-                let jsonDecoder = JSONDecoder()
-                do {
-                    let jsonDecoderData = try jsonDecoder.decode(NewsData.self, from: data)
-                    completion(jsonDecoderData)
-                } catch {
-                    print("Decode Error")
-                    print(error.localizedDescription)
-                }
-            }
-        }
-        task.resume()
-    }
-
     func fetchDrinkNewsData(completion: @escaping ((Result<[Article], Error>) -> Void)) {
         let newsURLString = "\(urlHead)q=\(category)&apiKey=\(apiKey)"
         print(newsURLString)
