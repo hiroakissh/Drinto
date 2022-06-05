@@ -42,6 +42,7 @@ extension DrinkNewsViewController: DrinkNewsPresenterOutput {
 
     func didPrepareInfomation(of newsData: Article) {
         print("OK")
+        print(newsData.title)
     }
 }
 
@@ -64,6 +65,7 @@ extension DrinkNewsViewController: UITableViewDataSource {
 extension DrinkNewsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        print("CellTap")
         presenter.didSelectRowAt(indexPath)
     }
 }

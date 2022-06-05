@@ -58,7 +58,7 @@ class DrinkNewsPresenter: DrinkNewsPresenterInput {
     }
 
     func didSelectRowAt(_ indexPath: IndexPath) {
-        guard let newsData = newsData(forRow: indexPath.row) else { return }
-        view?.didPrepareInfomation(of: newsData)
+        guard let newsDataDetail = newsData(forRow: indexPath.row) else { return }
+        view?.didPrepareInfomation(of: newsDataDetail)
     }
 }
