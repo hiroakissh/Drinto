@@ -8,11 +8,10 @@
 import Foundation
 
 protocol NewsAPIDataModelInput {
-    func fetchDrinkNewsData(completion: @escaping((Result<[NewsData], Error>) -> ()))
+    func fetchDrinkNewsData(completion: @escaping((Result<[Article], Error>) -> Void))
 }
 
 class FetchDrinkNewsData: NewsAPIDataModelInput {
-
     let apiKey = "84b4753e4e64481280f134d01ddfe9af"
     let urlHead = "https://newsapi.org/v2/everything?"
     let sort = "popularity"
@@ -44,7 +43,7 @@ class FetchDrinkNewsData: NewsAPIDataModelInput {
         task.resume()
     }
 
-    func fetchDrinkNewsData(completion: @escaping ((Result<NewsData, Error>) -> ())) {
+    func fetchDrinkNewsData(completion: @escaping ((Result<[Article], Error>) -> Void)) {
         let newsURLString = "\(urlHead)q=\(category)&apiKey=\(apiKey)"
         print(newsURLString)
         guard let url = URL(string: newsURLString) else { return }
@@ -60,7 +59,8 @@ class FetchDrinkNewsData: NewsAPIDataModelInput {
                 completion(.failure(error))
                 return
             }
-            completion(.success(decodedData))
+            completion(.success(decodedData.articles))
         }
+        task.resume()
     }
 }
