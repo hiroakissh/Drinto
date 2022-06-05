@@ -10,47 +10,62 @@ import UIKit
 class DrinkNewsViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
 
-    var newsDataModel = NewsDataModel()
+    var fetchNewsDataModel = FetchDrinkNewsData()
 
-    var newsData = [NewsData]()
-    var newsTotalCount = 1
-    var newsDataTest: [Article] = []
+    private var presenter: DrinkNewsPresenter!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        newsDataModel.getNewsFromNewsAPI(completionHandler: { newsDataFromAPI in
-            self.newsData = [newsDataFromAPI]
-            self.newsTotalCount = newsDataFromAPI.totalResults
-            self.newsDataTest = newsDataFromAPI.articles
-            print(self.newsDataTest[0].title)
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        })
-
         tableView.dataSource = self
         tableView.delegate = self
+        presenter = DrinkNewsPresenter.init(with: self)
+        presenter.viewDidLoad()
     }
 
     func loadData() {
         print(NewsData.self)
     }
 }
-extension DrinkNewsViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newsDataTest.count
+
+extension DrinkNewsViewController: DrinkNewsPresenterOutput {
+    func didFetch(_ drinkNews: [Article]) {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let drinkNewsCell = tableView.dequeueReusableCell(withIdentifier: "DrinkNewsCell", for: indexPath)
-        if newsDataTest.count == 0 {
-            drinkNewsCell.textLabel?.text = "データを取得中"
-        } else {
-            drinkNewsCell.textLabel?.text = newsDataTest[indexPath.row].title
-        }
-        return drinkNewsCell
+    func didFailToFetchDrinkNews(with error: Error) {
+       print("Error")
+    }
+
+    func didPrepareInfomation(of newsData: Article) {
+        print("OK")
+        print(newsData.title)
     }
 }
 
-// 84b4753e4e64481280f134d01ddfe9af
+extension DrinkNewsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return presenter.numberOfNewsData
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "DrinkNewsCell",
+            for: indexPath
+        )
+        let drinkNews = presenter.newsData(forRow: indexPath.row)
+        cell.textLabel?.text = drinkNews?.title
+        return cell
+    }
+}
+
+extension DrinkNewsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        print("CellTap")
+        presenter.didSelectRowAt(indexPath)
+    }
+}
