@@ -13,6 +13,7 @@ class DrinkNewsViewController: UIViewController {
     var fetchNewsDataModel = FetchDrinkNewsData()
 
     private var presenter: DrinkNewsPresenter!
+    private var newsDataInfo: Article?
 
 
     override func viewDidLoad() {
@@ -43,6 +44,14 @@ extension DrinkNewsViewController: DrinkNewsPresenterOutput {
     func didPrepareInfomation(of newsData: Article) {
         print("OK")
         print(newsData.title)
+        newsDataInfo = newsData
+        performSegue(withIdentifier: "DrinkNewsDetailVC", sender: newsData)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DrinkNewsDetailVC" {
+            let detailNewsVC = segue.destination as? DrinkNewsDetailViewController
+            detailNewsVC?.newsData = self.newsDataInfo
+        }
     }
 }
 
