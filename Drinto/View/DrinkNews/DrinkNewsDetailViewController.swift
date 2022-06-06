@@ -28,7 +28,7 @@ class DrinkNewsDetailViewController: UIViewController {
         webView.load(newsRequest)
         webView.allowsBackForwardNavigationGestures = true
     }
-    @IBAction func backButton(_ sender: Any) {
+    @IBAction private func backButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
 }
