@@ -22,7 +22,12 @@
 		53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA52837759E00C2B96D /* SignUpViewController.swift */; };
 		53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA7283775F900C2B96D /* TopPageViewController.swift */; };
 		53287BB02837782000C2B96D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BAF2837782000C2B96D /* LaunchViewController.swift */; };
+		53452DA828561A88008F2444 /* DrinkMemoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */; };
 		534BB07B284E2B2700628CF2 /* DrinkNewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */; };
+		5377898F2851C6C40056576C /* DrinkMemoryRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */; };
+		537789912851C6E90056576C /* DrinkMemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537789902851C6E90056576C /* DrinkMemoryRepository.swift */; };
+		537789932851C7170056576C /* DrinkMemoryFirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537789922851C7170056576C /* DrinkMemoryFirebaseModel.swift */; };
+		537789952851C7290056576C /* DrinkMemoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537789942851C7290056576C /* DrinkMemoryPresenter.swift */; };
 		5386CCEA284AD6AC006F1A14 /* FetchDrinkNewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386CCE9284AD6AC006F1A14 /* FetchDrinkNewsData.swift */; };
 		5386CCEC284ADD85006F1A14 /* DrinkNewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386CCEB284ADD85006F1A14 /* DrinkNewsPresenter.swift */; };
 		539DE6CF271FC9D800720AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6CE271FC9D800720AF7 /* AppDelegate.swift */; };
@@ -49,7 +54,12 @@
 		53287BA52837759E00C2B96D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		53287BA7283775F900C2B96D /* TopPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
 		53287BAF2837782000C2B96D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryDetailViewController.swift; sourceTree = "<group>"; };
 		534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsDetailViewController.swift; sourceTree = "<group>"; };
+		5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRealmModel.swift; sourceTree = "<group>"; };
+		537789902851C6E90056576C /* DrinkMemoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRepository.swift; sourceTree = "<group>"; };
+		537789922851C7170056576C /* DrinkMemoryFirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryFirebaseModel.swift; sourceTree = "<group>"; };
+		537789942851C7290056576C /* DrinkMemoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryPresenter.swift; sourceTree = "<group>"; };
 		5386CCE9284AD6AC006F1A14 /* FetchDrinkNewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDrinkNewsData.swift; sourceTree = "<group>"; };
 		5386CCEB284ADD85006F1A14 /* DrinkNewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsPresenter.swift; sourceTree = "<group>"; };
 		539DE6CB271FC9D800720AF7 /* Drinto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drinto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +148,7 @@
 		531E83662842F9510036FE76 /* DrinkMemory */ = {
 			isa = PBXGroup;
 			children = (
+				537789942851C7290056576C /* DrinkMemoryPresenter.swift */,
 			);
 			path = DrinkMemory;
 			sourceTree = "<group>";
@@ -145,6 +156,9 @@
 		531E83672842F95D0036FE76 /* DrinkMemory */ = {
 			isa = PBXGroup;
 			children = (
+				5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */,
+				537789902851C6E90056576C /* DrinkMemoryRepository.swift */,
+				537789922851C7170056576C /* DrinkMemoryFirebaseModel.swift */,
 			);
 			path = DrinkMemory;
 			sourceTree = "<group>";
@@ -172,6 +186,7 @@
 			children = (
 				53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */,
 				5324315F2839A081005A8170 /* DrinkmemoryCell */,
+				53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */,
 			);
 			path = DrinkMemory;
 			sourceTree = "<group>";
@@ -417,12 +432,16 @@
 				532431632839A0AB005A8170 /* DrinkNewsTableViewCell.swift in Sources */,
 				53287BA42837758B00C2B96D /* SignInViewController.swift in Sources */,
 				53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */,
+				53452DA828561A88008F2444 /* DrinkMemoryDetailViewController.swift in Sources */,
 				539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */,
 				531E83692842FB610036FE76 /* NewsDataModel.swift in Sources */,
 				5386CCEC284ADD85006F1A14 /* DrinkNewsPresenter.swift in Sources */,
 				53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */,
 				53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */,
+				5377898F2851C6C40056576C /* DrinkMemoryRealmModel.swift in Sources */,
 				53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */,
+				537789912851C6E90056576C /* DrinkMemoryRepository.swift in Sources */,
+				537789932851C7170056576C /* DrinkMemoryFirebaseModel.swift in Sources */,
 				53287B9C283774F400C2B96D /* DrinkNewsViewController.swift in Sources */,
 				53287BB02837782000C2B96D /* LaunchViewController.swift in Sources */,
 				539DE6CF271FC9D800720AF7 /* AppDelegate.swift in Sources */,
@@ -430,6 +449,7 @@
 				539DE6D1271FC9D800720AF7 /* SceneDelegate.swift in Sources */,
 				534BB07B284E2B2700628CF2 /* DrinkNewsDetailViewController.swift in Sources */,
 				53287BA02837751400C2B96D /* MapViewController.swift in Sources */,
+				537789952851C7290056576C /* DrinkMemoryPresenter.swift in Sources */,
 				53287BA22837757000C2B96D /* AddDrinkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
