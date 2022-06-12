@@ -22,6 +22,7 @@
 		53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA52837759E00C2B96D /* SignUpViewController.swift */; };
 		53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA7283775F900C2B96D /* TopPageViewController.swift */; };
 		53287BB02837782000C2B96D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BAF2837782000C2B96D /* LaunchViewController.swift */; };
+		53452DA828561A88008F2444 /* DrinkMemoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */; };
 		534BB07B284E2B2700628CF2 /* DrinkNewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */; };
 		5377898F2851C6C40056576C /* DrinkMemoryRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */; };
 		537789912851C6E90056576C /* DrinkMemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537789902851C6E90056576C /* DrinkMemoryRepository.swift */; };
@@ -53,6 +54,7 @@
 		53287BA52837759E00C2B96D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		53287BA7283775F900C2B96D /* TopPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
 		53287BAF2837782000C2B96D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryDetailViewController.swift; sourceTree = "<group>"; };
 		534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsDetailViewController.swift; sourceTree = "<group>"; };
 		5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRealmModel.swift; sourceTree = "<group>"; };
 		537789902851C6E90056576C /* DrinkMemoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRepository.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			children = (
 				53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */,
 				5324315F2839A081005A8170 /* DrinkmemoryCell */,
+				53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */,
 			);
 			path = DrinkMemory;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				532431632839A0AB005A8170 /* DrinkNewsTableViewCell.swift in Sources */,
 				53287BA42837758B00C2B96D /* SignInViewController.swift in Sources */,
 				53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */,
+				53452DA828561A88008F2444 /* DrinkMemoryDetailViewController.swift in Sources */,
 				539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */,
 				531E83692842FB610036FE76 /* NewsDataModel.swift in Sources */,
 				5386CCEC284ADD85006F1A14 /* DrinkNewsPresenter.swift in Sources */,

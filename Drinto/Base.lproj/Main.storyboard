@@ -401,6 +401,15 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="OJo-g5-Bso"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="eAZ-ac-bkG"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0m-3p-2V7">
+                                <rect key="frame" x="273" y="62" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="test"/>
+                                <connections>
+                                    <segue destination="IYV-KD-C26" kind="presentation" id="Jlu-Li-GZ9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ec5-po-xdY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -414,20 +423,56 @@
             </objects>
             <point key="canvasLocation" x="647.82608695652175" y="-135.26785714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Drink Memory Detail View Controller-->
         <scene sceneID="ywn-oj-c0s">
             <objects>
-                <viewController id="IYV-KD-C26" sceneMemberID="viewController">
+                <viewController id="IYV-KD-C26" customClass="DrinkMemoryDetailViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aaS-t5-Xtf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZP-Ob-nkU">
+                                <rect key="frame" x="131" y="629" width="153" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="test1"/>
+                                <connections>
+                                    <action selector="test1ButtonAction:" destination="IYV-KD-C26" eventType="touchUpInside" id="FyY-y5-xH5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94Z-rM-y3e">
+                                <rect key="frame" x="131" y="716" width="153" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="test2"/>
+                                <connections>
+                                    <action selector="test2ButtonAction:" destination="IYV-KD-C26" eventType="touchUpInside" id="d63-Nf-di3"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSk-JZ-uV2" customClass="RadarChartView" customModule="Drinto" customModuleProvider="target">
+                                <rect key="frame" x="20" y="144" width="374" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="MuV-EO-cQ1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dOh-G9-PpR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jSk-JZ-uV2" firstAttribute="top" secondItem="dOh-G9-PpR" secondAttribute="top" constant="100" id="9DU-t5-dOT"/>
+                            <constraint firstItem="jSk-JZ-uV2" firstAttribute="leading" secondItem="dOh-G9-PpR" secondAttribute="leading" constant="20" id="UOB-7F-NHO"/>
+                            <constraint firstItem="dOh-G9-PpR" firstAttribute="trailing" secondItem="jSk-JZ-uV2" secondAttribute="trailing" constant="20" id="c08-Xo-Mff"/>
+                            <constraint firstItem="jSk-JZ-uV2" firstAttribute="centerX" secondItem="aaS-t5-Xtf" secondAttribute="centerX" id="nIe-zd-w7J"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="radarChartView" destination="jSk-JZ-uV2" id="aW7-dF-Da7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crP-DX-grq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1668" y="-135"/>
+            <point key="canvasLocation" x="1666.6666666666667" y="-135.26785714285714"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="0mo-N8-CLH">
