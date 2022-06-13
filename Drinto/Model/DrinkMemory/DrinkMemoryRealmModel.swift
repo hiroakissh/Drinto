@@ -41,3 +41,6 @@ class DrinkMemoryRealmModel: Object {
     }
 }
 
+class DrinkMemoryRealmModelList: Object {
+    let drinkMemoryRealmModelList = List<DrinkMemoryRealmModel>()
+}
