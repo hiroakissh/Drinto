@@ -158,8 +158,8 @@
 		531E83672842F95D0036FE76 /* DrinkMemory */ = {
 			isa = PBXGroup;
 			children = (
-				5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */,
 				537789902851C6E90056576C /* DrinkMemoryRepository.swift */,
+				5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */,
 				537789922851C7170056576C /* DrinkMemoryFirebaseModel.swift */,
 				53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */,
 			);
