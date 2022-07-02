@@ -15,7 +15,6 @@ class DrinkNewsViewController: UIViewController {
     private var presenter: DrinkNewsPresenter!
     private var newsDataInfo: Article?
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

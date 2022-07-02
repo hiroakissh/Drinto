@@ -22,7 +22,7 @@ class DrinkMemoryRealmModel: Object {
     @Persisted var drinkName: String?
     @Persisted var category: String?
     @Persisted var imagePath: String?
-    var drinkPoint = List<DrinkPoint>()
+    @Persisted var drinkPoint = List<DrinkPoint>()
 
     var uuid: UUID? {
         UUID(uuidString: drinkMemoryUUID)
@@ -39,8 +39,4 @@ class DrinkMemoryRealmModel: Object {
         self.imagePath = imagePath
         self.drinkPoint = drinkPoint
     }
-}
-
-class DrinkMemoryRealmModelList: Object {
-    let drinkMemoryRealmModelList = List<DrinkMemoryRealmModel>()
 }
