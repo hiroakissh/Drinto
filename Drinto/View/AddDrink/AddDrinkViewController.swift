@@ -22,6 +22,7 @@ class AddDrinkViewController: UIViewController {
     private var editTextFiled: UITextField?
 
     private let point: [String] = ["0", "1", "2", "3", "4", "5"]
+    private let category: [String] = ["コーヒ", "紅茶", "日本茶", "中国茶", "その他"]
 
     // swiftlint:disable force_try
     private let realm = try! Realm()
@@ -35,6 +36,7 @@ class AddDrinkViewController: UIViewController {
         value4TextField.delegate = self
         value5TextField.delegate = self
         value6TextField.delegate = self
+        categoryTextField.delegate = self
     }
     @IBAction func addButtonAction(_ sender: Any) {
         let realmModel = DrinkMemoryRealmModel()
@@ -105,6 +107,7 @@ extension AddDrinkViewController {
         value4TextField.endEditing(true)
         value5TextField.endEditing(true)
         value6TextField.endEditing(true)
+        categoryTextField.endEditing(true)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         value1TextField.endEditing(true)
@@ -113,6 +116,7 @@ extension AddDrinkViewController {
         value4TextField.endEditing(true)
         value5TextField.endEditing(true)
         value6TextField.endEditing(true)
+        categoryTextField.endEditing(true)
     }
 }
 
@@ -122,11 +126,19 @@ extension AddDrinkViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        point.count
+        if editTextFiled == categoryTextField {
+            return category.count
+        } else {
+            return point.count
+        }
     }
 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        point[row]
+        if editTextFiled == categoryTextField {
+            return category[row]
+        } else {
+            return point[row]
+        }
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -142,6 +154,8 @@ extension AddDrinkViewController: UIPickerViewDelegate, UIPickerViewDataSource {
             value5TextField.text = point[row]
         } else if editTextFiled == value6TextField {
             value6TextField.text = point[row]
+        } else if editTextFiled == categoryTextField {
+            categoryTextField.text = category[row]
         }
     }
 
@@ -153,6 +167,7 @@ extension AddDrinkViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         value4TextField.inputView = pickerView
         value5TextField.inputView = pickerView
         value6TextField.inputView = pickerView
+        categoryTextField.inputView = pickerView
 
         let toolbar = UIToolbar()
         toolbar.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44)
@@ -168,6 +183,7 @@ extension AddDrinkViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         value4TextField.inputAccessoryView = toolbar
         value5TextField.inputAccessoryView = toolbar
         value6TextField.inputAccessoryView = toolbar
+        categoryTextField.inputAccessoryView = toolbar
     }
 }
 
