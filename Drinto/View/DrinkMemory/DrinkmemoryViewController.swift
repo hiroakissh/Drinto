@@ -14,6 +14,10 @@ class DrinkMemoryViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.register(
+            UINib(nibName: "DrinkMemoryTableViewCell", bundle: nil),
+            forCellReuseIdentifier: "DrinkMemoryCell"
+        )
     }
 }
 
@@ -23,8 +27,11 @@ extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate 
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let drinkCell = tableView.dequeueReusableCell(withIdentifier: "DrinkCell", for: indexPath)
-
+        let drinkCell = tableView.dequeueReusableCell(
+            withIdentifier: "DrinkMemoryCell",
+            for: indexPath
+            // swiftlint:disable:next force_cast
+        ) as! DrinkMemoryTableViewCell
         return drinkCell
     }
 }

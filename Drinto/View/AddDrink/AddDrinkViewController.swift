@@ -65,7 +65,6 @@ class AddDrinkViewController: UIViewController {
         realmModel.category = categoryTextField.text
         realmModel.imagePath = ""
         realmModel.drinkPoint.append(drinkPoint)
-//        drinkPointList?.append(drinkPoint)
 
         realmModel.drinkPoint.append(drinkPoint)
         print(realmModel)
@@ -73,7 +72,6 @@ class AddDrinkViewController: UIViewController {
         do {
             try realm.write {
                 realm.add(realmModel)
-//                realm.add(drinkPoint)
             }
         } catch {
             print("Realm Add Error")
@@ -87,14 +85,10 @@ class AddDrinkViewController: UIViewController {
             let realmTest = try Realm()
 
             let results = realm.objects(DrinkMemoryRealmModel.self)
-//            let resultDrinkPoint = realm.objects(DrinkPoint.self)
-            print(results)
             let drinkPointList: List<DrinkPoint>?
-//            print(results[0].drinkPoint)
+
             drinkPointList = realmTest.objects(DrinkMemoryRealmModel.self).first?.drinkPoint
             print(drinkPointList)
-//            print(realm.objects(DrinkMemoryRealmModel.self).first?.drinkPoint)
-//            print(resultDrinkPoint)
         }
         catch {
             print(error)
