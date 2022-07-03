@@ -15,5 +15,5 @@ struct DrinkMemorySwiftModel {
     var drinkName: String?
     var category: String?
     var imagePath: String?
-    var drinkPoint: [Int]
+    var drinkPoint: [Int]?
 }
