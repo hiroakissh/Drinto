@@ -18,6 +18,7 @@ class DrinkMemoryViewController: UIViewController {
             UINib(nibName: "DrinkMemoryTableViewCell", bundle: nil),
             forCellReuseIdentifier: "DrinkMemoryCell"
         )
+        tableView.layer.cornerRadius = 10.0
     }
 }
 
