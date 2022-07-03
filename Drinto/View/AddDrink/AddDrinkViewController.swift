@@ -18,6 +18,9 @@ class AddDrinkViewController: UIViewController {
     @IBOutlet private weak var drinkNameTextField: UITextField!
     @IBOutlet private weak var categoryTextField: UITextField!
 
+    @IBOutlet private weak var addButton: UIButton!
+    @IBOutlet private weak var drinkImageView: UIImageView!
+
     private var pickerView = UIPickerView()
     private var editTextFiled: UITextField?
 
@@ -96,6 +99,10 @@ class AddDrinkViewController: UIViewController {
         catch {
             print(error)
         }
+    }
+
+    private func settingUI() {
+        addButton.layer.cornerRadius = 10.0
     }
 }
 

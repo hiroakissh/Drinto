@@ -408,15 +408,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rC6-do-LLe">
-                                <rect key="frame" x="100" y="104" width="216" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rC6-do-LLe">
+                                <rect key="frame" x="191" y="104" width="32" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNL-ov-cPt">
-                                <rect key="frame" x="184" y="67" width="49" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="名前" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNL-ov-cPt">
+                                <rect key="frame" x="182.5" y="67" width="49" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -427,17 +425,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLa-lC-Sje">
-                                <rect key="frame" x="100" y="707" width="216" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="追加"/>
-                                <connections>
-                                    <action selector="addButtonAction:" destination="4T9-M0-9eM" eventType="touchUpInside" id="Jgb-Bm-AO9"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="カテゴリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5J-dn-fio">
+                                <rect key="frame" x="146" y="150" width="122" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf2-Zh-ObR">
-                                <rect key="frame" x="182" y="754" width="53" height="31"/>
+                                <rect key="frame" x="325" y="750" width="53" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="確認"/>
@@ -445,21 +440,45 @@
                                     <action selector="test:" destination="4T9-M0-9eM" eventType="touchUpInside" id="hPX-Xk-9Kq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="カテゴリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5J-dn-fio">
-                                <rect key="frame" x="148" y="150" width="122" height="29"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uff-FN-Mbb">
+                                <rect key="frame" x="77" y="456" width="262" height="245"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="写真" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPE-fL-kkF">
+                                <rect key="frame" x="183" y="419" width="49" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLa-lC-Sje">
+                                <rect key="frame" x="99" y="731" width="217" height="50"/>
+                                <color key="backgroundColor" name="MainColor1"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="追加">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addButtonAction:" destination="4T9-M0-9eM" eventType="touchUpInside" id="Jgb-Bm-AO9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Jv-cW-74c"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rC6-do-LLe" firstAttribute="centerX" secondItem="qal-il-g67" secondAttribute="centerX" id="NqI-jG-VEb"/>
+                            <constraint firstItem="Uff-FN-Mbb" firstAttribute="centerX" secondItem="qal-il-g67" secondAttribute="centerX" id="Rnk-aZ-bcS"/>
+                            <constraint firstItem="gNL-ov-cPt" firstAttribute="centerX" secondItem="qal-il-g67" secondAttribute="centerX" id="jpn-UZ-sfh"/>
+                            <constraint firstItem="aLa-lC-Sje" firstAttribute="centerX" secondItem="qal-il-g67" secondAttribute="centerX" id="saA-5m-whR"/>
+                            <constraint firstItem="P5J-dn-fio" firstAttribute="centerX" secondItem="qal-il-g67" secondAttribute="centerX" id="zr5-0I-HS0"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="" image="AddIcon" selectedImage="AddIcon" id="xdb-JM-1D1"/>
                     <connections>
+                        <outlet property="addButton" destination="aLa-lC-Sje" id="q6j-eI-cMH"/>
                         <outlet property="categoryTextField" destination="lrb-BY-RFg" id="M7a-c5-lDy"/>
+                        <outlet property="drinkImageView" destination="Uff-FN-Mbb" id="aTm-Hm-Mjh"/>
                         <outlet property="drinkNameTextField" destination="rC6-do-LLe" id="ZbN-aJ-91F"/>
                         <outlet property="value1TextField" destination="yHY-bi-JQ9" id="G9h-Io-ypq"/>
                         <outlet property="value2TextField" destination="3dK-ke-pLf" id="0px-VU-EwU"/>
