@@ -18,7 +18,11 @@ class DrinkMemoryTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
+        cellBackGroundView.layer.cornerRadius = 20.0
+        cellBackGroundView.layer.shadowOffset = .init(width: 0.25, height: 0.25)
+        cellBackGroundView.layer.shadowOpacity = 0.3
+        cellBackGroundView.layer.shadowRadius = 10.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
