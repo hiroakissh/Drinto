@@ -26,8 +26,6 @@ class AddDrinkViewController: UIViewController {
     private let point: [String] = ["0", "1", "2", "3", "4", "5"]
     private let category: [String] = ["コーヒ", "紅茶", "日本茶", "中国茶", "その他"]
 
-    // swiftlint:disable force_try
-//    private let realm = try! Realm()
     var drinkMemoryRepository = DrinkMemoryRepository()
     var drinkMemorySwiftModel = DrinkMemorySwiftModel()
 
@@ -43,7 +41,7 @@ class AddDrinkViewController: UIViewController {
         value6TextField.delegate = self
         categoryTextField.delegate = self
     }
-    @IBAction func addButtonAction(_ sender: Any) {
+    @IBAction private func addButtonAction(_ sender: Any) {
         let uuid = UUID()
 
         drinkMemorySwiftModel.uuidString = uuid.uuidString
