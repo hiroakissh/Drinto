@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import RealmSwift
 
 class AddDrinkViewController: UIViewController {
     @IBOutlet private weak var value1TextField: UITextField!
@@ -28,10 +27,13 @@ class AddDrinkViewController: UIViewController {
     private let category: [String] = ["コーヒ", "紅茶", "日本茶", "中国茶", "その他"]
 
     // swiftlint:disable force_try
-    private let realm = try! Realm()
+//    private let realm = try! Realm()
+    var drinkMemoryRepository = DrinkMemoryRepository()
+    var drinkMemorySwiftModel = DrinkMemorySwiftModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        settingUI()
         createPickerView()
         value1TextField.delegate = self
         value2TextField.delegate = self
@@ -42,57 +44,24 @@ class AddDrinkViewController: UIViewController {
         categoryTextField.delegate = self
     }
     @IBAction func addButtonAction(_ sender: Any) {
-        let realmModel = DrinkMemoryRealmModel()
-        let drinkPoint = DrinkPoint()
-        var drinkPointList: List<DrinkPoint>?
         let uuid = UUID()
 
-        drinkPoint.value1 = Int(value1TextField.text ?? "0") ?? 0
-        drinkPoint.value2 = Int(value2TextField.text ?? "0") ?? 0
-        drinkPoint.value3 = Int(value3TextField.text ?? "0") ?? 0
-        drinkPoint.value4 = Int(value4TextField.text ?? "0") ?? 0
-        drinkPoint.value5 = Int(value5TextField.text ?? "0") ?? 0
-        drinkPoint.value6 = Int(value6TextField.text ?? "0") ?? 0
-        print(drinkPoint)
+        drinkMemorySwiftModel.uuidString = uuid.uuidString
+        drinkMemorySwiftModel.drinkName = drinkNameTextField.text
+        drinkMemorySwiftModel.category = categoryTextField.text
+        drinkMemorySwiftModel.imagePath = ""
 
-        drinkPointList?.append(drinkPoint)
-        print("drinkPoint\n\(drinkPoint)")
-        print("drinkPointList\n\(drinkPointList)")
-        print("realm drinkPoint\n\(realmModel.drinkPoint)")
+        // TODO: 0~5の間の値チェックを入れる
 
-        realmModel.drinkMemoryUUID = uuid.uuidString
-        realmModel.drinkName = drinkNameTextField.text
-        realmModel.category = categoryTextField.text
-        realmModel.imagePath = ""
-        realmModel.drinkPoint.append(drinkPoint)
+        let value1 = Int(value1TextField.text ?? "0") ?? 0
+        let value2 = Int(value2TextField.text ?? "0") ?? 0
+        let value3 = Int(value3TextField.text ?? "0") ?? 0
+        let value4 = Int(value4TextField.text ?? "0") ?? 0
+        let value5 = Int(value5TextField.text ?? "0") ?? 0
+        let value6 = Int(value6TextField.text ?? "0") ?? 0
 
-        realmModel.drinkPoint.append(drinkPoint)
-        print(realmModel)
-
-        do {
-            try realm.write {
-                realm.add(realmModel)
-            }
-        } catch {
-            print("Realm Add Error")
-            return
-        }
-        print(realmModel)
-    }
-
-    @IBAction private func test(_ sender: Any) {
-        do {
-            let realmTest = try Realm()
-
-            let results = realm.objects(DrinkMemoryRealmModel.self)
-            let drinkPointList: List<DrinkPoint>?
-
-            drinkPointList = realmTest.objects(DrinkMemoryRealmModel.self).first?.drinkPoint
-            print(drinkPointList)
-        }
-        catch {
-            print(error)
-        }
+        drinkMemorySwiftModel.drinkPoint = [value1, value2, value3, value4, value5, value6]
+        drinkMemoryRepository.addDrinkMemoryData(drinkMemorySwiftModel)
     }
 
     private func settingUI() {
