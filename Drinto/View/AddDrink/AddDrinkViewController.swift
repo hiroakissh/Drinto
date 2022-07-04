@@ -50,6 +50,7 @@ class AddDrinkViewController: UIViewController {
         drinkMemorySwiftModel.imagePath = ""
 
         // TODO: 0~5の間の値チェックを入れる
+        // TODO: カテゴリーに収まっているかをチェック
 
         let value1 = Int(value1TextField.text ?? "0") ?? 0
         let value2 = Int(value2TextField.text ?? "0") ?? 0
@@ -60,6 +61,16 @@ class AddDrinkViewController: UIViewController {
 
         drinkMemorySwiftModel.drinkPoint = [value1, value2, value3, value4, value5, value6]
         drinkMemoryRepository.addDrinkMemoryData(drinkMemorySwiftModel)
+
+        drinkNameTextField.text = ""
+        categoryTextField.text = ""
+        value1TextField.text = ""
+        value2TextField.text = ""
+        value3TextField.text = ""
+        value4TextField.text = ""
+        value5TextField.text = ""
+        value6TextField.text = ""
+        drinkImageView.image = nil
     }
 
     private func settingUI() {

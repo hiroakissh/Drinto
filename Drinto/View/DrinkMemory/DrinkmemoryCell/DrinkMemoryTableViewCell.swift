@@ -10,12 +10,12 @@ import UIKit
 class DrinkMemoryTableViewCell: UITableViewCell {
 
     @IBOutlet private weak var cellBackGroundView: UIView!
-    @IBOutlet private weak var editorNameLabel: UILabel!
-    @IBOutlet private weak var drinkNameLabel: UILabel!
-    @IBOutlet private weak var drinkFeatureLabel: UILabel!
+    @IBOutlet private(set) weak var editorNameLabel: UILabel!
+    @IBOutlet private(set) weak var drinkNameLabel: UILabel!
+    @IBOutlet private(set) weak var drinkFeatureLabel: UILabel!
     @IBOutlet private weak var detailButton: UIButton!
-    @IBOutlet private weak var categoryLabel: UILabel!
-    @IBOutlet private weak var drinkImageView: UIImageView!
+    @IBOutlet private(set) weak var categoryLabel: UILabel!
+    @IBOutlet private(set) weak var drinkImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,7 +28,6 @@ class DrinkMemoryTableViewCell: UITableViewCell {
         categoryLabel.clipsToBounds = true
         detailButton.layer.cornerRadius = 10.0
         drinkImageView.layer.cornerRadius = 5.0
-
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
