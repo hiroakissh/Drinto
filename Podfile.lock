@@ -490,11 +490,6 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (2.0.0)
-  - Realm (10.25.2):
-    - Realm/Headers (= 10.25.2)
-  - Realm/Headers (10.25.2)
-  - RealmSwift (10.25.2):
-    - Realm (= 10.25.2)
   - SwiftLint (0.45.0)
 
 DEPENDENCIES:
@@ -503,7 +498,6 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Storage
-  - RealmSwift
   - SwiftLint
 
 SPEC REPOS:
@@ -527,8 +521,6 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
-    - Realm
-    - RealmSwift
     - SwiftLint
 
 SPEC CHECKSUMS:
@@ -551,10 +543,8 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
-  Realm: 978303663d0509166498f423d112e5ee97d4c91b
-  RealmSwift: a0c30c1efc49e928a0a6f8fb141bb2629616d79b
   SwiftLint: e5c7f1fba68eccfc51509d5b2ce1699f5502e0c7
 
-PODFILE CHECKSUM: 19989484cac6b2e2733e097aff0b3d893b63be4f
+PODFILE CHECKSUM: 70d2d68f189bbb6460396f4e6b3ecc200fe3b887
 
 COCOAPODS: 1.11.3
