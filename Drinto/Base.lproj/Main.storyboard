@@ -617,6 +617,7 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="CJP-Ay-D3M"/>
                     <connections>
                         <outlet property="tableView" destination="vIF-5x-tUA" id="Ycs-ET-mgI"/>
+                        <segue destination="MYT-kT-mZ2" kind="presentation" identifier="detailDrinkMemory" id="B4y-d2-Xfs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ak6-U9-pwC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -628,7 +629,7 @@
             <objects>
                 <viewController id="MYT-kT-mZ2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MHA-uD-caS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="pn6-Ac-AzW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
