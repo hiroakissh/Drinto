@@ -37,6 +37,7 @@
 		539DE6D8271FC9DA00720AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539DE6D7271FC9DA00720AF7 /* Assets.xcassets */; };
 		539DE6DB271FC9DA00720AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539DE6D9271FC9DA00720AF7 /* LaunchScreen.storyboard */; };
 		539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */; };
+		53D83FC9287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		539DE6DA271FC9DA00720AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		539DE6DC271FC9DA00720AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDrinkMemoryViewController.swift; sourceTree = "<group>"; };
 		8516DFE818CC14F70192E3F3 /* Pods-Drinto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinto.release.xcconfig"; path = "Target Support Files/Pods-Drinto/Pods-Drinto.release.xcconfig"; sourceTree = "<group>"; };
 		9514E30A35C50A1483D3C152 /* Pods-Drinto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinto.debug.xcconfig"; path = "Target Support Files/Pods-Drinto/Pods-Drinto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 				53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */,
 				5324315F2839A081005A8170 /* DrinkmemoryCell */,
 				53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */,
+				53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */,
 			);
 			path = DrinkMemory;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				5377898F2851C6C40056576C /* DrinkMemoryRealmModel.swift in Sources */,
 				53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */,
 				537789912851C6E90056576C /* DrinkMemoryRepository.swift in Sources */,
+				53D83FC9287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift in Sources */,
 				53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */,
 				537789932851C7170056576C /* DrinkMemoryFirebaseModel.swift in Sources */,
 				53287B9C283774F400C2B96D /* DrinkNewsViewController.swift in Sources */,

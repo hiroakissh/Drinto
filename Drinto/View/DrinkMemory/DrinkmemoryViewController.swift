@@ -49,6 +49,9 @@ extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate 
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        let selectDrinkMemory = drinkMemory.readDrinkMemoryData()
+
+        print(selectDrinkMemory[indexPath.row])
+        performSegue(withIdentifier: "detailDrinkMemory", sender: selectDrinkMemory[indexPath.row])
     }
 }
