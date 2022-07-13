@@ -47,4 +47,8 @@ extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate 
         }
         return drinkCell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
 }
