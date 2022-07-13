@@ -73,15 +73,18 @@ private extension DrinkMemorySwiftModel {
         self.drinkName = managedObject.drinkName
         self.category = managedObject.category
         self.imagePath = managedObject.imagePath
+        print(managedObject.drinkPoint[0])
+        print(managedObject.drinkPoint[0].value1)
+        print(type(of: managedObject.drinkPoint[0].value1))
         // TODO: Listを[Intに変換]
-        self.drinkPoint?.append(managedObject.drinkPoint[0].value1)
-        self.drinkPoint?.append(managedObject.drinkPoint[0].value2)
-        self.drinkPoint?.append(managedObject.drinkPoint[0].value3)
-        self.drinkPoint?.append(managedObject.drinkPoint[0].value4)
-        self.drinkPoint?.append(managedObject.drinkPoint[0].value5)
-        self.drinkPoint?.append(managedObject.drinkPoint[0].value6)
-
-//        self.drinkPoint?.append(managedObject.drinkPoint)
+        self.drinkPoint = [
+            managedObject.drinkPoint[0].value1,
+            managedObject.drinkPoint[0].value2,
+            managedObject.drinkPoint[0].value3,
+            managedObject.drinkPoint[0].value4,
+            managedObject.drinkPoint[0].value5,
+            managedObject.drinkPoint[0].value6
+        ]
     }
 
     func convertArray(_ drinkPoint: List<DrinkPoint>) {
