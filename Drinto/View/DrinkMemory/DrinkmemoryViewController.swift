@@ -50,8 +50,18 @@ extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate 
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectDrinkMemory = drinkMemory.readDrinkMemoryData()
-
-        print(selectDrinkMemory[indexPath.row])
+        print(selectDrinkMemory[indexPath.row].drinkPoint)
         performSegue(withIdentifier: "detailDrinkMemory", sender: selectDrinkMemory[indexPath.row])
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailDrinkMemory" {
+            let detailDrinkMemoryVC = segue.destination as? DetailDrinkMemoryViewController
+            guard let sender = sender else {
+                return
+            }
+            // swiftlint:disable:next force_cast
+            detailDrinkMemoryVC?.detailDrinkMemory = sender as! DrinkMemorySwiftModel
+        }
     }
 }

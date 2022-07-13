@@ -25,8 +25,6 @@ class DrinkMemoryRepository: DrinkMemorySwiftModelInput {
     func readDrinkMemoryData() -> [DrinkMemorySwiftModel] {
         let realmModel = realm.objects(DrinkMemoryRealmModel.self)
         let realmArray = Array(realmModel)
-        print(realmArray)
-        print(realmArray.count)
         let drinkMemory = realmArray.map { DrinkMemorySwiftModel(managedObject: $0) }
         return drinkMemory
     }
@@ -70,7 +68,6 @@ class DrinkMemoryRepository: DrinkMemorySwiftModelInput {
 }
 
 private extension DrinkMemorySwiftModel {
-
     init(managedObject: DrinkMemoryRealmModel) {
         self.uuidString = managedObject.drinkMemoryUUID
         self.drinkName = managedObject.drinkName
