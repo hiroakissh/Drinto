@@ -22,6 +22,7 @@
 		53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA52837759E00C2B96D /* SignUpViewController.swift */; };
 		53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA7283775F900C2B96D /* TopPageViewController.swift */; };
 		53287BB02837782000C2B96D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BAF2837782000C2B96D /* LaunchViewController.swift */; };
+		533EEBC92880164D00E63F79 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EEBC82880164D00E63F79 /* ChartView.swift */; };
 		53452DA828561A88008F2444 /* DrinkMemoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */; };
 		53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */; };
 		534BB07B284E2B2700628CF2 /* DrinkNewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */; };
@@ -56,6 +57,7 @@
 		53287BA52837759E00C2B96D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		53287BA7283775F900C2B96D /* TopPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
 		53287BAF2837782000C2B96D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		533EEBC82880164D00E63F79 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryDetailViewController.swift; sourceTree = "<group>"; };
 		53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemorySwiftModel.swift; sourceTree = "<group>"; };
 		534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsDetailViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				5324315F2839A081005A8170 /* DrinkmemoryCell */,
 				53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */,
 				53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */,
+				533EEBC82880164D00E63F79 /* ChartView.swift */,
 			);
 			path = DrinkMemory;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5324315D2839A07A005A8170 /* DrinkMemoryTableViewCell.swift in Sources */,
+				533EEBC92880164D00E63F79 /* ChartView.swift in Sources */,
 				532431632839A0AB005A8170 /* DrinkNewsTableViewCell.swift in Sources */,
 				53287BA42837758B00C2B96D /* SignInViewController.swift in Sources */,
 				53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */,
