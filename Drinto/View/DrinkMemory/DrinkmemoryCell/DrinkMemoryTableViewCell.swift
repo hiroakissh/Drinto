@@ -35,4 +35,8 @@ class DrinkMemoryTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+
+    @IBAction func moveDetailButton(_ sender: Any) {
+        print("詳細の確認")
+    }
 }
