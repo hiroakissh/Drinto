@@ -39,7 +39,7 @@ class ChartView: UIView {
 
     func configure(valueInfo: ParameterInfo) {
         self.valueInfo = valueInfo
-        setNeedsDisplay()
+        101
     }
 
     override func draw(_ rect: CGRect) {

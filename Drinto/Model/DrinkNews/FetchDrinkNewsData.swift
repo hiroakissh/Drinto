@@ -15,7 +15,7 @@ class FetchDrinkNewsData: NewsAPIDataModelInput {
     let apiKey = "84b4753e4e64481280f134d01ddfe9af"
     let urlHead = "https://newsapi.org/v2/everything?"
     let sort = "popularity"
-    var category = "tea"
+    var category = "drink"
 
     func fetchDrinkNewsData(completion: @escaping ((Result<[Article], Error>) -> Void)) {
         let newsURLString = "\(urlHead)q=\(category)&apiKey=\(apiKey)"

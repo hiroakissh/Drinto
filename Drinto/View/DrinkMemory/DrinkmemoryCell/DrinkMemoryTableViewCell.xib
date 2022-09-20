@@ -122,6 +122,7 @@
                 <outlet property="drinkImageView" destination="y9B-y3-bcb" id="3qc-4o-bwg"/>
                 <outlet property="drinkNameLabel" destination="iQO-Ua-rjK" id="t8E-N6-gNC"/>
                 <outlet property="editorNameLabel" destination="3zI-QE-3aA" id="xyY-KA-u9P"/>
+                <outlet property="featureLabel" destination="c4D-Ba-chE" id="tvX-Aj-IWI"/>
             </connections>
             <point key="canvasLocation" x="-407.24637681159425" y="-38.169642857142854"/>
         </tableViewCell>

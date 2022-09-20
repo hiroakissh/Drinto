@@ -41,6 +41,7 @@ class AddDrinkViewController: UIViewController {
         value6TextField.delegate = self
         categoryTextField.delegate = self
     }
+
     @IBAction private func addButtonAction(_ sender: Any) {
         let uuid = UUID()
 
@@ -71,6 +72,8 @@ class AddDrinkViewController: UIViewController {
         value5TextField.text = ""
         value6TextField.text = ""
         drinkImageView.image = nil
+
+        // TODO: 特に記入漏れがなければTOP画面に遷移
     }
 
     private func settingUI() {
@@ -96,6 +99,7 @@ extension AddDrinkViewController {
         value5TextField.endEditing(true)
         value6TextField.endEditing(true)
         categoryTextField.endEditing(true)
+        drinkNameTextField.endEditing(true)
     }
 }
 
@@ -169,6 +173,10 @@ extension AddDrinkViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 extension AddDrinkViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         editTextFiled = textField
+        return true
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        drinkNameTextField.resignFirstResponder()
         return true
     }
 }
