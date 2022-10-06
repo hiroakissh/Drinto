@@ -532,7 +532,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBarItem key="tabBarItem" title="" image="AddIcon" selectedImage="AddIcon" id="xdb-JM-1D1"/>
+                    <tabBarItem key="tabBarItem" title="" image="AddIcon" id="xdb-JM-1D1"/>
                     <connections>
                         <outlet property="addButton" destination="aLa-lC-Sje" id="q6j-eI-cMH"/>
                         <outlet property="categoryTextField" destination="lrb-BY-RFg" id="M7a-c5-lDy"/>
@@ -580,7 +580,7 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vIF-5x-tUA">
-                                <rect key="frame" x="15" y="213" width="384" height="590"/>
+                                <rect key="frame" x="15" y="188" width="384" height="615"/>
                                 <color key="backgroundColor" name="MainColor1"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DrinkCell" rowHeight="128" id="G08-rv-6M0">
@@ -593,46 +593,34 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LMA-DQ-oXh">
-                                <rect key="frame" x="0.0" y="124" width="526" height="79"/>
-                                <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-o6-Z5H">
-                                        <rect key="frame" x="8" y="20" width="437" height="32"/>
-                                        <color key="backgroundColor" name="MainColor1"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="03F-Lx-Ca7"/>
-                                        </constraints>
-                                        <segments>
-                                            <segment title="全て"/>
-                                            <segment title="コーヒー"/>
-                                            <segment title="紅茶"/>
-                                            <segment title="日本茶"/>
-                                            <segment title="中国茶"/>
-                                            <segment title="その他"/>
-                                        </segments>
-                                    </segmentedControl>
-                                </subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-o6-Z5H">
+                                <rect key="frame" x="15" y="127" width="384" height="32"/>
+                                <color key="backgroundColor" name="MainColor1"/>
                                 <constraints>
-                                    <constraint firstItem="Nwj-o6-Z5H" firstAttribute="top" secondItem="LMA-DQ-oXh" secondAttribute="top" constant="20" id="8GQ-za-yXQ"/>
-                                    <constraint firstAttribute="height" constant="79" id="SPO-a6-KPv"/>
-                                    <constraint firstItem="Nwj-o6-Z5H" firstAttribute="leading" secondItem="LMA-DQ-oXh" secondAttribute="leading" constant="8" id="eJP-1a-O33"/>
-                                    <constraint firstAttribute="bottom" secondItem="Nwj-o6-Z5H" secondAttribute="bottom" constant="28" id="veU-bJ-jEF"/>
+                                    <constraint firstAttribute="height" constant="31" id="03F-Lx-Ca7"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="OJo-g5-Bso"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="eAZ-ac-bkG"/>
-                            </scrollView>
+                                <segments>
+                                    <segment title="全て"/>
+                                    <segment title="コーヒー"/>
+                                    <segment title="紅茶"/>
+                                    <segment title="日本茶"/>
+                                    <segment title="中国茶"/>
+                                    <segment title="その他"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ec5-po-xdY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Nwj-o6-Z5H" firstAttribute="top" secondItem="EWq-cv-JKM" secondAttribute="bottom" constant="8" symbolic="YES" id="7tU-TT-ZOW"/>
                             <constraint firstItem="EWq-cv-JKM" firstAttribute="top" secondItem="wa9-Tz-o3I" secondAttribute="top" constant="36" id="9yh-48-EwG"/>
-                            <constraint firstItem="vIF-5x-tUA" firstAttribute="top" secondItem="LMA-DQ-oXh" secondAttribute="bottom" constant="10" id="M9X-mi-APb"/>
-                            <constraint firstItem="LMA-DQ-oXh" firstAttribute="top" secondItem="EWq-cv-JKM" secondAttribute="bottom" constant="5" id="Usa-gk-UN5"/>
+                            <constraint firstItem="ec5-po-xdY" firstAttribute="trailing" secondItem="Nwj-o6-Z5H" secondAttribute="trailing" constant="15" id="EX7-VX-may"/>
+                            <constraint firstItem="vIF-5x-tUA" firstAttribute="top" secondItem="Nwj-o6-Z5H" secondAttribute="bottom" constant="30" id="JG1-TT-9nz"/>
                             <constraint firstItem="ec5-po-xdY" firstAttribute="bottom" secondItem="vIF-5x-tUA" secondAttribute="bottom" constant="10" id="V0b-Vb-gOr"/>
                             <constraint firstItem="vIF-5x-tUA" firstAttribute="leading" secondItem="ec5-po-xdY" secondAttribute="leading" constant="15" id="fPI-5A-Viq"/>
                             <constraint firstItem="ec5-po-xdY" firstAttribute="trailing" secondItem="vIF-5x-tUA" secondAttribute="trailing" constant="15" id="laO-O7-QVv"/>
                             <constraint firstItem="EWq-cv-JKM" firstAttribute="centerX" secondItem="wa9-Tz-o3I" secondAttribute="centerX" id="pN9-l1-lG7"/>
-                            <constraint firstItem="LMA-DQ-oXh" firstAttribute="leading" secondItem="ec5-po-xdY" secondAttribute="leading" id="rOa-B2-xNV"/>
+                            <constraint firstItem="Nwj-o6-Z5H" firstAttribute="leading" secondItem="ec5-po-xdY" secondAttribute="leading" constant="15" id="pbh-u2-LuL"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="CJP-Ay-D3M"/>
