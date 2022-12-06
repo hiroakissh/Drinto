@@ -22,6 +22,7 @@
 		53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA52837759E00C2B96D /* SignUpViewController.swift */; };
 		53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA7283775F900C2B96D /* TopPageViewController.swift */; };
 		53287BB02837782000C2B96D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BAF2837782000C2B96D /* LaunchViewController.swift */; };
+		533EEBC92880164D00E63F79 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EEBC82880164D00E63F79 /* ChartView.swift */; };
 		53452DA828561A88008F2444 /* DrinkMemoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */; };
 		53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */; };
 		534BB07B284E2B2700628CF2 /* DrinkNewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */; };
@@ -37,6 +38,7 @@
 		539DE6D8271FC9DA00720AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539DE6D7271FC9DA00720AF7 /* Assets.xcassets */; };
 		539DE6DB271FC9DA00720AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539DE6D9271FC9DA00720AF7 /* LaunchScreen.storyboard */; };
 		539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */; };
+		53D83FC9287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,7 @@
 		53287BA52837759E00C2B96D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		53287BA7283775F900C2B96D /* TopPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
 		53287BAF2837782000C2B96D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		533EEBC82880164D00E63F79 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryDetailViewController.swift; sourceTree = "<group>"; };
 		53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemorySwiftModel.swift; sourceTree = "<group>"; };
 		534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsDetailViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 		539DE6DA271FC9DA00720AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		539DE6DC271FC9DA00720AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDrinkMemoryViewController.swift; sourceTree = "<group>"; };
 		8516DFE818CC14F70192E3F3 /* Pods-Drinto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinto.release.xcconfig"; path = "Target Support Files/Pods-Drinto/Pods-Drinto.release.xcconfig"; sourceTree = "<group>"; };
 		9514E30A35C50A1483D3C152 /* Pods-Drinto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinto.debug.xcconfig"; path = "Target Support Files/Pods-Drinto/Pods-Drinto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +194,8 @@
 				53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */,
 				5324315F2839A081005A8170 /* DrinkmemoryCell */,
 				53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */,
+				53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */,
+				533EEBC82880164D00E63F79 /* ChartView.swift */,
 			);
 			path = DrinkMemory;
 			sourceTree = "<group>";
@@ -432,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5324315D2839A07A005A8170 /* DrinkMemoryTableViewCell.swift in Sources */,
+				533EEBC92880164D00E63F79 /* ChartView.swift in Sources */,
 				532431632839A0AB005A8170 /* DrinkNewsTableViewCell.swift in Sources */,
 				53287BA42837758B00C2B96D /* SignInViewController.swift in Sources */,
 				53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */,
@@ -444,6 +451,7 @@
 				5377898F2851C6C40056576C /* DrinkMemoryRealmModel.swift in Sources */,
 				53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */,
 				537789912851C6E90056576C /* DrinkMemoryRepository.swift in Sources */,
+				53D83FC9287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift in Sources */,
 				53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */,
 				537789932851C7170056576C /* DrinkMemoryFirebaseModel.swift in Sources */,
 				53287B9C283774F400C2B96D /* DrinkNewsViewController.swift in Sources */,
@@ -622,7 +630,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -652,7 +660,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

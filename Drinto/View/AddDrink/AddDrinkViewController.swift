@@ -19,8 +19,10 @@ class AddDrinkViewController: UIViewController {
 
     @IBOutlet private weak var addButton: UIButton!
     @IBOutlet private weak var drinkImageView: UIImageView!
+    private var drinkImageURL: String = ""
 
     private var pickerView = UIPickerView()
+    private let imagePicker = UIImagePickerController()
     private var editTextFiled: UITextField?
 
     private let point: [String] = ["0", "1", "2", "3", "4", "5"]
@@ -33,6 +35,7 @@ class AddDrinkViewController: UIViewController {
         super.viewDidLoad()
         settingUI()
         createPickerView()
+        imagePicker.delegate = self
         value1TextField.delegate = self
         value2TextField.delegate = self
         value3TextField.delegate = self
@@ -40,7 +43,16 @@ class AddDrinkViewController: UIViewController {
         value5TextField.delegate = self
         value6TextField.delegate = self
         categoryTextField.delegate = self
+
+        drinkImageView.isUserInteractionEnabled = true
+        drinkImageView.addGestureRecognizer(
+            UITapGestureRecognizer(
+                target: self,
+                action: #selector(imageViewTapped(_:))
+            )
+        )
     }
+
     @IBAction private func addButtonAction(_ sender: Any) {
         let uuid = UUID()
 
@@ -60,6 +72,8 @@ class AddDrinkViewController: UIViewController {
         let value6 = Int(value6TextField.text ?? "0") ?? 0
 
         drinkMemorySwiftModel.drinkPoint = [value1, value2, value3, value4, value5, value6]
+        print(drinkImageURL)
+        drinkMemorySwiftModel.imagePath = drinkImageURL
         drinkMemoryRepository.addDrinkMemoryData(drinkMemorySwiftModel)
 
         drinkNameTextField.text = ""
@@ -71,10 +85,35 @@ class AddDrinkViewController: UIViewController {
         value5TextField.text = ""
         value6TextField.text = ""
         drinkImageView.image = nil
+
+        // TODO: 特に記入漏れがなければTOP画面に遷移
     }
 
     private func settingUI() {
         addButton.layer.cornerRadius = 10.0
+    }
+
+    @objc func imageViewTapped(_ sender: UITapGestureRecognizer) {
+        let actionAlert = UIAlertController(
+            title: "画像の選択方法",
+            message: "画像を追加する方法を選択してください",
+            preferredStyle: .actionSheet
+        )
+
+        let imagePickerAction = UIAlertAction(title: "写真を選択", style: .default) { _ in
+            self.present(self.imagePicker, animated: true)
+        }
+        actionAlert.addAction(imagePickerAction)
+
+        let takeImageAction = UIAlertAction(title: "写真を撮る", style: .default) { _ in
+            print("写真をとるよ")
+        }
+        actionAlert.addAction(takeImageAction)
+
+        let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel)
+        actionAlert.addAction(cancelAction)
+
+        self.present(actionAlert, animated: true)
     }
 }
 
@@ -96,6 +135,7 @@ extension AddDrinkViewController {
         value5TextField.endEditing(true)
         value6TextField.endEditing(true)
         categoryTextField.endEditing(true)
+        drinkNameTextField.endEditing(true)
     }
 }
 
@@ -170,5 +210,38 @@ extension AddDrinkViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         editTextFiled = textField
         return true
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        drinkNameTextField.resignFirstResponder()
+        return true
+    }
+}
+
+extension AddDrinkViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let selectImage = info[.originalImage] as? UIImage else { return }
+        guard let selectImageURL = info[.imageURL] as? URL else { return }
+
+
+        let documentDirectoryFileURL = FileManager.default.urls(
+            for: .documentDirectory,
+            in: .userDomainMask
+        )[0]
+
+        print(documentDirectoryFileURL)
+
+        drinkImageURL = selectImageURL.absoluteString
+        drinkImageView.image = selectImage
+        self.dismiss(animated: true)
+    }
+
+    func createLocalDataFile(_ documentDirectoryFileURL: URL, _ selectImageExtension: String) -> URL {
+        let uuidString = UUID().uuidString
+        var fileName = uuidString + selectImageExtension
+        return documentDirectoryFileURL.appendingPathComponent(fileName)
+    }
+
+    func saveImage(saveImagePath: URL) {
+        let pngImageData = drinkImageView.image?.pngData()
     }
 }

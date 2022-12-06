@@ -15,6 +15,7 @@ class DrinkMemoryTableViewCell: UITableViewCell {
     @IBOutlet private(set) weak var drinkFeatureLabel: UILabel!
     @IBOutlet private weak var detailButton: UIButton!
     @IBOutlet private(set) weak var categoryLabel: UILabel!
+    @IBOutlet private(set) weak var featureLabel: UILabel!
     @IBOutlet private(set) weak var drinkImageView: UIImageView!
 
     override func awakeFromNib() {
@@ -34,5 +35,9 @@ class DrinkMemoryTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+
+    @IBAction func moveDetailButton(_ sender: Any) {
+        print("詳細の確認")
     }
 }
