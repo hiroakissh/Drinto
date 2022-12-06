@@ -42,5 +42,13 @@ class DetailDrinkMemoryViewController: UIViewController {
                     value6: detailDrinkMemory.drinkPoint?[5] ?? 0
                 )
         )
+        print(detailDrinkMemory.imagePath)
+        guard let imagePathString = detailDrinkMemory.imagePath else { return }
+        print("画像")
+        let imagePathURL = URL(fileURLWithPath: imagePathString)
+        print(imagePathURL)
+        print(imagePathURL.path)
+        print(UIImage(contentsOfFile: imagePathURL.path))
+        drinkImageView.image = UIImage(contentsOfFile: imagePathURL.path)
     }
 }

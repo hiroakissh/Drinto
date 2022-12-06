@@ -66,6 +66,7 @@ extension DrinkNewsViewController: UITableViewDataSource {
         )
         let drinkNews = presenter.newsData(forRow: indexPath.row)
         cell.textLabel?.text = drinkNews?.title
+        cell.textLabel?.textColor = .black
         return cell
     }
 }
