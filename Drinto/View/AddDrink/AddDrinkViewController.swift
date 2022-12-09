@@ -51,15 +51,24 @@ class AddDrinkViewController: UIViewController {
                 action: #selector(imageViewTapped(_:))
             )
         )
+
+        let docDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        print(docDir)
+        print(getFileURL(fileName: "test"))
     }
 
     @IBAction private func addButtonAction(_ sender: Any) {
-        let uuid = UUID()
+        let drinkUUID = UUID().uuidString
 
-        drinkMemorySwiftModel.uuidString = uuid.uuidString
+        drinkMemorySwiftModel.uuidString = drinkUUID
         drinkMemorySwiftModel.drinkName = drinkNameTextField.text
         drinkMemorySwiftModel.category = categoryTextField.text
-        drinkMemorySwiftModel.imagePath = ""
+
+        // TODO: 情報の保存
+        saveImage(drinkID: drinkUUID)
+        print("保存時")
+        print(drinkImageURL)
+        drinkMemorySwiftModel.imagePath = drinkImageURL
 
         // TODO: 0~5の間の値チェックを入れる
         // TODO: カテゴリーに収まっているかをチェック
@@ -72,8 +81,6 @@ class AddDrinkViewController: UIViewController {
         let value6 = Int(value6TextField.text ?? "0") ?? 0
 
         drinkMemorySwiftModel.drinkPoint = [value1, value2, value3, value4, value5, value6]
-        print(drinkImageURL)
-        drinkMemorySwiftModel.imagePath = drinkImageURL
         drinkMemoryRepository.addDrinkMemoryData(drinkMemorySwiftModel)
 
         drinkNameTextField.text = ""
@@ -91,6 +98,24 @@ class AddDrinkViewController: UIViewController {
 
     private func settingUI() {
         addButton.layer.cornerRadius = 10.0
+    }
+
+    // TODO: Document内に飲み物にフォルダを作成するプロ
+    func saveImage(drinkID: String) {
+        guard let imageData = drinkImageView.image?.jpegData(compressionQuality: 1.0) else { return }
+        let imageFileURL = getFileURL(fileName: "\(drinkID).jpg")
+        do {
+            try imageData.write(to: imageFileURL)
+            drinkImageURL = imageFileURL.absoluteString
+            print("Image saved.")
+        } catch {
+            print("Failed to save the image:", error)
+        }
+    }
+    func getFileURL(fileName: String) -> URL {
+        let docDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        print(docDir)
+        return docDir.appendingPathComponent(fileName)
     }
 
     @objc func imageViewTapped(_ sender: UITapGestureRecognizer) {
@@ -227,21 +252,8 @@ extension AddDrinkViewController: UIImagePickerControllerDelegate, UINavigationC
             for: .documentDirectory,
             in: .userDomainMask
         )[0]
-
-        print(documentDirectoryFileURL)
-
         drinkImageURL = selectImageURL.absoluteString
         drinkImageView.image = selectImage
         self.dismiss(animated: true)
-    }
-
-    func createLocalDataFile(_ documentDirectoryFileURL: URL, _ selectImageExtension: String) -> URL {
-        let uuidString = UUID().uuidString
-        var fileName = uuidString + selectImageExtension
-        return documentDirectoryFileURL.appendingPathComponent(fileName)
-    }
-
-    func saveImage(saveImagePath: URL) {
-        let pngImageData = drinkImageView.image?.pngData()
     }
 }

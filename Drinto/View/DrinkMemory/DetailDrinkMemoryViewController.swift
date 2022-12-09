@@ -42,13 +42,20 @@ class DetailDrinkMemoryViewController: UIViewController {
                     value6: detailDrinkMemory.drinkPoint?[5] ?? 0
                 )
         )
-        print(detailDrinkMemory.imagePath)
+
         guard let imagePathString = detailDrinkMemory.imagePath else { return }
-        print("画像")
-        let imagePathURL = URL(fileURLWithPath: imagePathString)
-        print(imagePathURL)
-        print(imagePathURL.path)
-        print(UIImage(contentsOfFile: imagePathURL.path))
-        drinkImageView.image = UIImage(contentsOfFile: imagePathURL.path)
+//        print(imagePathString)
+//        let url = URL(string: imagePathString)
+//        print(url)
+        let url = getFileURL(fileName: "\(detailDrinkMemory.uuidString).jpg")
+        // TODO: Buildするとファイルのパスが変わる
+        print(url)
+        print(FileManager.default.fileExists(atPath: url.path))
+        drinkImageView.image = UIImage(contentsOfFile: url.path)
+    }
+    func getFileURL(fileName: String) -> URL {
+        let docDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        print(docDir)
+        return docDir.appendingPathComponent(fileName)
     }
 }
