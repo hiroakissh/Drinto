@@ -15,6 +15,8 @@ class DetailDrinkMemoryViewController: UIViewController {
 
     var detailDrinkMemory = DrinkMemorySwiftModel()
 
+    private var drinkImageModel = DrinkImageModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         print(detailDrinkMemory)
@@ -43,19 +45,6 @@ class DetailDrinkMemoryViewController: UIViewController {
                 )
         )
 
-        guard let imagePathString = detailDrinkMemory.imagePath else { return }
-//        print(imagePathString)
-//        let url = URL(string: imagePathString)
-//        print(url)
-        let url = getFileURL(fileName: "\(detailDrinkMemory.uuidString).jpg")
-        // TODO: Buildするとファイルのパスが変わる
-        print(url)
-        print(FileManager.default.fileExists(atPath: url.path))
-        drinkImageView.image = UIImage(contentsOfFile: url.path)
-    }
-    func getFileURL(fileName: String) -> URL {
-        let docDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        print(docDir)
-        return docDir.appendingPathComponent(fileName)
+        drinkImageView.image = drinkImageModel.getImageData(imageUUID: detailDrinkMemory.uuidString)
     }
 }
