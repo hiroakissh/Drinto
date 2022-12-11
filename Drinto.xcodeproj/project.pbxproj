@@ -443,7 +443,6 @@
 /* Begin PBXShellScriptBuildPhase section */
 		53DAECD5283784EE0069D744 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
