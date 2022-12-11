@@ -7,6 +7,23 @@ version: 2.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
+  display_system_info:
+      macos:
+          xcode: 14.1.0 # Specify the Xcode version to use
+      steps:
+        - run:
+            name: Display system infomation
+            command: system_profiler SPHardwareDataType
+  
+  test:
+    macos:
+      xcode: 14.1.0
+    steps:
+      - checkout
+      - run: 
+         name: Run Unit Tests
+         command: xcodebuild test -scheme DrintoTests
+
   build:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
@@ -17,9 +34,9 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-#      - run:
-#          name: Display system information
-#          command: system_profier SPHardwareDataType
+      - run:
+          name: Build Application
+          command: xcodebuild
 
 
       # Collect XML test results data to show in the UI, and save the same XML
@@ -33,7 +50,12 @@ jobs:
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  sample: # This is the name of the workflow, feel free to change it to better match your workflow.
-    # Inside the workflow, you define the jobs you want to run.
+  test_build:
     jobs:
-      - build
+      - display_system_info
+      - test:
+          requires:
+            - display_system_info
+      - build:
+          requires:
+            - test
