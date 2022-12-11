@@ -31,6 +31,8 @@ class AddDrinkViewController: UIViewController {
     var drinkMemoryRepository = DrinkMemoryRepository()
     var drinkMemorySwiftModel = DrinkMemorySwiftModel()
 
+    private var drinkImageModel = DrinkImageModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         settingUI()
@@ -51,10 +53,6 @@ class AddDrinkViewController: UIViewController {
                 action: #selector(imageViewTapped(_:))
             )
         )
-
-        let docDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        print(docDir)
-        print(getFileURL(fileName: "test"))
     }
 
     @IBAction private func addButtonAction(_ sender: Any) {
@@ -65,7 +63,8 @@ class AddDrinkViewController: UIViewController {
         drinkMemorySwiftModel.category = categoryTextField.text
 
         // TODO: 情報の保存
-        saveImage(drinkID: drinkUUID)
+//        saveImage(drinkID: drinkUUID)
+        drinkImageModel.saveImageData(imageUUID: drinkUUID, drinkImage: drinkImageView.image)
         print("保存時")
         print(drinkImageURL)
         drinkMemorySwiftModel.imagePath = drinkImageURL
@@ -98,24 +97,6 @@ class AddDrinkViewController: UIViewController {
 
     private func settingUI() {
         addButton.layer.cornerRadius = 10.0
-    }
-
-    // TODO: Document内に飲み物にフォルダを作成するプロ
-    func saveImage(drinkID: String) {
-        guard let imageData = drinkImageView.image?.jpegData(compressionQuality: 1.0) else { return }
-        let imageFileURL = getFileURL(fileName: "\(drinkID).jpg")
-        do {
-            try imageData.write(to: imageFileURL)
-            drinkImageURL = imageFileURL.absoluteString
-            print("Image saved.")
-        } catch {
-            print("Failed to save the image:", error)
-        }
-    }
-    func getFileURL(fileName: String) -> URL {
-        let docDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        print(docDir)
-        return docDir.appendingPathComponent(fileName)
     }
 
     @objc func imageViewTapped(_ sender: UITapGestureRecognizer) {
