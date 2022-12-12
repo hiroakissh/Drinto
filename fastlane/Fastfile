@@ -21,14 +21,16 @@ platform :ios do
     Drinto
   end
 
-  desc "Runs all the tests"
+  desc "テストをビルドして実行"
   lane :test do
     scan
   end
 
-  desc "Ad-hoc build"
+  desc "アドホック ビルド"
   lane :adhoc do
     match(type: "adhoc")
     gym(export_method: "ad-hoc")
   end
+  ...
+end
 end
