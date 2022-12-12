@@ -1,27 +1,12 @@
-# This file contains the fastlane.tools configuration
-# You can find the documentation at https://docs.fastlane.tools
-#
-# For a list of all available actions, check out
-#
-#     https://docs.fastlane.tools/actions
-#
-# For a list of all available plugins, check out
-#
-#     https://docs.fastlane.tools/plugins/available-plugins
-#
-
-# Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
-
 # fastlane/Fastfile
 default_platform :ios
 
 platform :ios do
   before_all do
-    Drinto
+    setup_circle_ci
   end
 
-  desc "テストをビルドして実行"
+  desc "すべてのテストを実行"
   lane :test do
     scan
   end
@@ -31,6 +16,4 @@ platform :ios do
     match(type: "adhoc")
     gym(export_method: "ad-hoc")
   end
-  ...
-end
 end
