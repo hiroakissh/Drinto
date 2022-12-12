@@ -64,6 +64,6 @@ workflows:
       - test:
           requires:
             - display_system_info
-      # - build:
-      #     requires:
-      #       - test
+      - build:
+          requires:
+            - test
