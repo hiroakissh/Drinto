@@ -22,6 +22,8 @@
 		53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA7283775F900C2B96D /* TopPageViewController.swift */; };
 		53287BB02837782000C2B96D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BAF2837782000C2B96D /* LaunchViewController.swift */; };
 		532D0F4829457C11005ABF6B /* DrinkImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D0F4729457C11005ABF6B /* DrinkImageModel.swift */; };
+		532D0F522945835E005ABF6B /* DrintoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D0F512945835E005ABF6B /* DrintoTests.swift */; };
+		532D0F5A29458A7D005ABF6B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 532D0F5929458A7D005ABF6B /* RealmSwift */; };
 		533EEBC92880164D00E63F79 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EEBC82880164D00E63F79 /* ChartView.swift */; };
 		53452DA828561A88008F2444 /* DrinkMemoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */; };
 		53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */; };
@@ -42,6 +44,16 @@
 		53D83FC9287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		532D0F532945835E005ABF6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 539DE6C3271FC9D800720AF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 539DE6CA271FC9D800720AF7;
+			remoteInfo = Drinto;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		531E83682842FB610036FE76 /* NewsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataModel.swift; sourceTree = "<group>"; };
 		5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -58,6 +70,8 @@
 		53287BA7283775F900C2B96D /* TopPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
 		53287BAF2837782000C2B96D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		532D0F4729457C11005ABF6B /* DrinkImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkImageModel.swift; sourceTree = "<group>"; };
+		532D0F4F2945835D005ABF6B /* DrintoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrintoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		532D0F512945835E005ABF6B /* DrintoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrintoTests.swift; sourceTree = "<group>"; };
 		533EEBC82880164D00E63F79 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryDetailViewController.swift; sourceTree = "<group>"; };
 		53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemorySwiftModel.swift; sourceTree = "<group>"; };
@@ -80,6 +94,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		532D0F4C2945835D005ABF6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532D0F5A29458A7D005ABF6B /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		539DE6C8271FC9D800720AF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,11 +266,28 @@
 			path = DrinkImage;
 			sourceTree = "<group>";
 		};
+		532D0F502945835D005ABF6B /* DrintoTests */ = {
+			isa = PBXGroup;
+			children = (
+				532D0F512945835E005ABF6B /* DrintoTests.swift */,
+			);
+			path = DrintoTests;
+			sourceTree = "<group>";
+		};
+		532D0F5829458A7D005ABF6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		539DE6C2271FC9D800720AF7 = {
 			isa = PBXGroup;
 			children = (
 				539DE6CD271FC9D800720AF7 /* Drinto */,
+				532D0F502945835D005ABF6B /* DrintoTests */,
 				539DE6CC271FC9D800720AF7 /* Products */,
+				532D0F5829458A7D005ABF6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				539DE6CB271FC9D800720AF7 /* Drinto.app */,
+				532D0F4F2945835D005ABF6B /* DrintoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -294,6 +334,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		532D0F4E2945835D005ABF6B /* DrintoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532D0F552945835E005ABF6B /* Build configuration list for PBXNativeTarget "DrintoTests" */;
+			buildPhases = (
+				532D0F4B2945835D005ABF6B /* Sources */,
+				532D0F4C2945835D005ABF6B /* Frameworks */,
+				532D0F4D2945835D005ABF6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				532D0F542945835E005ABF6B /* PBXTargetDependency */,
+			);
+			name = DrintoTests;
+			packageProductDependencies = (
+				532D0F5929458A7D005ABF6B /* RealmSwift */,
+			);
+			productName = DrintoTests;
+			productReference = 532D0F4F2945835D005ABF6B /* DrintoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		539DE6CA271FC9D800720AF7 /* Drinto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 539DE6DF271FC9DA00720AF7 /* Build configuration list for PBXNativeTarget "Drinto" */;
@@ -322,9 +383,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					532D0F4E2945835D005ABF6B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 539DE6CA271FC9D800720AF7;
+					};
 					539DE6CA271FC9D800720AF7 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -348,11 +413,19 @@
 			projectRoot = "";
 			targets = (
 				539DE6CA271FC9D800720AF7 /* Drinto */,
+				532D0F4E2945835D005ABF6B /* DrintoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		532D0F4D2945835D005ABF6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		539DE6C9271FC9D800720AF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,7 +443,6 @@
 /* Begin PBXShellScriptBuildPhase section */
 		53DAECD5283784EE0069D744 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -389,6 +461,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		532D0F4B2945835D005ABF6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532D0F522945835E005ABF6B /* DrintoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		539DE6C7271FC9D800720AF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,6 +505,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		532D0F542945835E005ABF6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 539DE6CA271FC9D800720AF7 /* Drinto */;
+			targetProxy = 532D0F532945835E005ABF6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		539DE6D4271FC9D800720AF7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -445,6 +533,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		532D0F562945835E005ABF6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X5LBWH4CYQ;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = X5LBWH4CYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.5.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiroakiapp.DrintoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drinto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Drinto";
+			};
+			name = Debug;
+		};
+		532D0F572945835E005ABF6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X5LBWH4CYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.5.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiroakiapp.DrintoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drinto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Drinto";
+			};
+			name = Release;
+		};
 		539DE6DD271FC9DA00720AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -478,6 +623,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -496,7 +642,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.5.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -539,6 +686,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -551,7 +699,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.5.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -566,6 +715,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X5LBWH4CYQ;
@@ -577,6 +727,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,6 +735,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiroakiapp.Drinto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -595,6 +747,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X5LBWH4CYQ;
@@ -606,6 +759,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -613,6 +767,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiroakiapp.Drinto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -622,6 +777,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		532D0F552945835E005ABF6B /* Build configuration list for PBXNativeTarget "DrintoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532D0F562945835E005ABF6B /* Debug */,
+				532D0F572945835E005ABF6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		539DE6C6271FC9D800720AF7 /* Build configuration list for PBXProject "Drinto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -662,6 +826,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		532D0F5929458A7D005ABF6B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 536839872940544E0078D81E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		536839882940544E0078D81E /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 536839872940544E0078D81E /* XCRemoteSwiftPackageReference "realm-swift" */;

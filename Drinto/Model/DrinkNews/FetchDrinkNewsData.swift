@@ -13,12 +13,12 @@ protocol NewsAPIDataModelInput {
 
 class FetchDrinkNewsData: NewsAPIDataModelInput {
     let apiKey = "84b4753e4e64481280f134d01ddfe9af"
-    let urlHead = "https://newsapi.org/v2/everything?"
+    let urlHead = "https://newsapi.org/v2/top-headlines?"
     let sort = "popularity"
-    var category = "drink"
+    var category = "war"
 
     func fetchDrinkNewsData(completion: @escaping ((Result<[Article], Error>) -> Void)) {
-        let newsURLString = "\(urlHead)q=\(category)&apiKey=\(apiKey)"
+        let newsURLString = "\(urlHead)country=us&category=\(category)&apiKey=\(apiKey)"
         print(newsURLString)
         guard let url = URL(string: newsURLString) else { return }
         let session = URLSession(configuration: .default)
