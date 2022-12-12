@@ -20,9 +20,9 @@ jobs:
       xcode: 14.1.0
     steps:
       - checkout
-      - run: 
-         name: Run Unit Tests
-         command: xcodebuild test -scheme DrintoTests
+      # - run: 
+      #    name: Run Unit Tests
+      #    command: xcodebuild test -scheme DrintoTests
 
   build:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
@@ -38,13 +38,13 @@ jobs:
           name: Build Application
           command: xcodebuild
       
-      - run:
-          name: Compress app for storage
-          command: zip -r app.zip build/Release/Drinto.app
+      # - run:
+      #     name: Compress app for storage
+      #     command: zip -r app.zip build/Release/Drinto.app
       
-      - store_artifacts:
-          path: app.zip
-          destination: app
+      # - store_artifacts:
+      #     path: app.zip
+      #     destination: app
 
 
       # # Collect XML test results data to show in the UI, and save the same XML
@@ -64,6 +64,6 @@ workflows:
       - test:
           requires:
             - display_system_info
-      - build:
-          requires:
-            - test
+      # - build:
+      #     requires:
+      #       - test
