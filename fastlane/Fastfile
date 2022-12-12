@@ -8,7 +8,9 @@ platform :ios do
 
   desc "すべてのテストを実行"
   lane :test do
-    scan
+    scan(
+	include_simulator_logs: false
+	)
   end
 
   desc "アドホック ビルド"
