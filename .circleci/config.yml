@@ -1,69 +1,45 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
-# See: https://circleci.com/docs/2.0/configuration-reference
-# For a detailed guide to building and testing on iOS, read the docs:
-# https://circleci.com/docs/2.0/testing-ios/
+# .circleci/config.yml
 version: 2.1
-
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
-  display_system_info:
-      macos:
-          xcode: 14.1.0 # Specify the Xcode version to use
-      steps:
-        - run:
-            name: Display system infomation
-            command: system_profiler SPHardwareDataType
-  
-  test:
+  build-and-test:
     macos:
       xcode: 14.1.0
+    environment:
+      FL_OUTPUT_DIR: output
+      FASTLANE_LANE: test
     steps:
       - checkout
-      # - run: 
-      #    name: Run Unit Tests
-      #    command: xcodebuild test -scheme DrintoTests
-
-  build:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
-    macos:
-      xcode: 14.1.0 # Specify the Xcode version to use
-
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-    steps:
-      - checkout
+      - run: bundle install
       - run:
-          name: Build Application
-          command: xcodebuild
-      
-      # - run:
-      #     name: Compress app for storage
-      #     command: zip -r app.zip build/Release/Drinto.app
-      
-      # - store_artifacts:
-      #     path: app.zip
-      #     destination: app
+          name: Fastlane
+          command: bundle exec fastlane $FASTLANE_LANE
+      - store_artifacts:
+          path: output
+      - store_test_results:
+          path: output/scan
 
+  adhoc:
+    macos:
+      xcode: 14.1.0
+    environment:
+      FL_OUTPUT_DIR: output
+      FASTLANE_LANE: adhoc
+    steps:
+      - checkout
+      - run: bundle install
+      - run:
+          name: Fastlane
+          command: bundle exec fastlane $FASTLANE_LANE
+      - store_artifacts:
+          path: output
 
-      # # Collect XML test results data to show in the UI, and save the same XML
-      # # files under test-results folder in the Artifacts tab
-      # - store_test_results:
-      #     path: test_output
-      # - store_artifacts:
-      #     path: test_output
-      #     destination: scan-output
-
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  test_build:
+  build-test-adhoc:
     jobs:
-      - display_system_info
-      - test:
+      - build-and-test
+      - adhoc:
+          filters:
+            branches:
+              only: development
           requires:
-            - display_system_info
-      - build:
-          requires:
-            - test
+            - build-and-test
