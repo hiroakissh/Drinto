@@ -10,6 +10,7 @@
 		5313E50B2956AEDD0030570B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5313E50A2956AEDD0030570B /* FirebaseAuth */; };
 		5313E50D2956AEDD0030570B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5313E50C2956AEDD0030570B /* FirebaseFirestore */; };
 		5313E50F2956AEDD0030570B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5313E50E2956AEDD0030570B /* FirebaseStorage */; };
+		5313E5112956B0AC0030570B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5313E5102956B0AC0030570B /* GoogleService-Info.plist */; };
 		531E83692842FB610036FE76 /* NewsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531E83682842FB610036FE76 /* NewsDataModel.swift */; };
 		5324315D2839A07A005A8170 /* DrinkMemoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */; };
 		5324315E2839A07A005A8170 /* DrinkMemoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5313E5102956B0AC0030570B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		531E83682842FB610036FE76 /* NewsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataModel.swift; sourceTree = "<group>"; };
 		5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryTableViewCell.swift; sourceTree = "<group>"; };
 		5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkMemoryTableViewCell.xib; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 				539DE6D0271FC9D800720AF7 /* SceneDelegate.swift */,
 				539DE6D7271FC9DA00720AF7 /* Assets.xcassets */,
 				539DE6DC271FC9DA00720AF7 /* Info.plist */,
+				5313E5102956B0AC0030570B /* GoogleService-Info.plist */,
 			);
 			path = Drinto;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				539DE6D8271FC9DA00720AF7 /* Assets.xcassets in Resources */,
 				539DE6D6271FC9D800720AF7 /* Main.storyboard in Resources */,
 				532431642839A0AB005A8170 /* DrinkNewsTableViewCell.xib in Resources */,
+				5313E5112956B0AC0030570B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
