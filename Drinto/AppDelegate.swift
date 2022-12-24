@@ -7,6 +7,7 @@
 
 import UIKit
 import RealmSwift
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(Realm.Configuration.defaultConfiguration.fileURL!)
 //        //swiftlint:disable force_try
 //        try! Realm.deleteFiles(for: Realm.Configuration.defaultConfiguration)
+        FirebaseApp.configure()
         return true
     }
 
