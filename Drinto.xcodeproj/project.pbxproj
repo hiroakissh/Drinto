@@ -371,7 +371,8 @@
 				539DE6C7271FC9D800720AF7 /* Sources */,
 				539DE6C8271FC9D800720AF7 /* Frameworks */,
 				539DE6C9271FC9D800720AF7 /* Resources */,
-				53DAECD5283784EE0069D744 /* ShellScript */,
+				53DAECD5283784EE0069D744 /* Run Script */,
+				5313E5142956D4E20030570B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -455,7 +456,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		53DAECD5283784EE0069D744 /* ShellScript */ = {
+		5313E5142956D4E20030570B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -464,6 +465,24 @@
 			);
 			inputPaths = (
 			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Release\" ]; then\n  cp \"${PROJECT_DIR}/${PROJECT_NAME}/GoogleService-Info.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse\n  cp \"${PROJECT_DIR}/${PROJECT_NAME}/GoogleService-Info.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
+		};
+		53DAECD5283784EE0069D744 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
