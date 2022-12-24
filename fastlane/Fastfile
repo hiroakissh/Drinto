@@ -8,6 +8,7 @@ platform :ios do
 
   desc "すべてのテストを実行"
   lane :test do
+    ENV["FASTLANE_XCODE_LIST_TIMEOUT"] = "120" 
     scan(
 	include_simulator_logs: false
 	)
