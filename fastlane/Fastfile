@@ -9,6 +9,8 @@ platform :ios do
   desc "すべてのテストを実行"
   lane :test do
     ENV["FASTLANE_XCODE_LIST_TIMEOUT"] = "120" 
+    ENV['FL_UNLOCK_KEYCHAIN_PATH'] = 'login.keychain'
+    ENV['FL_UNLOCK_KEYCHAIN_PASSWORD'] = 'password' 
     scan(
 	include_simulator_logs: false
 	)
