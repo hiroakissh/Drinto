@@ -13,6 +13,8 @@ class DrinkMemoryViewController: UIViewController {
 
     private var drinkMemory = DrinkMemoryRepository()
 
+    private var drinkImageModel = DrinkImageModel()
+
     private var drinkMemoryPresenter: DrinkMemoryPresenterInput!
 
     override func viewDidLoad() {
@@ -73,7 +75,9 @@ extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate 
         }
         // TODO: Imagepathに関しての追記
         if indexDrinkMemory.imagePath != nil {
-            drinkCell.drinkImageView.image = UIImage(contentsOfFile: indexDrinkMemory.imagePath ?? "")
+            print(drinkCell.drinkImageView.frame.width)
+            print(drinkCell.drinkImageView.frame.height)
+            drinkCell.drinkImageView.image = drinkImageModel.getImageData(imageUUID: indexDrinkMemory.uuidString)
         }
         return drinkCell
     }

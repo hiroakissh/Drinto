@@ -46,5 +46,7 @@ class DetailDrinkMemoryViewController: UIViewController {
         )
 
         drinkImageView.image = drinkImageModel.getImageData(imageUUID: detailDrinkMemory.uuidString)
+        print(drinkImageView.frame.width)
+        print(drinkImageView.frame.height)
     }
 }

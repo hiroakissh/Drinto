@@ -28,7 +28,8 @@ class DrinkMemoryTableViewCell: UITableViewCell {
         categoryLabel.layer.cornerRadius = 10.0
         categoryLabel.clipsToBounds = true
         detailButton.layer.cornerRadius = 10.0
-        drinkImageView.layer.cornerRadius = 5.0
+        drinkImageView.clipsToBounds = true
+        drinkImageView.layer.cornerRadius = 10.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

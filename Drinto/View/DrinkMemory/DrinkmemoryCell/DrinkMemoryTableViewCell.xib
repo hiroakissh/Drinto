@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,15 +11,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DrinkMemoryCell" id="KGk-i7-Jjw" customClass="DrinkMemoryTableViewCell" customModule="Drinto" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="360" height="450"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DrinkMemoryCell" rowHeight="536" id="KGk-i7-Jjw" customClass="DrinkMemoryTableViewCell" customModule="Drinto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="536"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="360" height="450"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="536"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHg-SR-FhS">
-                        <rect key="frame" x="20" y="20" width="320" height="410"/>
+                        <rect key="frame" x="20" y="20" width="320" height="490"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81u-dH-pKy">
                                 <rect key="frame" x="220" y="15" width="80" height="30"/>
@@ -57,8 +57,11 @@
                                     <action selector="moveDetailButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zic-HP-Ije"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y9B-y3-bcb">
-                                <rect key="frame" x="15" y="235" width="290" height="160"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y9B-y3-bcb">
+                                <rect key="frame" x="15" y="235" width="290" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="xrv-0G-DGo"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投稿者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zI-QE-3aA">
                                 <rect key="frame" x="20" y="15" width="56" height="22"/>
@@ -87,6 +90,7 @@
                             <constraint firstItem="3zI-QE-3aA" firstAttribute="leading" secondItem="LHg-SR-FhS" secondAttribute="leading" constant="20" id="2p7-or-8Qv"/>
                             <constraint firstAttribute="trailing" secondItem="81u-dH-pKy" secondAttribute="trailing" constant="20" id="9uH-ob-tgT"/>
                             <constraint firstItem="LEA-VN-V5u" firstAttribute="top" secondItem="iQO-Ua-rjK" secondAttribute="bottom" constant="20" id="Bh9-Kh-BDN"/>
+                            <constraint firstAttribute="height" constant="490" id="FsS-ec-qZW"/>
                             <constraint firstItem="43X-Ka-BSB" firstAttribute="centerX" secondItem="LHg-SR-FhS" secondAttribute="centerX" id="Jhl-bS-ok5"/>
                             <constraint firstItem="iQO-Ua-rjK" firstAttribute="leading" secondItem="LHg-SR-FhS" secondAttribute="leading" constant="30" id="KJQ-FB-Xgm"/>
                             <constraint firstItem="c4D-Ba-chE" firstAttribute="top" secondItem="iQO-Ua-rjK" secondAttribute="bottom" constant="20" id="OMr-hX-pDs"/>
@@ -124,7 +128,7 @@
                 <outlet property="editorNameLabel" destination="3zI-QE-3aA" id="xyY-KA-u9P"/>
                 <outlet property="featureLabel" destination="c4D-Ba-chE" id="tvX-Aj-IWI"/>
             </connections>
-            <point key="canvasLocation" x="-407.24637681159425" y="-38.169642857142854"/>
+            <point key="canvasLocation" x="-407.24637681159425" y="-9.375"/>
         </tableViewCell>
     </objects>
     <resources>
