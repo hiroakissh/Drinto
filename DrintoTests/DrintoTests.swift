@@ -7,6 +7,7 @@
 
 import XCTest
 import RealmSwift
+import FirebaseCore
 @testable import Drinto
 
 final class DrintoTests: XCTestCase {

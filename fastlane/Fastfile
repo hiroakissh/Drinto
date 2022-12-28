@@ -8,6 +8,7 @@ platform :ios do
 
   desc "すべてのテストを実行"
   lane :test do
+    ENV['FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT'] = '500'
     scan(
 	include_simulator_logs: false
 	)
