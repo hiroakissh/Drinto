@@ -10,9 +10,9 @@ import Foundation
 protocol DrinkMemoryPresenterInput {
     var numberOfDrinkMemory: Int { get }
     var numberOfDrinkMemoryInCategory: Int { get }
-    func drinkMemory(forRow row: Int) -> DrinkMemorySwiftModel?
+    func drinkMemory(forRow row: Int, categoryType: CategoryType, category: String) -> DrinkMemorySwiftModel?
     func viewDidLoad()
-    func getDrinkMemoryInCategory(_ category: String) -> [DrinkMemorySwiftModel]
+    func getDrinkMemoryInCategory(_ category: String)
     func didSelectRowAt(_ indexPath: IndexPath)
     func selectFuture(_ drink: DrinkMemorySwiftModel) -> DrinkFuture
 }
@@ -49,13 +49,21 @@ class DrinkMemoryPresenter: DrinkMemoryPresenterInput {
     }
 
     var numberOfDrinkMemoryInCategory: Int {
-        drinkEachCategory.count
+        return drinkEachCategory.count
     }
 
-    func drinkMemory(forRow row: Int) -> DrinkMemorySwiftModel? {
-        let drinkMemory = model.readDrinkMemoryData()
-        let indexDrinkMemory = drinkMemory[row]
-        return indexDrinkMemory
+    func drinkMemory(forRow row: Int, categoryType: CategoryType, category: String) -> DrinkMemorySwiftModel? {
+        switch categoryType {
+        case .all:
+            drinkMemory = model.readDrinkMemoryData()
+            
+            let indexDrinkMemory = drinkMemory[row]
+            return indexDrinkMemory
+        case .category:
+            drinkEachCategory = model.readDrinkMemoryDataInCategory(category)
+            let indexDrinkMemory = drinkEachCategory[row]
+            return indexDrinkMemory
+        }
     }
 
     func didSelectRowAt(_ indexPath: IndexPath) {
@@ -67,7 +75,6 @@ class DrinkMemoryPresenter: DrinkMemoryPresenterInput {
             return DrinkFuture.none
         }
         let firstIndex = drink.drinkPoint?.firstIndex(of: maxPoint)
-        print(drink.drinkPoint?.firstIndex(of: maxPoint))
         switch firstIndex {
         case 0:
             return DrinkFuture.aroma
@@ -90,8 +97,7 @@ class DrinkMemoryPresenter: DrinkMemoryPresenterInput {
         drinkMemory = model.readDrinkMemoryData()
     }
 
-    func getDrinkMemoryInCategory(_ category: String) -> [DrinkMemorySwiftModel] {
+    func getDrinkMemoryInCategory(_ category: String){
         drinkEachCategory = model.readDrinkMemoryDataInCategory(category)
-        return drinkEachCategory
     }
 }

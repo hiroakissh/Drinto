@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum CategoryType {
+    case all
+    case category
+}
+
 class DrinkMemoryViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
@@ -17,6 +22,9 @@ class DrinkMemoryViewController: UIViewController {
     private var drinkImageModel = DrinkImageModel()
 
     private var drinkMemoryPresenter: DrinkMemoryPresenterInput!
+
+    private var categoryType: CategoryType = .all
+    private var categoryTitle: String = "全て"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,20 +46,35 @@ class DrinkMemoryViewController: UIViewController {
 
     // TODO: ジャンルごとに表示の切り替わり
     @IBAction private func switchCategoryAction(_ sender: UISegmentedControl) {
-        print(sender.titleForSegment(at: sender.selectedSegmentIndex)!)
-        var title = sender.titleForSegment(at: sender.selectedSegmentIndex)!
-        print(drinkMemoryPresenter.getDrinkMemoryInCategory(title))
-        print(drinkMemoryPresenter.numberOfDrinkMemoryInCategory)
+        guard let selectTitle = sender.titleForSegment(at: sender.selectedSegmentIndex) else  { return }
+        categoryTitle = selectTitle
+        if categoryTitle == "全て" {
+            categoryType = .all
+            drinkMemoryPresenter.viewDidLoad()
+        } else {
+            categoryType = .category
+            drinkMemoryPresenter.getDrinkMemoryInCategory(categoryTitle)
+        }
+        tableView.reloadData()
     }
 }
 
 extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return drinkMemoryPresenter?.numberOfDrinkMemory ?? 0
+        switch categoryType {
+        case .all:
+            print("all count")
+            return drinkMemoryPresenter?.numberOfDrinkMemory ?? 0
+        case .category:
+            print("category count")
+            print(drinkMemoryPresenter.numberOfDrinkMemoryInCategory)
+            return drinkMemoryPresenter.numberOfDrinkMemoryInCategory
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let indexDrinkMemory = drinkMemoryPresenter.drinkMemory(forRow: indexPath.row)
+        let indexDrinkMemory = drinkMemoryPresenter.drinkMemory(forRow: indexPath.row, categoryType: categoryType, category: categoryTitle)
+
         guard let indexDrinkMemory = indexDrinkMemory else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DrinkMemoryCell", for: indexPath) as? DrinkMemoryTableViewCell
             cell?.drinkNameLabel.text = "読み込めませんでした"
@@ -92,8 +115,7 @@ extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate 
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let selectDrinkMemory = drinkMemory.readDrinkMemoryData()
-        let selectDrinkMemory = drinkMemoryPresenter.drinkMemory(forRow: indexPath.row)
+        let selectDrinkMemory = drinkMemoryPresenter.drinkMemory(forRow: indexPath.row, categoryType: categoryType, category: categoryTitle)
         performSegue(withIdentifier: "detailDrinkMemory", sender: selectDrinkMemory)
     }
 
