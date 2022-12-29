@@ -39,6 +39,9 @@ class DrinkMemoryViewController: UIViewController {
     // TODO: ジャンルごとに表示の切り替わり
     @IBAction private func switchCategoryAction(_ sender: UISegmentedControl) {
         print(sender.titleForSegment(at: sender.selectedSegmentIndex)!)
+        var title = sender.titleForSegment(at: sender.selectedSegmentIndex)!
+        print(drinkMemoryPresenter.getDrinkMemoryInCategory(title))
+        print(drinkMemoryPresenter.numberOfDrinkMemoryInCategory)
     }
 }
 

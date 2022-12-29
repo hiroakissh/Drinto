@@ -9,8 +9,10 @@ import Foundation
 
 protocol DrinkMemoryPresenterInput {
     var numberOfDrinkMemory: Int { get }
+    var numberOfDrinkMemoryInCategory: Int { get }
     func drinkMemory(forRow row: Int) -> DrinkMemorySwiftModel?
     func viewDidLoad()
+    func getDrinkMemoryInCategory(_ category: String) -> [DrinkMemorySwiftModel]
     func didSelectRowAt(_ indexPath: IndexPath)
     func selectFuture(_ drink: DrinkMemorySwiftModel) -> DrinkFuture
 }
@@ -32,6 +34,7 @@ enum DrinkFuture {
 class DrinkMemoryPresenter: DrinkMemoryPresenterInput {
 
     var drinkMemory = [DrinkMemorySwiftModel]()
+    var drinkEachCategory = [DrinkMemorySwiftModel]()
 
     var view: DrinkMemoryPresenterOutput?
     var model: DrinkMemoryRepository
@@ -43,6 +46,10 @@ class DrinkMemoryPresenter: DrinkMemoryPresenterInput {
 
     var numberOfDrinkMemory: Int {
         drinkMemory.count
+    }
+
+    var numberOfDrinkMemoryInCategory: Int {
+        drinkEachCategory.count
     }
 
     func drinkMemory(forRow row: Int) -> DrinkMemorySwiftModel? {
@@ -81,5 +88,10 @@ class DrinkMemoryPresenter: DrinkMemoryPresenterInput {
 
     func viewDidLoad() {
         drinkMemory = model.readDrinkMemoryData()
+    }
+
+    func getDrinkMemoryInCategory(_ category: String) -> [DrinkMemorySwiftModel] {
+        drinkEachCategory = model.readDrinkMemoryDataInCategory(category)
+        return drinkEachCategory
     }
 }
