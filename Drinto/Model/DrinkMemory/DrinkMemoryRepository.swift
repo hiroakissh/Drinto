@@ -9,7 +9,8 @@ import Foundation
 import RealmSwift
 
 protocol DrinkMemorySwiftModelInput {
-//    func fetchDrinkMemoryData(completion: @escaping((Result<[DrinkMemorySwiftModel], Error>) -> Void))
+    func readDrinkMemoryData() -> [DrinkMemorySwiftModel]
+    func readDrinkMemoryDataInCategory(_ category: String) -> [DrinkMemorySwiftModel]
     func addDrinkMemoryData(_ drinkMemoryData: DrinkMemorySwiftModel)
     func removeDrinkMemoryData(at index: Int)
     func updateDrinkMemoryData(at index: Int)
@@ -19,11 +20,15 @@ class DrinkMemoryRepository: DrinkMemorySwiftModelInput {
     // swiftlint:disable:next force_try
     private let realm = try! Realm()
 
-//    func fetchDrinkMemoryData(completion: @escaping ((Result<[DrinkMemorySwiftModel], Error>) -> Void)) {
-//
-//    }
     func readDrinkMemoryData() -> [DrinkMemorySwiftModel] {
         let realmModel = realm.objects(DrinkMemoryRealmModel.self)
+        let realmArray = Array(realmModel)
+        let drinkMemory = realmArray.map { DrinkMemorySwiftModel(managedObject: $0) }
+        return drinkMemory
+    }
+
+    func readDrinkMemoryDataInCategory(_ category: String) -> [DrinkMemorySwiftModel] {
+        let realmModel = realm.objects(DrinkMemoryRealmModel.self).filter("category=='\(category)'")
         let realmArray = Array(realmModel)
         let drinkMemory = realmArray.map { DrinkMemorySwiftModel(managedObject: $0) }
         return drinkMemory

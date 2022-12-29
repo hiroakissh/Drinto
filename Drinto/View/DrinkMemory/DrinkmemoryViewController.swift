@@ -10,6 +10,7 @@ import UIKit
 class DrinkMemoryViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var categorySegmentedControl: UISegmentedControl!
 
     private var drinkMemory = DrinkMemoryRepository()
 
@@ -33,6 +34,11 @@ class DrinkMemoryViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         drinkMemoryPresenter.viewDidLoad()
         tableView.reloadData()
+    }
+
+    // TODO: ジャンルごとに表示の切り替わり
+    @IBAction private func switchCategoryAction(_ sender: UISegmentedControl) {
+        print(sender.titleForSegment(at: sender.selectedSegmentIndex)!)
     }
 }
 

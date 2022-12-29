@@ -626,6 +626,9 @@
                                     <segment title="中国茶"/>
                                     <segment title="その他"/>
                                 </segments>
+                                <connections>
+                                    <action selector="switchCategoryAction:" destination="edf-hR-ShN" eventType="valueChanged" id="4hr-Uk-i70"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ec5-po-xdY"/>
@@ -644,6 +647,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="CJP-Ay-D3M"/>
                     <connections>
+                        <outlet property="categorySegmentedControl" destination="Nwj-o6-Z5H" id="m7X-Nc-Hy3"/>
                         <outlet property="tableView" destination="vIF-5x-tUA" id="Ycs-ET-mgI"/>
                         <segue destination="MYT-kT-mZ2" kind="presentation" identifier="detailDrinkMemory" modalPresentationStyle="automatic" id="B4y-d2-Xfs"/>
                     </connections>
