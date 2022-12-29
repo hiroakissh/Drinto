@@ -13,7 +13,6 @@ class DrinkMemoryTableViewCell: UITableViewCell {
     @IBOutlet private(set) weak var editorNameLabel: UILabel!
     @IBOutlet private(set) weak var drinkNameLabel: UILabel!
     @IBOutlet private(set) weak var drinkFeatureLabel: UILabel!
-    @IBOutlet private weak var detailButton: UIButton!
     @IBOutlet private(set) weak var categoryLabel: UILabel!
     @IBOutlet private(set) weak var featureLabel: UILabel!
     @IBOutlet private(set) weak var drinkImageView: UIImageView!
@@ -27,7 +26,6 @@ class DrinkMemoryTableViewCell: UITableViewCell {
         cellBackGroundView.layer.shadowRadius = 10.0
         categoryLabel.layer.cornerRadius = 10.0
         categoryLabel.clipsToBounds = true
-        detailButton.layer.cornerRadius = 10.0
         drinkImageView.clipsToBounds = true
         drinkImageView.layer.cornerRadius = 10.0
     }
@@ -36,9 +34,5 @@ class DrinkMemoryTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-
-    @IBAction func moveDetailButton(_ sender: Any) {
-        print("詳細の確認")
     }
 }
