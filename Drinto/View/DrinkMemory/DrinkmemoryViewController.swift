@@ -99,11 +99,15 @@ extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate 
         case .astringency:
             drinkCell.featureLabel.text = "香重視"
         case .kokou:
-            drinkCell.featureLabel.text = "香り重視"
+            drinkCell.featureLabel.text = "コク重視"
         case .coast:
-            drinkCell.featureLabel.text = "香り重視"
+            drinkCell.featureLabel.text = "コスト重視"
+        case .balance:
+            drinkCell.featureLabel.text = "バランス型"
+        case .perfect:
+            drinkCell.featureLabel.text = "完璧な味わい"
         case .none:
-            drinkCell.featureLabel.text = "香り重視"
+            drinkCell.featureLabel.text = "特徴なし"
         }
         // TODO: Imagepathに関しての追記
         if indexDrinkMemory.imagePath != nil {

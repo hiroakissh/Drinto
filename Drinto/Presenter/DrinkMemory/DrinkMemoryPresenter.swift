@@ -21,16 +21,6 @@ protocol DrinkMemoryPresenterOutput {
     func didFetch(_ drinkMemory: [DrinkMemorySwiftModel])
 }
 
-enum DrinkFuture {
-    case aroma
-    case sweet
-    case umami
-    case astringency
-    case kokou
-    case coast
-    case none
-}
-
 class DrinkMemoryPresenter: DrinkMemoryPresenterInput {
 
     var drinkMemory = [DrinkMemorySwiftModel]()
@@ -70,27 +60,8 @@ class DrinkMemoryPresenter: DrinkMemoryPresenterInput {
     }
 
     func selectFuture(_ drink: DrinkMemorySwiftModel) -> DrinkFuture {
-        let maxPoint = drink.drinkPoint?.max()
-        guard let maxPoint = maxPoint else {
-            return DrinkFuture.none
-        }
-        let firstIndex = drink.drinkPoint?.firstIndex(of: maxPoint)
-        switch firstIndex {
-        case 0:
-            return DrinkFuture.aroma
-        case 1:
-            return DrinkFuture.sweet
-        case 2:
-            return DrinkFuture.umami
-        case 3:
-            return DrinkFuture.astringency
-        case 4:
-            return DrinkFuture.kokou
-        case 5:
-            return DrinkFuture.coast
-        default:
-            return DrinkFuture.none
-        }
+        let drinkFeatureCheckModel = DrinkFeatureCheckModel(checkDrinkModel: drink)
+        return drinkFeatureCheckModel.selectFeature()
     }
 
     func viewDidLoad() {
