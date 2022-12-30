@@ -569,7 +569,7 @@
             </objects>
             <point key="canvasLocation" x="611.59420289855075" y="1202.6785714285713"/>
         </scene>
-        <!--Item 1-->
+        <!--Drinto-->
         <scene sceneID="GYh-Hf-Xjp">
             <objects>
                 <viewController id="edf-hR-ShN" customClass="DrinkMemoryViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
@@ -577,15 +577,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blK-sS-Keq">
-                                <rect key="frame" x="35" y="74" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blK-sS-Keq">
+                                <rect key="frame" x="35" y="74" width="48" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGI-PO-zkd">
-                                <rect key="frame" x="330" y="74" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="並び替え" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGI-PO-zkd">
+                                <rect key="frame" x="330" y="74" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -645,7 +645,7 @@
                             <constraint firstItem="Nwj-o6-Z5H" firstAttribute="leading" secondItem="ec5-po-xdY" secondAttribute="leading" constant="15" id="pbh-u2-LuL"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="CJP-Ay-D3M"/>
+                    <tabBarItem key="tabBarItem" title="Drinto" id="CJP-Ay-D3M"/>
                     <connections>
                         <outlet property="categorySegmentedControl" destination="Nwj-o6-Z5H" id="m7X-Nc-Hy3"/>
                         <outlet property="tableView" destination="vIF-5x-tUA" id="Ycs-ET-mgI"/>
