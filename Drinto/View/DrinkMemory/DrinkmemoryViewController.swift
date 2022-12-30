@@ -7,13 +7,24 @@
 
 import UIKit
 
+enum CategoryType {
+    case all
+    case category
+}
+
 class DrinkMemoryViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var categorySegmentedControl: UISegmentedControl!
 
     private var drinkMemory = DrinkMemoryRepository()
 
+    private var drinkImageModel = DrinkImageModel()
+
     private var drinkMemoryPresenter: DrinkMemoryPresenterInput!
+
+    private var categoryType: CategoryType = .all
+    private var categoryTitle: String = "全て"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,15 +43,38 @@ class DrinkMemoryViewController: UIViewController {
         drinkMemoryPresenter.viewDidLoad()
         tableView.reloadData()
     }
+
+    // TODO: ジャンルごとに表示の切り替わり
+    @IBAction private func switchCategoryAction(_ sender: UISegmentedControl) {
+        guard let selectTitle = sender.titleForSegment(at: sender.selectedSegmentIndex) else  { return }
+        categoryTitle = selectTitle
+        if categoryTitle == "全て" {
+            categoryType = .all
+            drinkMemoryPresenter.viewDidLoad()
+        } else {
+            categoryType = .category
+            drinkMemoryPresenter.getDrinkMemoryInCategory(categoryTitle)
+        }
+        tableView.reloadData()
+    }
 }
 
 extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return drinkMemoryPresenter?.numberOfDrinkMemory ?? 0
+        switch categoryType {
+        case .all:
+            print("all count")
+            return drinkMemoryPresenter?.numberOfDrinkMemory ?? 0
+        case .category:
+            print("category count")
+            print(drinkMemoryPresenter.numberOfDrinkMemoryInCategory)
+            return drinkMemoryPresenter.numberOfDrinkMemoryInCategory
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let indexDrinkMemory = drinkMemoryPresenter.drinkMemory(forRow: indexPath.row)
+        let indexDrinkMemory = drinkMemoryPresenter.drinkMemory(forRow: indexPath.row, categoryType: categoryType, category: categoryTitle)
+
         guard let indexDrinkMemory = indexDrinkMemory else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DrinkMemoryCell", for: indexPath) as? DrinkMemoryTableViewCell
             cell?.drinkNameLabel.text = "読み込めませんでした"
@@ -65,22 +99,27 @@ extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate 
         case .astringency:
             drinkCell.featureLabel.text = "香重視"
         case .kokou:
-            drinkCell.featureLabel.text = "香り重視"
+            drinkCell.featureLabel.text = "コク重視"
         case .coast:
-            drinkCell.featureLabel.text = "香り重視"
+            drinkCell.featureLabel.text = "コスト重視"
+        case .balance:
+            drinkCell.featureLabel.text = "バランス型"
+        case .perfect:
+            drinkCell.featureLabel.text = "完璧な味わい"
         case .none:
-            drinkCell.featureLabel.text = "香り重視"
+            drinkCell.featureLabel.text = "特徴なし"
         }
         // TODO: Imagepathに関しての追記
         if indexDrinkMemory.imagePath != nil {
-            drinkCell.drinkImageView.image = UIImage(contentsOfFile: indexDrinkMemory.imagePath ?? "")
+            print(drinkCell.drinkImageView.frame.width)
+            print(drinkCell.drinkImageView.frame.height)
+            drinkCell.drinkImageView.image = drinkImageModel.getImageData(imageUUID: indexDrinkMemory.uuidString)
         }
         return drinkCell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let selectDrinkMemory = drinkMemory.readDrinkMemoryData()
-        let selectDrinkMemory = drinkMemoryPresenter.drinkMemory(forRow: indexPath.row)
+        let selectDrinkMemory = drinkMemoryPresenter.drinkMemory(forRow: indexPath.row, categoryType: categoryType, category: categoryTitle)
         performSegue(withIdentifier: "detailDrinkMemory", sender: selectDrinkMemory)
     }
 

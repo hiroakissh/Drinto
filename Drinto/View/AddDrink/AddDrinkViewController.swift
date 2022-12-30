@@ -26,7 +26,7 @@ class AddDrinkViewController: UIViewController {
     private var editTextFiled: UITextField?
 
     private let point: [String] = ["0", "1", "2", "3", "4", "5"]
-    private let category: [String] = ["コーヒ", "紅茶", "日本茶", "中国茶", "その他"]
+    private let category: [String] = ["コーヒー", "紅茶", "日本茶", "中国茶", "その他"]
 
     var drinkMemoryRepository = DrinkMemoryRepository()
     var drinkMemorySwiftModel = DrinkMemorySwiftModel()
