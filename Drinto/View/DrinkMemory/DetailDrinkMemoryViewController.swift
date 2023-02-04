@@ -17,6 +17,10 @@ class DetailDrinkMemoryViewController: UIViewController {
 
     private var drinkImageModel = DrinkImageModel()
 
+    private var drinkCategoryModel = DrinkCategoryModel()
+
+    private var drinkCategory: DrinkCategory?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         print(detailDrinkMemory)
@@ -26,6 +30,9 @@ class DetailDrinkMemoryViewController: UIViewController {
         print("Drinkカテゴリー")
         print(detailDrinkMemory.category ?? "")
         drinkCategoryLabel.text = detailDrinkMemory.category
+
+        drinkCategoryModel.drinkCategoryString = detailDrinkMemory.category
+
         print("ドリンクポイント")
         print(detailDrinkMemory.drinkPoint?[0] ?? 0)
         print(detailDrinkMemory.drinkPoint?[1] ?? 0)
@@ -42,7 +49,7 @@ class DetailDrinkMemoryViewController: UIViewController {
                     value4: detailDrinkMemory.drinkPoint?[3] ?? 0,
                     value5: detailDrinkMemory.drinkPoint?[4] ?? 0,
                     value6: detailDrinkMemory.drinkPoint?[5] ?? 0
-                )
+                ), drinkCategory: drinkCategoryModel.drinkCategoryStringToType()
         )
 
         drinkImageView.image = drinkImageModel.getImageData(imageUUID: detailDrinkMemory.uuidString)

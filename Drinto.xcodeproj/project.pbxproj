@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		530613E5295E81C90079ECA2 /* DrinkFeatureCheckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530613E4295E81C90079ECA2 /* DrinkFeatureCheckModel.swift */; };
 		530613DF295C44360079ECA2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 530613DE295C44360079ECA2 /* FirebaseStorage */; };
 		530613E1295C443A0079ECA2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 530613E0295C443A0079ECA2 /* FirebaseAuth */; };
 		530613E3295C44420079ECA2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 530613E2295C44420079ECA2 /* FirebaseFirestore */; };
+		530613E5295E81C90079ECA2 /* DrinkFeatureCheckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530613E4295E81C90079ECA2 /* DrinkFeatureCheckModel.swift */; };
 		5313E50B2956AEDD0030570B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5313E50A2956AEDD0030570B /* FirebaseAuth */; };
 		5313E50D2956AEDD0030570B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5313E50C2956AEDD0030570B /* FirebaseFirestore */; };
 		5313E50F2956AEDD0030570B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5313E50E2956AEDD0030570B /* FirebaseStorage */; };
@@ -36,6 +36,7 @@
 		53452DA828561A88008F2444 /* DrinkMemoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */; };
 		53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */; };
 		534BB07B284E2B2700628CF2 /* DrinkNewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */; };
+		535B26AE298E47F6000DCBC5 /* DrinkCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535B26AD298E47F6000DCBC5 /* DrinkCategoryModel.swift */; };
 		536839892940544E0078D81E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 536839882940544E0078D81E /* RealmSwift */; };
 		5377898F2851C6C40056576C /* DrinkMemoryRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */; };
 		537789912851C6E90056576C /* DrinkMemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537789902851C6E90056576C /* DrinkMemoryRepository.swift */; };
@@ -86,6 +87,7 @@
 		53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryDetailViewController.swift; sourceTree = "<group>"; };
 		53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemorySwiftModel.swift; sourceTree = "<group>"; };
 		534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsDetailViewController.swift; sourceTree = "<group>"; };
+		535B26AD298E47F6000DCBC5 /* DrinkCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCategoryModel.swift; sourceTree = "<group>"; };
 		5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRealmModel.swift; sourceTree = "<group>"; };
 		537789902851C6E90056576C /* DrinkMemoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRepository.swift; sourceTree = "<group>"; };
 		537789922851C7170056576C /* DrinkMemoryFirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryFirebaseModel.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */,
 				537789922851C7170056576C /* DrinkMemoryFirebaseModel.swift */,
 				53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */,
+				535B26AD298E47F6000DCBC5 /* DrinkCategoryModel.swift */,
 			);
 			path = DrinkMemory;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				5386CCEA284AD6AC006F1A14 /* FetchDrinkNewsData.swift in Sources */,
 				539DE6D1271FC9D800720AF7 /* SceneDelegate.swift in Sources */,
 				534BB07B284E2B2700628CF2 /* DrinkNewsDetailViewController.swift in Sources */,
+				535B26AE298E47F6000DCBC5 /* DrinkCategoryModel.swift in Sources */,
 				53287BA02837751400C2B96D /* MapViewController.swift in Sources */,
 				537789952851C7290056576C /* DrinkMemoryPresenter.swift in Sources */,
 				53287BA22837757000C2B96D /* AddDrinkViewController.swift in Sources */,

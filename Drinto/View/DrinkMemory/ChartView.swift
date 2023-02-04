@@ -28,6 +28,9 @@ struct ParameterInfo {
 }
 
 class ChartView: UIView {
+
+    private var drinkCategory: DrinkCategory?
+
     private var valueInfo: ParameterInfo = ParameterInfo(
         value1: 0,
         value2: 0,
@@ -37,9 +40,9 @@ class ChartView: UIView {
         value6: 0
     )
 
-    func configure(valueInfo: ParameterInfo) {
+    func configure(valueInfo: ParameterInfo, drinkCategory: DrinkCategory) {
         self.valueInfo = valueInfo
-        101
+        self.drinkCategory = drinkCategory
     }
 
     override func draw(_ rect: CGRect) {
@@ -51,7 +54,21 @@ class ChartView: UIView {
         fixBodar.forEach {
             fixPolygon(size: $0)
         }
-        drawPolygon()
+        switch drinkCategory {
+        case .coffee:
+            drawPolygon(.coffeeColor())
+        case .blackTea:
+            drawPolygon(.blackTeaColor())
+        case .japanTea:
+            drawPolygon(.japanTeaColor())
+        case .chinaTea:
+            drawPolygon(.chinaColor())
+        case .other:
+            drawPolygon(.otherColor())
+        default:
+            fatalError("カテゴリー取得失敗")
+        }
+
 
         func fixPolygon(size: Int) {
             context?.setStrokeColor(UIColor.black.cgColor)
@@ -84,9 +101,9 @@ class ChartView: UIView {
             path.stroke()
         }
 
-        func drawPolygon() {
-            context?.setStrokeColor(UIColor.blue.cgColor)
-            context?.setFillColor(UIColor.blue.cgColor)
+        func drawPolygon(_ color: UIColor) {
+            context?.setStrokeColor(color.cgColor)
+            context?.setFillColor(color.cgColor)
             context?.setAlpha(0.8)
 
             var points: [CGPoint] = []
@@ -133,5 +150,23 @@ class ChartView: UIView {
     }
     func yPoint(topCount: Int, value: Int, rad: CGFloat, center: CGPoint) -> CGFloat {
         center.y + CGFloat(value) * (min(center.x, center.y) / 5) * sin((rad * CGFloat(topCount - 1)) - .pi / 2)
+    }
+}
+
+extension UIColor {
+    static func coffeeColor() -> UIColor {
+        return UIColor(red: 115/255, green: 70/255, blue: 45/255, alpha: 0.9)
+    }
+    static func blackTeaColor() -> UIColor {
+        return UIColor(red: 89/255, green: 42/255, blue: 25/255, alpha: 0.9)
+    }
+    static func japanTeaColor() -> UIColor {
+        return UIColor(red: 176/255, green: 191/255, blue: 59/255, alpha: 0.9)
+    }
+    static func chinaColor() -> UIColor {
+        return UIColor(red: 255/255, green: 133/255, blue: 75/255, alpha: 0.9)
+    }
+    static func otherColor() -> UIColor {
+        return UIColor(red: 90/255, green: 220/255, blue: 255/255, alpha: 0.9)
     }
 }
