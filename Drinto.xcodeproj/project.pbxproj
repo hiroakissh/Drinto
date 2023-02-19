@@ -50,6 +50,9 @@
 		539DE6D8271FC9DA00720AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539DE6D7271FC9DA00720AF7 /* Assets.xcassets */; };
 		539DE6DB271FC9DA00720AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539DE6D9271FC9DA00720AF7 /* LaunchScreen.storyboard */; };
 		539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */; };
+		53B681DB29A2ED63003327B6 /* TwitterAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B681DA29A2ED63003327B6 /* TwitterAPIModel.swift */; };
+		53B681DD29A2ED79003327B6 /* TwitterAPIPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B681DC29A2ED79003327B6 /* TwitterAPIPresenter.swift */; };
+		53B681DF29A2ED9F003327B6 /* TwitterAPIResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B681DE29A2ED9F003327B6 /* TwitterAPIResultViewController.swift */; };
 		53D83FC9287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +105,9 @@
 		539DE6DA271FC9DA00720AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		539DE6DC271FC9DA00720AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		53B681DA29A2ED63003327B6 /* TwitterAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPIModel.swift; sourceTree = "<group>"; };
+		53B681DC29A2ED79003327B6 /* TwitterAPIPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPIPresenter.swift; sourceTree = "<group>"; };
+		53B681DE29A2ED9F003327B6 /* TwitterAPIResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPIResultViewController.swift; sourceTree = "<group>"; };
 		53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDrinkMemoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -331,6 +337,7 @@
 		539DE6CD271FC9D800720AF7 /* Drinto */ = {
 			isa = PBXGroup;
 			children = (
+				53B681D629A2ED20003327B6 /* TwitterAPIComminucation */,
 				531E83612842F8EA0036FE76 /* Presenter */,
 				531E83602842F8E30036FE76 /* Model */,
 				53D129F22827A38300DA7E91 /* View */,
@@ -343,6 +350,40 @@
 				5313E5122956B7C20030570B /* GoogleService-Info.plist */,
 			);
 			path = Drinto;
+			sourceTree = "<group>";
+		};
+		53B681D629A2ED20003327B6 /* TwitterAPIComminucation */ = {
+			isa = PBXGroup;
+			children = (
+				53B681D929A2ED4D003327B6 /* Views */,
+				53B681D829A2ED43003327B6 /* Presenters */,
+				53B681D729A2ED32003327B6 /* Models */,
+			);
+			path = TwitterAPIComminucation;
+			sourceTree = "<group>";
+		};
+		53B681D729A2ED32003327B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53B681DA29A2ED63003327B6 /* TwitterAPIModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53B681D829A2ED43003327B6 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				53B681DC29A2ED79003327B6 /* TwitterAPIPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		53B681D929A2ED4D003327B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53B681DE29A2ED9F003327B6 /* TwitterAPIResultViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		53D129F22827A38300DA7E91 /* View */ = {
@@ -529,6 +570,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B681DF29A2ED9F003327B6 /* TwitterAPIResultViewController.swift in Sources */,
 				5324315D2839A07A005A8170 /* DrinkMemoryTableViewCell.swift in Sources */,
 				533EEBC92880164D00E63F79 /* ChartView.swift in Sources */,
 				532431632839A0AB005A8170 /* DrinkNewsTableViewCell.swift in Sources */,
@@ -539,6 +581,7 @@
 				531E83692842FB610036FE76 /* NewsDataModel.swift in Sources */,
 				5386CCEC284ADD85006F1A14 /* DrinkNewsPresenter.swift in Sources */,
 				53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */,
+				53B681DB29A2ED63003327B6 /* TwitterAPIModel.swift in Sources */,
 				53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */,
 				5377898F2851C6C40056576C /* DrinkMemoryRealmModel.swift in Sources */,
 				53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */,
@@ -546,6 +589,7 @@
 				530613E5295E81C90079ECA2 /* DrinkFeatureCheckModel.swift in Sources */,
 				53D83FC9287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift in Sources */,
 				53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */,
+				53B681DD29A2ED79003327B6 /* TwitterAPIPresenter.swift in Sources */,
 				532D0F4829457C11005ABF6B /* DrinkImageModel.swift in Sources */,
 				537789932851C7170056576C /* DrinkMemoryFirebaseModel.swift in Sources */,
 				53287B9C283774F400C2B96D /* DrinkNewsViewController.swift in Sources */,
