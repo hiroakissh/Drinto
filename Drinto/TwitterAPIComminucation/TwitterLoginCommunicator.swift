@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct TwitterLoginCommunicator {
+    func twitterLogin() async throws -> () {
+        // Twitterの確認
+    }
+}
