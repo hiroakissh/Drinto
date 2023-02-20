@@ -267,7 +267,7 @@
         <!--Item 2-->
         <scene sceneID="0yr-ce-XqC">
             <objects>
-                <viewController id="nXv-mj-Ghl" customClass="DrinkNewsViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nXv-mj-Ghl" customClass="TwitterAPIResultViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eRJ-5t-diS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,7 +276,7 @@
                                 <rect key="frame" x="10" y="178" width="394" height="635"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DrinkNewsCell" id="5iO-2p-Exa">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" id="5iO-2p-Exa">
                                         <rect key="frame" x="0.0" y="50" width="394" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5iO-2p-Exa" id="189-ED-EPF">
@@ -316,7 +316,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="g3M-N3-ln9"/>
                     <connections>
-                        <outlet property="tableView" destination="vLo-yh-E4n" id="tq1-Ah-FAO"/>
+                        <outlet property="tweetResultTableView" destination="vLo-yh-E4n" id="z3H-1c-FpO"/>
                         <segue destination="gwi-nY-XyP" kind="presentation" identifier="DrinkNewsDetailVC" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="kKb-ym-thx"/>
                     </connections>
                 </viewController>
@@ -911,7 +911,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="K8P-y3-fbK"/>
+        <segue reference="sbW-ek-exf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AddIcon" width="80" height="80"/>
