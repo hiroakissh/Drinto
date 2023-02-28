@@ -267,13 +267,13 @@
         <!--Item 2-->
         <scene sceneID="0yr-ce-XqC">
             <objects>
-                <viewController id="nXv-mj-Ghl" customClass="TwitterAPIResultViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nXv-mj-Ghl" customClass="YoutubeAPIResultViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eRJ-5t-diS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vLo-yh-E4n">
-                                <rect key="frame" x="10" y="178" width="394" height="635"/>
+                                <rect key="frame" x="10" y="178" width="394" height="684"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" id="5iO-2p-Exa">
@@ -316,7 +316,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="g3M-N3-ln9"/>
                     <connections>
-                        <outlet property="tweetResultTableView" destination="vLo-yh-E4n" id="z3H-1c-FpO"/>
+                        <outlet property="resultTableView" destination="vLo-yh-E4n" id="umL-je-sk7"/>
                         <segue destination="gwi-nY-XyP" kind="presentation" identifier="DrinkNewsDetailVC" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="kKb-ym-thx"/>
                     </connections>
                 </viewController>
@@ -798,7 +798,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="edf-hR-ShN" kind="relationship" relationship="viewControllers" id="96A-T1-i7m"/>
-                        <segue destination="nXv-mj-Ghl" kind="relationship" relationship="viewControllers" id="UCA-hS-EW1"/>
                         <segue destination="4T9-M0-9eM" kind="relationship" relationship="viewControllers" id="PwH-qs-DCn"/>
                         <segue destination="aYY-O7-oSL" kind="relationship" relationship="viewControllers" id="hKn-I5-csH"/>
                         <segue destination="CTT-cu-Vbe" kind="relationship" relationship="viewControllers" id="gTS-4T-QA9"/>

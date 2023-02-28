@@ -1,5 +1,5 @@
 //
-//  TwitterAPIResultViewController.swift
+//  YoutubeAPIResultViewController.swift
 //  Drinto
 //
 //  Created by HiroakiSaito on 2023/02/20.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class TwitterAPIResultViewController: UIViewController {
-    @IBOutlet private weak var tweetResultTableView: UITableView!
+class YoutubeAPIResultViewController: UIViewController {
+    @IBOutlet private weak var resultTableView: UITableView!
 
     private var tweets: [TweetModel] = []
 
@@ -24,8 +24,8 @@ class TwitterAPIResultViewController: UIViewController {
         testAPI.getTimeLine()
         print("2")
 
-        tweetResultTableView.dataSource = self
-        tweetResultTableView.delegate = self
+        resultTableView.dataSource = self
+        resultTableView.delegate = self
 
         // ダミー
         let testUser = TwitterUserModel(
@@ -38,17 +38,17 @@ class TwitterAPIResultViewController: UIViewController {
         let testTweet = TweetModel(id: "91011", text: "テスト", user: testUser)
 
         tweets.append(testTweet)
-        tweetResultTableView.reloadData()
+        resultTableView.reloadData()
     }
 }
 
-extension TwitterAPIResultViewController: UITableViewDelegate {
+extension YoutubeAPIResultViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("タップ")
     }
 }
 
-extension TwitterAPIResultViewController: UITableViewDataSource {
+extension YoutubeAPIResultViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tweets.count
     }

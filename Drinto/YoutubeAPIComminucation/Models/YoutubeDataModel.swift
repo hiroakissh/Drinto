@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct YoutubeDataModel {
+    let videoId: String?
+    let title: String?
+    let description: String?
+    let thumbnailImageURLString: String?
+    let channelTitle: String?
+    let publishTime: String?
+}

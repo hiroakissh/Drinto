@@ -1,5 +1,5 @@
 //
-//  TwitterAPIPresenter.swift
+//  YoutubeAPIPresenter.swift
 //  Drinto
 //
 //  Created by HiroakiSaito on 2023/02/20.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TwitterAPIPresenter {
+class YoutubeAPIPresenter {
 //    func getTimeLine() async throws -> String {
 //        let requestUrlString = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=@Saito1014&count=10"
 //
