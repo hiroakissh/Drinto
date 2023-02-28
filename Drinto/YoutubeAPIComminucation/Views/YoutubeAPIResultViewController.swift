@@ -12,8 +12,18 @@ class TwitterAPIResultViewController: UIViewController {
 
     private var tweets: [TweetModel] = []
 
+    private var testAPI = TwitterAPIPresenter()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+//        Task {
+//            try await testAPI.getTimeLine()
+//        }
+        print("1")
+        testAPI.getTimeLine()
+        print("2")
+
         tweetResultTableView.dataSource = self
         tweetResultTableView.delegate = self
 
