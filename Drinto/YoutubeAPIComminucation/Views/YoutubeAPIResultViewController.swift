@@ -10,34 +10,18 @@ import UIKit
 class YoutubeAPIResultViewController: UIViewController {
     @IBOutlet private weak var resultTableView: UITableView!
 
-    private var tweets: [TweetModel] = []
-
-    private var testAPI = TwitterAPIPresenter()
+    private var fetchYoutubeDataModel = FetchDataModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        Task {
-//            try await testAPI.getTimeLine()
-//        }
-        print("1")
-        testAPI.getTimeLine()
-        print("2")
+        Task {
+            try await fetchYoutubeDataModel.fetchYoutubeData(searchTitle: "ねこ")
+        }
 
         resultTableView.dataSource = self
         resultTableView.delegate = self
 
-        // ダミー
-        let testUser = TwitterUserModel(
-            id: "1234",
-            userId: "5678",
-            userName: "testUser",
-            profileImageURL: "https://test"
-        )
-
-        let testTweet = TweetModel(id: "91011", text: "テスト", user: testUser)
-
-        tweets.append(testTweet)
         resultTableView.reloadData()
     }
 }
@@ -50,13 +34,13 @@ extension YoutubeAPIResultViewController: UITableViewDelegate {
 
 extension YoutubeAPIResultViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tweets.count
+        return 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tweetCell = tableView.dequeueReusableCell(withIdentifier: "tweetCell", for: indexPath)
         var content = tweetCell.defaultContentConfiguration()
-        content.text = tweets[0].text
+        content.text = "test"
         tweetCell.contentConfiguration = content
         return tweetCell
     }

@@ -33,10 +33,10 @@
 		532D0F522945835E005ABF6B /* DrintoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D0F512945835E005ABF6B /* DrintoTests.swift */; };
 		532D0F5A29458A7D005ABF6B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 532D0F5929458A7D005ABF6B /* RealmSwift */; };
 		533EEBC92880164D00E63F79 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EEBC82880164D00E63F79 /* ChartView.swift */; };
-		53452DA828561A88008F2444 /* DrinkMemoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */; };
 		53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */; };
 		534BB07B284E2B2700628CF2 /* DrinkNewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */; };
 		535B26AE298E47F6000DCBC5 /* DrinkCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535B26AD298E47F6000DCBC5 /* DrinkCategoryModel.swift */; };
+		5367DB7D29B09EBE008889E0 /* YoutubeAPIDecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367DB7C29B09EBE008889E0 /* YoutubeAPIDecordModel.swift */; };
 		536839892940544E0078D81E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 536839882940544E0078D81E /* RealmSwift */; };
 		53726E1F29AD7E9400AD5636 /* YoutubeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53726E1E29AD7E9400AD5636 /* YoutubeDataModel.swift */; };
 		53726E2129AD7ECF00AD5636 /* FetchDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53726E2029AD7ECF00AD5636 /* FetchDataModel.swift */; };
@@ -88,10 +88,10 @@
 		532D0F4F2945835D005ABF6B /* DrintoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrintoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		532D0F512945835E005ABF6B /* DrintoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrintoTests.swift; sourceTree = "<group>"; };
 		533EEBC82880164D00E63F79 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
-		53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryDetailViewController.swift; sourceTree = "<group>"; };
 		53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemorySwiftModel.swift; sourceTree = "<group>"; };
 		534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsDetailViewController.swift; sourceTree = "<group>"; };
 		535B26AD298E47F6000DCBC5 /* DrinkCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCategoryModel.swift; sourceTree = "<group>"; };
+		5367DB7C29B09EBE008889E0 /* YoutubeAPIDecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeAPIDecordModel.swift; sourceTree = "<group>"; };
 		53726E1E29AD7E9400AD5636 /* YoutubeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeDataModel.swift; sourceTree = "<group>"; };
 		53726E2029AD7ECF00AD5636 /* FetchDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataModel.swift; sourceTree = "<group>"; };
 		5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRealmModel.swift; sourceTree = "<group>"; };
@@ -243,7 +243,6 @@
 			children = (
 				53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */,
 				5324315F2839A081005A8170 /* DrinkmemoryCell */,
-				53452DA728561A88008F2444 /* DrinkMemoryDetailViewController.swift */,
 				53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */,
 				533EEBC82880164D00E63F79 /* ChartView.swift */,
 			);
@@ -369,6 +368,7 @@
 			children = (
 				53726E1E29AD7E9400AD5636 /* YoutubeDataModel.swift */,
 				53726E2029AD7ECF00AD5636 /* FetchDataModel.swift */,
+				5367DB7C29B09EBE008889E0 /* YoutubeAPIDecordModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -580,7 +580,6 @@
 				53287BA42837758B00C2B96D /* SignInViewController.swift in Sources */,
 				53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */,
 				53726E2129AD7ECF00AD5636 /* FetchDataModel.swift in Sources */,
-				53452DA828561A88008F2444 /* DrinkMemoryDetailViewController.swift in Sources */,
 				539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */,
 				531E83692842FB610036FE76 /* NewsDataModel.swift in Sources */,
 				53726E1F29AD7E9400AD5636 /* YoutubeDataModel.swift in Sources */,
@@ -589,6 +588,7 @@
 				53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */,
 				5377898F2851C6C40056576C /* DrinkMemoryRealmModel.swift in Sources */,
 				53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */,
+				5367DB7D29B09EBE008889E0 /* YoutubeAPIDecordModel.swift in Sources */,
 				537789912851C6E90056576C /* DrinkMemoryRepository.swift in Sources */,
 				530613E5295E81C90079ECA2 /* DrinkFeatureCheckModel.swift in Sources */,
 				53D83FC9287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift in Sources */,

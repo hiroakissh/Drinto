@@ -264,7 +264,7 @@
             </objects>
             <point key="canvasLocation" x="-1930" y="849"/>
         </scene>
-        <!--Item 2-->
+        <!--movie-->
         <scene sceneID="0yr-ce-XqC">
             <objects>
                 <viewController id="nXv-mj-Ghl" customClass="YoutubeAPIResultViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
@@ -273,7 +273,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vLo-yh-E4n">
-                                <rect key="frame" x="10" y="178" width="394" height="684"/>
+                                <rect key="frame" x="10" y="178" width="394" height="635"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" id="5iO-2p-Exa">
@@ -314,7 +314,7 @@
                             <constraint firstItem="vLo-yh-E4n" firstAttribute="leading" secondItem="1QQ-vy-iAs" secondAttribute="leading" constant="10" id="tiy-EB-5yq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="g3M-N3-ln9"/>
+                    <tabBarItem key="tabBarItem" title="movie" id="g3M-N3-ln9"/>
                     <connections>
                         <outlet property="resultTableView" destination="vLo-yh-E4n" id="umL-je-sk7"/>
                         <segue destination="gwi-nY-XyP" kind="presentation" identifier="DrinkNewsDetailVC" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="kKb-ym-thx"/>
@@ -798,6 +798,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="edf-hR-ShN" kind="relationship" relationship="viewControllers" id="96A-T1-i7m"/>
+                        <segue destination="nXv-mj-Ghl" kind="relationship" relationship="viewControllers" id="E68-6z-4s9"/>
                         <segue destination="4T9-M0-9eM" kind="relationship" relationship="viewControllers" id="PwH-qs-DCn"/>
                         <segue destination="aYY-O7-oSL" kind="relationship" relationship="viewControllers" id="hKn-I5-csH"/>
                         <segue destination="CTT-cu-Vbe" kind="relationship" relationship="viewControllers" id="gTS-4T-QA9"/>
@@ -807,7 +808,7 @@
             </objects>
             <point key="canvasLocation" x="-467" y="1203"/>
         </scene>
-        <!--Item-->
+        <!--map-->
         <scene sceneID="dpW-iy-l84">
             <objects>
                 <viewController id="aYY-O7-oSL" customClass="MapViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
@@ -823,13 +824,13 @@
                         <viewLayoutGuide key="safeArea" id="Fpc-p1-xxe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="UPW-2m-XKe"/>
+                    <tabBarItem key="tabBarItem" title="map" id="UPW-2m-XKe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfN-kS-39C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="611.59420289855075" y="1878.3482142857142"/>
         </scene>
-        <!--Item-->
+        <!--setting-->
         <scene sceneID="kMN-SR-XA9">
             <objects>
                 <viewController id="CTT-cu-Vbe" customClass="MyPageViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
@@ -846,7 +847,7 @@
                         <viewLayoutGuide key="safeArea" id="7k3-2J-Z8v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="hUG-cu-xt7"/>
+                    <tabBarItem key="tabBarItem" title="setting" id="hUG-cu-xt7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Up3-bd-aEo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

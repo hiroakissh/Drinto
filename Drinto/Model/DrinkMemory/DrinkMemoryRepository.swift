@@ -60,7 +60,6 @@ class DrinkMemoryRepository: DrinkMemorySwiftModelInput {
             print("Realm Add Error")
             return
         }
-        print(realmModel)
     }
 
     func removeDrinkMemoryData(at index: Int) {
@@ -78,9 +77,6 @@ private extension DrinkMemorySwiftModel {
         self.drinkName = managedObject.drinkName
         self.category = managedObject.category
         self.imagePath = managedObject.imagePath
-        print(managedObject.drinkPoint[0])
-        print(managedObject.drinkPoint[0].value1)
-        print(type(of: managedObject.drinkPoint[0].value1))
         // TODO: Listを[Intに変換]
         self.drinkPoint = [
             managedObject.drinkPoint[0].value1,
@@ -95,7 +91,6 @@ private extension DrinkMemorySwiftModel {
     func convertArray(_ drinkPoint: List<DrinkPoint>) {
         var array = Array<Any>()
         array.append(contentsOf: Array(drinkPoint))
-        print(array)
     }
 
     func managedObject() -> DrinkMemoryRealmModel {
