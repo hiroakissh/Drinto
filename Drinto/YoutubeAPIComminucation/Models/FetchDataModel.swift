@@ -22,7 +22,8 @@ final class FetchDataModel {
 
     func fetchYoutubeData(searchTitle: String) async throws -> [YoutubeDataModel] {
         let searchTitle = String()
-        var urlString = "https://www.googleapis.com/youtube/v3/search?key=\(apiKey)&part=snippet&q=\(searchTitle)&maxResults=3"
+//        var urlString = "https://www.googleapis.com/youtube/v3/search?key=\(apiKey)&part=snippet&q=\(searchTitle)&maxResults=3"
+        var urlString = "https://www.googleaps.com/youtube/v3/search?key=\(apiKey)&part=snippet&q=\(searchTitle)&maxResults=3"
         let apiUrl = URL(string: urlString)
         guard let apiUrl = apiUrl else {
             throw APIClientError.invalidURL
@@ -51,7 +52,6 @@ final class FetchDataModel {
                     print(error.localizedDescription)
                     throw APIClientError.transRateDataError
                 }
-                print(youtubeDatas)
                 return youtubeDatas
             case  400...:
                 throw APIClientError.badStatus
