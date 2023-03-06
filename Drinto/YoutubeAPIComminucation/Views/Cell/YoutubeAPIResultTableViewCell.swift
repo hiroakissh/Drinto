@@ -8,6 +8,10 @@
 import UIKit
 
 class YoutubeAPIResultTableViewCell: UITableViewCell {
+    @IBOutlet weak var ThumbnailImageView: UIImageView!
+    @IBOutlet weak var youtubeTitleLabel: UILabel!
+    @IBOutlet weak var channelTitleLabel: UILabel!
+    @IBOutlet weak var postDateLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
