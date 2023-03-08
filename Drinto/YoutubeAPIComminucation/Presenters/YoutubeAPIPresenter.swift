@@ -17,7 +17,6 @@ protocol YoutubeAPIPresenterOutput {
 }
 
 class YoutubeAPIPresenter {
-
     private var youtubeAPIPresenter: YoutubeAPIPresenterOutput?
 
     var fetchDataModel = FetchDataModel()
@@ -37,5 +36,7 @@ extension YoutubeAPIPresenter: YoutubeAPIPresenterInput {
                 youtubeAPIPresenter?.getError(apiError: error)
             }
         }
+        print("fetchYoutubeData")
+        print(Thread.current.isMainThread)
     }
 }

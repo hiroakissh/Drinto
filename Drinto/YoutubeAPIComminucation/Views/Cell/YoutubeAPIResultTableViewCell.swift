@@ -8,7 +8,7 @@
 import UIKit
 
 class YoutubeAPIResultTableViewCell: UITableViewCell {
-    @IBOutlet weak var ThumbnailImageView: UIImageView!
+    @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var youtubeTitleLabel: UILabel!
     @IBOutlet weak var channelTitleLabel: UILabel!
     @IBOutlet weak var postDateLabel: UILabel!
@@ -23,5 +23,4 @@ class YoutubeAPIResultTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }
