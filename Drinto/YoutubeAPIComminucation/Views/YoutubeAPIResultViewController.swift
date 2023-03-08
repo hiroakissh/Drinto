@@ -9,6 +9,7 @@ import UIKit
 
 class YoutubeAPIResultViewController: UIViewController {
     @IBOutlet private weak var resultTableView: UITableView!
+    @IBOutlet private weak var categorySegmentedControl: UISegmentedControl!
 
     private var youtubeResultDatas = [YoutubeDataModel]()
 
@@ -27,15 +28,13 @@ class YoutubeAPIResultViewController: UIViewController {
         resultTableView.dataSource = self
         resultTableView.delegate = self
 
-        print("ViewDidLoad")
-        print(Thread.current.isMainThread)
-
         resultTableView.register(UINib(
             nibName: "YoutubeAPIResultTableViewCell",
             bundle: nil
         ),
         forCellReuseIdentifier: "YoutubeResultCell")
 
+        youtubeAPIPresenter.fetchYoutubeData(searchTitle: "猫")
         resultTableView.reloadData()
     }
 }
@@ -43,7 +42,6 @@ class YoutubeAPIResultViewController: UIViewController {
 extension YoutubeAPIResultViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("タップ")
-        youtubeAPIPresenter.fetchYoutubeData(searchTitle: "猫")
     }
 }
 

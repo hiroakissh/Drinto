@@ -331,6 +331,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="movie" id="g3M-N3-ln9"/>
                     <connections>
+                        <outlet property="categorySegmentedControl" destination="N9s-Qp-Nk6" id="lrB-Rd-Bym"/>
                         <outlet property="resultTableView" destination="vLo-yh-E4n" id="umL-je-sk7"/>
                         <segue destination="gwi-nY-XyP" kind="presentation" identifier="DrinkNewsDetailVC" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="kKb-ym-thx"/>
                     </connections>
