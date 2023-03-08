@@ -273,7 +273,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vLo-yh-E4n">
-                                <rect key="frame" x="10" y="178" width="394" height="635"/>
+                                <rect key="frame" x="10" y="197" width="394" height="616"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="resultCell" rowHeight="100" id="5iO-2p-Exa">
@@ -300,17 +300,32 @@
                                     <constraint firstAttribute="height" constant="80" id="TeR-ZZ-9ww"/>
                                 </constraints>
                             </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="N9s-Qp-Nk6">
+                                <rect key="frame" x="10" y="146" width="394" height="32"/>
+                                <color key="backgroundColor" name="MainColor1"/>
+                                <segments>
+                                    <segment title="全て"/>
+                                    <segment title="コーヒ"/>
+                                    <segment title="紅茶"/>
+                                    <segment title="日本茶"/>
+                                    <segment title="中国茶"/>
+                                    <segment title="その他"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1QQ-vy-iAs"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="EqH-f4-rvp" firstAttribute="top" secondItem="1QQ-vy-iAs" secondAttribute="top" constant="50" id="0iI-0O-uUq"/>
                             <constraint firstItem="vLo-yh-E4n" firstAttribute="bottom" secondItem="1QQ-vy-iAs" secondAttribute="bottom" id="9GQ-pP-lNG"/>
+                            <constraint firstItem="N9s-Qp-Nk6" firstAttribute="top" secondItem="dMx-Sv-LkS" secondAttribute="bottom" constant="8" symbolic="YES" id="I78-hi-DBe"/>
                             <constraint firstItem="dMx-Sv-LkS" firstAttribute="leading" secondItem="1QQ-vy-iAs" secondAttribute="leading" constant="35" id="U6F-0D-oye"/>
                             <constraint firstAttribute="trailing" secondItem="vLo-yh-E4n" secondAttribute="trailing" constant="10" id="U6j-Qc-94s"/>
                             <constraint firstItem="dMx-Sv-LkS" firstAttribute="top" secondItem="1QQ-vy-iAs" secondAttribute="top" constant="10" id="XL9-NP-5WX"/>
-                            <constraint firstItem="vLo-yh-E4n" firstAttribute="top" secondItem="dMx-Sv-LkS" secondAttribute="bottom" constant="40" id="aLW-uh-Ujr"/>
+                            <constraint firstItem="vLo-yh-E4n" firstAttribute="top" secondItem="N9s-Qp-Nk6" secondAttribute="bottom" constant="20" id="eOe-Yg-elJ"/>
+                            <constraint firstItem="N9s-Qp-Nk6" firstAttribute="leading" secondItem="1QQ-vy-iAs" secondAttribute="leading" constant="10" id="ena-OQ-Z0a"/>
                             <constraint firstItem="EqH-f4-rvp" firstAttribute="centerX" secondItem="eRJ-5t-diS" secondAttribute="centerX" id="kED-GO-AQ3"/>
+                            <constraint firstItem="1QQ-vy-iAs" firstAttribute="trailing" secondItem="N9s-Qp-Nk6" secondAttribute="trailing" constant="10" id="r0R-PQ-WG0"/>
                             <constraint firstItem="vLo-yh-E4n" firstAttribute="leading" secondItem="1QQ-vy-iAs" secondAttribute="leading" constant="10" id="tiy-EB-5yq"/>
                         </constraints>
                     </view>
