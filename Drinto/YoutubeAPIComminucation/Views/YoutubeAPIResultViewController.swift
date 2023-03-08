@@ -8,15 +8,7 @@
 import UIKit
 
 class YoutubeAPIResultViewController: UIViewController {
-    @IBOutlet private weak var resultTableView: UITableView! //{
-//        didSet {
-//            resultTableView.register(UINib(
-//                nibName: "YoutubeAPIResultTableViewCell",
-//                bundle: nil
-//            ),
-//            forCellReuseIdentifier: "YoutubeResultCell")
-//        }
-//    }
+    @IBOutlet private weak var resultTableView: UITableView!
 
     private var youtubeResultDatas = [YoutubeDataModel]()
 
@@ -62,8 +54,6 @@ extension YoutubeAPIResultViewController: UITableViewDataSource {
         }
         return youtubeResultDatas.count
     }
-
-
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if youtubeResultDatas.isEmpty {
