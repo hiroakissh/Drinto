@@ -311,6 +311,9 @@
                                     <segment title="中国茶"/>
                                     <segment title="その他"/>
                                 </segments>
+                                <connections>
+                                    <action selector="selectCategory:" destination="nXv-mj-Ghl" eventType="valueChanged" id="x5c-x1-NfU"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1QQ-vy-iAs"/>

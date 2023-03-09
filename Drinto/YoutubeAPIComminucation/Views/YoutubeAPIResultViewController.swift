@@ -34,8 +34,28 @@ class YoutubeAPIResultViewController: UIViewController {
         ),
         forCellReuseIdentifier: "YoutubeResultCell")
 
-        youtubeAPIPresenter.fetchYoutubeData(searchTitle: "猫")
+        youtubeAPIPresenter.fetchYoutubeData(searchTitle: "飲み物")
         resultTableView.reloadData()
+    }
+
+    @IBAction private func selectCategory(_ sender: UISegmentedControl) {
+        print(sender.selectedSegmentIndex)
+        switch sender.selectedSegmentIndex {
+        case 0:
+            youtubeAPIPresenter.fetchYoutubeData(searchTitle: "飲み物")
+        case 1:
+            youtubeAPIPresenter.fetchYoutubeData(searchTitle: "コーヒー")
+        case 2:
+            youtubeAPIPresenter.fetchYoutubeData(searchTitle: "紅茶")
+        case 3:
+            youtubeAPIPresenter.fetchYoutubeData(searchTitle: "日本茶")
+        case 4:
+            youtubeAPIPresenter.fetchYoutubeData(searchTitle: "中国茶")
+        case 5:
+            youtubeAPIPresenter.fetchYoutubeData(searchTitle: "新しい飲み物")
+        default:
+            break
+        }
     }
 }
 

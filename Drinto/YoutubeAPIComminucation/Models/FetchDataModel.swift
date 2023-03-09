@@ -21,9 +21,10 @@ final class FetchDataModel {
     var youtubeDatas = [YoutubeDataModel]()
 
     func fetchYoutubeData(searchTitle: String) async throws -> [YoutubeDataModel] {
-        let searchTitle = String()
         var urlString = "https://www.googleapis.com/youtube/v3/search?key=\(apiKey)&part=snippet&q=\(searchTitle)&maxResults=3"
-        let apiUrl = URL(string: urlString)
+        let encoderUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        guard let encoderUrlString = encoderUrlString else { throw APIClientError.invalidURL }
+        let apiUrl = URL(string: encoderUrlString)
         guard let apiUrl = apiUrl else {
             throw APIClientError.invalidURL
         }
