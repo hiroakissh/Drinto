@@ -315,6 +315,11 @@
                                     <action selector="selectCategory:" destination="nXv-mj-Ghl" eventType="valueChanged" id="x5c-x1-NfU"/>
                                 </connections>
                             </segmentedControl>
+                            <activityIndicatorView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Qgf-Yj-HiM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1QQ-vy-iAs"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -335,6 +340,7 @@
                     <tabBarItem key="tabBarItem" title="movie" id="g3M-N3-ln9"/>
                     <connections>
                         <outlet property="categorySegmentedControl" destination="N9s-Qp-Nk6" id="lrB-Rd-Bym"/>
+                        <outlet property="executingIndicator" destination="Qgf-Yj-HiM" id="zR1-Jp-S3b"/>
                         <outlet property="resultTableView" destination="vLo-yh-E4n" id="umL-je-sk7"/>
                         <segue destination="gwi-nY-XyP" kind="presentation" identifier="DrinkNewsDetailVC" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="kKb-ym-thx"/>
                     </connections>

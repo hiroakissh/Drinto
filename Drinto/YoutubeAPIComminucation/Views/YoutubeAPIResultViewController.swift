@@ -10,6 +10,7 @@ import UIKit
 class YoutubeAPIResultViewController: UIViewController {
     @IBOutlet private weak var resultTableView: UITableView!
     @IBOutlet private weak var categorySegmentedControl: UISegmentedControl!
+    @IBOutlet private weak var executingIndicator: UIActivityIndicatorView!
 
     private var youtubeResultDatas = [YoutubeDataModel]()
 
@@ -35,7 +36,16 @@ class YoutubeAPIResultViewController: UIViewController {
         forCellReuseIdentifier: "YoutubeResultCell")
 
         youtubeAPIPresenter.fetchYoutubeData(searchTitle: "飲み物")
-        resultTableView.reloadData()
+//        resultTableView.reloadData()
+        executingIndicator.isHidden = false
+    }
+
+    func hiddenIndicator() {
+        if executingIndicator.isHidden {
+            executingIndicator.isHidden = false
+        } else {
+            executingIndicator.isHidden = true
+        }
     }
 
     @IBAction private func selectCategory(_ sender: UISegmentedControl) {
@@ -56,6 +66,7 @@ class YoutubeAPIResultViewController: UIViewController {
         default:
             break
         }
+        executingIndicator.isHidden = false
     }
 }
 
@@ -100,7 +111,10 @@ extension YoutubeAPIResultViewController: YoutubeAPIPresenterOutput {
     func updateYoutubeData(youtubeDatas: [YoutubeDataModel]) {
         youtubeResultDatas = youtubeDatas
         Task.detached {
+            await self.resultTableView.setContentOffset(.zero, animated: true)
+            await self.resultTableView.layoutIfNeeded()
             await self.resultTableView.reloadData()
+            await self.hiddenIndicator()
         }
     }
 
