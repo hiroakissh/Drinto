@@ -84,6 +84,10 @@ extension YoutubeAPIResultViewController: UITableViewDataSource {
         return youtubeResultDatas.count
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        100
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if youtubeResultDatas.isEmpty {
             print("CellForRowAt")
