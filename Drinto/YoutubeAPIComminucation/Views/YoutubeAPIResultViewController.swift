@@ -36,16 +36,19 @@ class YoutubeAPIResultViewController: UIViewController {
         forCellReuseIdentifier: "YoutubeResultCell")
 
         youtubeAPIPresenter.fetchYoutubeData(searchTitle: "飲み物")
-//        resultTableView.reloadData()
         executingIndicator.isHidden = false
     }
 
-    func hiddenIndicator() {
+    private func hiddenIndicator() {
         if executingIndicator.isHidden {
             executingIndicator.isHidden = false
         } else {
             executingIndicator.isHidden = true
         }
+    }
+
+    private func setThumbnailImage(cell: YoutubeAPIResultTableViewCell, image: UIImage) {
+        cell.thumbnailImageView?.image = image
     }
 
     @IBAction private func selectCategory(_ sender: UISegmentedControl) {
@@ -107,6 +110,10 @@ extension YoutubeAPIResultViewController: UITableViewDataSource {
         resultCell.youtubeTitleLabel.text = youtubeResultDatas[indexPath.row].title ?? "取得エラー"
         resultCell.channelTitleLabel.text = youtubeResultDatas[indexPath.row].channelTitle ?? "取得エラー"
         resultCell.postDateLabel.text = youtubeResultDatas[indexPath.row].publishTime ?? "取得エラー"
+        youtubeAPIPresenter.fetchThumbnailImageData(
+            imageUrl: youtubeResultDatas[indexPath.row].thumbnailImageURLString ?? "",
+            indexPath: indexPath
+        )
         return resultCell
     }
 }
@@ -119,6 +126,16 @@ extension YoutubeAPIResultViewController: YoutubeAPIPresenterOutput {
             await self.resultTableView.layoutIfNeeded()
             await self.resultTableView.reloadData()
             await self.hiddenIndicator()
+        }
+    }
+
+    func updateThumbnailImageData(thumbnailImage: UIImage, indexPath: IndexPath) {
+        Task.detached {
+            guard let cell = await self.resultTableView.cellForRow(at: indexPath) as? YoutubeAPIResultTableViewCell
+            else {
+                fatalError("Cellの取得に失敗")
+            }
+            await self.setThumbnailImage(cell: cell, image: thumbnailImage)
         }
     }
 

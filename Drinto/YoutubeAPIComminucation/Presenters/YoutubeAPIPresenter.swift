@@ -6,13 +6,16 @@
 //
 
 import Foundation
+import UIKit
 
 protocol YoutubeAPIPresenterInput {
     func fetchYoutubeData(searchTitle: String)
+    func fetchThumbnailImageData(imageUrl: String, indexPath: IndexPath)
 }
 
 protocol YoutubeAPIPresenterOutput {
     func updateYoutubeData(youtubeDatas: [YoutubeDataModel])
+    func updateThumbnailImageData(thumbnailImage: UIImage, indexPath: IndexPath)
     func getError(apiError: Error)
 }
 
@@ -36,7 +39,16 @@ extension YoutubeAPIPresenter: YoutubeAPIPresenterInput {
                 youtubeAPIPresenter?.getError(apiError: error)
             }
         }
-        print("fetchYoutubeData")
-        print(Thread.current.isMainThread)
+    }
+
+    func fetchThumbnailImageData(imageUrl: String, indexPath: IndexPath) {
+        Task {
+            do {
+                let thumbnailImage = try await fetchDataModel.fetchThumbnailImage(imageUrlString: imageUrl)
+                youtubeAPIPresenter?.updateThumbnailImageData(thumbnailImage: thumbnailImage, indexPath: indexPath)
+            } catch {
+                youtubeAPIPresenter?.getError(apiError: error)
+            }
+        }
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum APIClientError: Error {
     case invalidURL
@@ -54,6 +55,30 @@ final class FetchDataModel {
                 }
                 return youtubeDatas
             case  400...:
+                throw APIClientError.badStatus
+            default:
+                fatalError("予期せぬステータスコード")
+            }
+        } catch {
+            throw APIClientError.serverError
+        }
+    }
+
+    func fetchThumbnailImage(imageUrlString: String) async throws -> UIImage {
+        let imageUrl = URL(string: imageUrlString)
+        guard let imageUrl = imageUrl else { throw APIClientError.invalidURL }
+        do {
+            let (data, response) = try await URLSession.shared.data(from: imageUrl)
+            guard let httpStatus = response as? HTTPURLResponse else { throw APIClientError.responseError }
+            switch httpStatus.statusCode {
+            case 200 ..< 400:
+                do {
+                    guard let imageData = UIImage(data: data) else { throw APIClientError.noData }
+                    return imageData
+                } catch {
+                    throw APIClientError.noData
+                }
+            case 400...:
                 throw APIClientError.badStatus
             default:
                 fatalError("予期せぬステータスコード")
