@@ -17,6 +17,15 @@ class YoutubeAPIResultViewController: UIViewController {
     private var fetchYoutubeDataModel = FetchDataModel()
     private var youtubeAPIPresenter: YoutubeAPIPresenterInput!
 
+    private var selectYoutubeData = YoutubeDataModel(
+        videoId: nil,
+        title: nil,
+        description: nil,
+        thumbnailImageURLString: nil,
+        channelTitle: nil,
+        publishTime: nil
+    )
+
     func inject(youtubeAPIPresenter: YoutubeAPIPresenterInput) {
         self.youtubeAPIPresenter = youtubeAPIPresenter
     }
@@ -78,9 +87,18 @@ class YoutubeAPIResultViewController: UIViewController {
 }
 
 extension YoutubeAPIResultViewController: UITableViewDelegate {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "YoutubePlayerVC" {
+            let youtubePlayerVC = segue.destination as? YoutubePlayerViewController
+            youtubePlayerVC?.youtubeData = self.selectYoutubeData
+        }
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "YoutubePlayerVC", sender: nil)
-        print("タップ")
+        if !youtubeResultDatas.isEmpty {
+            self.selectYoutubeData = youtubeResultDatas[indexPath.row]
+            performSegue(withIdentifier: "YoutubePlayerVC", sender: nil)
+        }
+        resultTableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
