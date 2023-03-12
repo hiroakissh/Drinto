@@ -79,6 +79,7 @@ class YoutubeAPIResultViewController: UIViewController {
 
 extension YoutubeAPIResultViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "YoutubePlayerVC", sender: nil)
         print("タップ")
     }
 }

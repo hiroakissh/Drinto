@@ -18,10 +18,7 @@
 		531E83692842FB610036FE76 /* NewsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531E83682842FB610036FE76 /* NewsDataModel.swift */; };
 		5324315D2839A07A005A8170 /* DrinkMemoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */; };
 		5324315E2839A07A005A8170 /* DrinkMemoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */; };
-		532431632839A0AB005A8170 /* DrinkNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532431612839A0AB005A8170 /* DrinkNewsTableViewCell.swift */; };
-		532431642839A0AB005A8170 /* DrinkNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532431622839A0AB005A8170 /* DrinkNewsTableViewCell.xib */; };
 		53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */; };
-		53287B9C283774F400C2B96D /* DrinkNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9B283774F400C2B96D /* DrinkNewsViewController.swift */; };
 		53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9D2837750500C2B96D /* MyPageViewController.swift */; };
 		53287BA02837751400C2B96D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9F2837751400C2B96D /* MapViewController.swift */; };
 		53287BA22837757000C2B96D /* AddDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA12837757000C2B96D /* AddDrinkViewController.swift */; };
@@ -34,11 +31,11 @@
 		532D0F5A29458A7D005ABF6B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 532D0F5929458A7D005ABF6B /* RealmSwift */; };
 		533EEBC92880164D00E63F79 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EEBC82880164D00E63F79 /* ChartView.swift */; };
 		53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */; };
-		534BB07B284E2B2700628CF2 /* DrinkNewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */; };
 		535B26AE298E47F6000DCBC5 /* DrinkCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535B26AD298E47F6000DCBC5 /* DrinkCategoryModel.swift */; };
 		5367DB7D29B09EBE008889E0 /* YoutubeAPIDecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367DB7C29B09EBE008889E0 /* YoutubeAPIDecordModel.swift */; };
 		5367DB8129B5658F008889E0 /* YoutubeAPIResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367DB7F29B5658F008889E0 /* YoutubeAPIResultTableViewCell.swift */; };
 		5367DB8229B5658F008889E0 /* YoutubeAPIResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5367DB8029B5658F008889E0 /* YoutubeAPIResultTableViewCell.xib */; };
+		5367DB8429BD824F008889E0 /* YoutubePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367DB8329BD824F008889E0 /* YoutubePlayerViewController.swift */; };
 		536839892940544E0078D81E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 536839882940544E0078D81E /* RealmSwift */; };
 		53726E1F29AD7E9400AD5636 /* YoutubeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53726E1E29AD7E9400AD5636 /* YoutubeDataModel.swift */; };
 		53726E2129AD7ECF00AD5636 /* FetchDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53726E2029AD7ECF00AD5636 /* FetchDataModel.swift */; };
@@ -75,10 +72,7 @@
 		531E83682842FB610036FE76 /* NewsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataModel.swift; sourceTree = "<group>"; };
 		5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryTableViewCell.swift; sourceTree = "<group>"; };
 		5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkMemoryTableViewCell.xib; sourceTree = "<group>"; };
-		532431612839A0AB005A8170 /* DrinkNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsTableViewCell.swift; sourceTree = "<group>"; };
-		532431622839A0AB005A8170 /* DrinkNewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkNewsTableViewCell.xib; sourceTree = "<group>"; };
 		53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkmemoryViewController.swift; sourceTree = "<group>"; };
-		53287B9B283774F400C2B96D /* DrinkNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsViewController.swift; sourceTree = "<group>"; };
 		53287B9D2837750500C2B96D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		53287B9F2837751400C2B96D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		53287BA12837757000C2B96D /* AddDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkViewController.swift; sourceTree = "<group>"; };
@@ -91,11 +85,11 @@
 		532D0F512945835E005ABF6B /* DrintoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrintoTests.swift; sourceTree = "<group>"; };
 		533EEBC82880164D00E63F79 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemorySwiftModel.swift; sourceTree = "<group>"; };
-		534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkNewsDetailViewController.swift; sourceTree = "<group>"; };
 		535B26AD298E47F6000DCBC5 /* DrinkCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCategoryModel.swift; sourceTree = "<group>"; };
 		5367DB7C29B09EBE008889E0 /* YoutubeAPIDecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeAPIDecordModel.swift; sourceTree = "<group>"; };
 		5367DB7F29B5658F008889E0 /* YoutubeAPIResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeAPIResultTableViewCell.swift; sourceTree = "<group>"; };
 		5367DB8029B5658F008889E0 /* YoutubeAPIResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YoutubeAPIResultTableViewCell.xib; sourceTree = "<group>"; };
+		5367DB8329BD824F008889E0 /* YoutubePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePlayerViewController.swift; sourceTree = "<group>"; };
 		53726E1E29AD7E9400AD5636 /* YoutubeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeDataModel.swift; sourceTree = "<group>"; };
 		53726E2029AD7ECF00AD5636 /* FetchDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataModel.swift; sourceTree = "<group>"; };
 		5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRealmModel.swift; sourceTree = "<group>"; };
@@ -233,15 +227,6 @@
 			path = DrinkmemoryCell;
 			sourceTree = "<group>";
 		};
-		532431602839A094005A8170 /* DeinkNewsCell */ = {
-			isa = PBXGroup;
-			children = (
-				532431612839A0AB005A8170 /* DrinkNewsTableViewCell.swift */,
-				532431622839A0AB005A8170 /* DrinkNewsTableViewCell.xib */,
-			);
-			path = DeinkNewsCell;
-			sourceTree = "<group>";
-		};
 		53287BA92837775C00C2B96D /* DrinkMemory */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,16 +236,6 @@
 				533EEBC82880164D00E63F79 /* ChartView.swift */,
 			);
 			path = DrinkMemory;
-			sourceTree = "<group>";
-		};
-		53287BAA2837777300C2B96D /* DrinkNews */ = {
-			isa = PBXGroup;
-			children = (
-				532431602839A094005A8170 /* DeinkNewsCell */,
-				53287B9B283774F400C2B96D /* DrinkNewsViewController.swift */,
-				534BB07A284E2B2700628CF2 /* DrinkNewsDetailViewController.swift */,
-			);
-			path = DrinkNews;
 			sourceTree = "<group>";
 		};
 		53287BAB2837777C00C2B96D /* DrinkMap */ = {
@@ -399,6 +374,7 @@
 			children = (
 				5367DB7E29B56568008889E0 /* Cell */,
 				53B681DE29A2ED9F003327B6 /* YoutubeAPIResultViewController.swift */,
+				5367DB8329BD824F008889E0 /* YoutubePlayerViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -410,7 +386,6 @@
 				53287BAD2837779600C2B96D /* AddDrink */,
 				53287BAC2837778500C2B96D /* Account */,
 				53287BAB2837777C00C2B96D /* DrinkMap */,
-				53287BAA2837777300C2B96D /* DrinkNews */,
 				53287BA92837775C00C2B96D /* DrinkMemory */,
 				539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */,
 				53287BAF2837782000C2B96D /* LaunchViewController.swift */,
@@ -530,7 +505,6 @@
 				539DE6D8271FC9DA00720AF7 /* Assets.xcassets in Resources */,
 				539DE6D6271FC9D800720AF7 /* Main.storyboard in Resources */,
 				5367DB8229B5658F008889E0 /* YoutubeAPIResultTableViewCell.xib in Resources */,
-				532431642839A0AB005A8170 /* DrinkNewsTableViewCell.xib in Resources */,
 				5313E5132956B7C20030570B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,10 +565,10 @@
 				53B681DF29A2ED9F003327B6 /* YoutubeAPIResultViewController.swift in Sources */,
 				5324315D2839A07A005A8170 /* DrinkMemoryTableViewCell.swift in Sources */,
 				533EEBC92880164D00E63F79 /* ChartView.swift in Sources */,
-				532431632839A0AB005A8170 /* DrinkNewsTableViewCell.swift in Sources */,
 				53287BA42837758B00C2B96D /* SignInViewController.swift in Sources */,
 				53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */,
 				53726E2129AD7ECF00AD5636 /* FetchDataModel.swift in Sources */,
+				5367DB8429BD824F008889E0 /* YoutubePlayerViewController.swift in Sources */,
 				539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */,
 				531E83692842FB610036FE76 /* NewsDataModel.swift in Sources */,
 				53726E1F29AD7E9400AD5636 /* YoutubeDataModel.swift in Sources */,
@@ -612,12 +586,10 @@
 				53B681DD29A2ED79003327B6 /* YoutubeAPIPresenter.swift in Sources */,
 				532D0F4829457C11005ABF6B /* DrinkImageModel.swift in Sources */,
 				537789932851C7170056576C /* DrinkMemoryFirebaseModel.swift in Sources */,
-				53287B9C283774F400C2B96D /* DrinkNewsViewController.swift in Sources */,
 				53287BB02837782000C2B96D /* LaunchViewController.swift in Sources */,
 				539DE6CF271FC9D800720AF7 /* AppDelegate.swift in Sources */,
 				5386CCEA284AD6AC006F1A14 /* FetchDrinkNewsData.swift in Sources */,
 				539DE6D1271FC9D800720AF7 /* SceneDelegate.swift in Sources */,
-				534BB07B284E2B2700628CF2 /* DrinkNewsDetailViewController.swift in Sources */,
 				535B26AE298E47F6000DCBC5 /* DrinkCategoryModel.swift in Sources */,
 				53287BA02837751400C2B96D /* MapViewController.swift in Sources */,
 				537789952851C7290056576C /* DrinkMemoryPresenter.swift in Sources */,
