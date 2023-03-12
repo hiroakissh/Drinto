@@ -51,6 +51,10 @@ class YoutubeAPIResultViewController: UIViewController {
         cell.thumbnailImageView?.image = image
     }
 
+    private func setEmptyArray() {
+        youtubeResultDatas = []
+    }
+
     @IBAction private func selectCategory(_ sender: UISegmentedControl) {
         print(sender.selectedSegmentIndex)
         switch sender.selectedSegmentIndex {
@@ -97,7 +101,7 @@ extension YoutubeAPIResultViewController: UITableViewDataSource {
             print(Thread.current.isMainThread)
             let resultCell = tableView.dequeueReusableCell(withIdentifier: "resultCell", for: indexPath)
             var content = resultCell.defaultContentConfiguration()
-            content.text = "データ取得なし"
+            content.text = "データ取得失敗しました。ネット環境をお確かめの上，再度ご確認ください。"
             resultCell.contentConfiguration = content
             return resultCell
         }
@@ -140,6 +144,11 @@ extension YoutubeAPIResultViewController: YoutubeAPIPresenterOutput {
     }
 
     func getError(apiError: Error) {
+        Task.detached {
+            await self.setEmptyArray()
+            await self.resultTableView.reloadData()
+            await self.hiddenIndicator()
+        }
         print(apiError)
         print(type(of: apiError))
     }
