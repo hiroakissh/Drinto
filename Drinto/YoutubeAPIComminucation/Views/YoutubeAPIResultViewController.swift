@@ -169,6 +169,5 @@ extension YoutubeAPIResultViewController: YoutubeAPIPresenterOutput {
             await self.hiddenIndicator()
         }
         print(apiError)
-        print(type(of: apiError))
     }
 }

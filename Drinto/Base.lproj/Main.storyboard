@@ -356,10 +356,27 @@
                     <view key="view" contentMode="scaleToFill" id="f8c-Y1-tRa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdZ-VR-UMr" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="92" width="414" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="BzG-Ve-S88"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Cgb-2c-J01"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cgb-2c-J01" firstAttribute="trailing" secondItem="bdZ-VR-UMr" secondAttribute="trailing" id="3S7-bY-Qcq"/>
+                            <constraint firstItem="bdZ-VR-UMr" firstAttribute="leading" secondItem="Cgb-2c-J01" secondAttribute="leading" id="GcG-qn-clu"/>
+                            <constraint firstItem="bdZ-VR-UMr" firstAttribute="top" secondItem="Cgb-2c-J01" secondAttribute="top" id="vp3-ZP-nJ1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BIj-EU-0Ow"/>
+                    <connections>
+                        <outlet property="playerView" destination="bdZ-VR-UMr" id="fZb-F4-DtF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uyd-eI-EZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
