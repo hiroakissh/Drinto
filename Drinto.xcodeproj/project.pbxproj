@@ -37,7 +37,7 @@
 		5367DB8229B5658F008889E0 /* YoutubeAPIResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5367DB8029B5658F008889E0 /* YoutubeAPIResultTableViewCell.xib */; };
 		5367DB8429BD824F008889E0 /* YoutubePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367DB8329BD824F008889E0 /* YoutubePlayerViewController.swift */; };
 		5367DB8729BD8B66008889E0 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 5367DB8629BD8B66008889E0 /* YouTubeiOSPlayerHelper */; };
-		5367DB8929C02798008889E0 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367DB8829C02798008889E0 /* AccessToken.swift */; };
+		5367DB8B29C02A87008889E0 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367DB8A29C02A87008889E0 /* AccessToken.swift */; };
 		536839892940544E0078D81E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 536839882940544E0078D81E /* RealmSwift */; };
 		53726E1F29AD7E9400AD5636 /* YoutubeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53726E1E29AD7E9400AD5636 /* YoutubeDataModel.swift */; };
 		53726E2129AD7ECF00AD5636 /* FetchDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53726E2029AD7ECF00AD5636 /* FetchDataModel.swift */; };
@@ -92,7 +92,7 @@
 		5367DB7F29B5658F008889E0 /* YoutubeAPIResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeAPIResultTableViewCell.swift; sourceTree = "<group>"; };
 		5367DB8029B5658F008889E0 /* YoutubeAPIResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YoutubeAPIResultTableViewCell.xib; sourceTree = "<group>"; };
 		5367DB8329BD824F008889E0 /* YoutubePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePlayerViewController.swift; sourceTree = "<group>"; };
-		5367DB8829C02798008889E0 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		5367DB8A29C02A87008889E0 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 		53726E1E29AD7E9400AD5636 /* YoutubeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeDataModel.swift; sourceTree = "<group>"; };
 		53726E2029AD7ECF00AD5636 /* FetchDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataModel.swift; sourceTree = "<group>"; };
 		5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRealmModel.swift; sourceTree = "<group>"; };
@@ -341,7 +341,7 @@
 				539DE6D7271FC9DA00720AF7 /* Assets.xcassets */,
 				539DE6DC271FC9DA00720AF7 /* Info.plist */,
 				5313E5122956B7C20030570B /* GoogleService-Info.plist */,
-				5367DB8829C02798008889E0 /* AccessToken.swift */,
+				5367DB8A29C02A87008889E0 /* AccessToken.swift */,
 			);
 			path = Drinto;
 			sourceTree = "<group>";
@@ -601,7 +601,7 @@
 				53287BA02837751400C2B96D /* MapViewController.swift in Sources */,
 				537789952851C7290056576C /* DrinkMemoryPresenter.swift in Sources */,
 				53287BA22837757000C2B96D /* AddDrinkViewController.swift in Sources */,
-				5367DB8929C02798008889E0 /* AccessToken.swift in Sources */,
+				5367DB8B29C02A87008889E0 /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
