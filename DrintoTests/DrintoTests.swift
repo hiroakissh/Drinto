@@ -20,20 +20,16 @@ final class DrintoTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testGetArticles() {
-        let fetchDrinkNewsData = FetchDrinkNewsData()
-        let exp: XCTestExpectation = expectation(description: "wait for finish")
-        fetchDrinkNewsData.fetchDrinkNewsData { result in
-            switch result {
-            case .failure(let error):
-                print("error")
-                print(error)
-            case .success(let loadedNewsData):
-                print("Succes")
-                print(loadedNewsData)
-                exp.fulfill()
+    var youtubeDatas = [YoutubeDataModel]()
+    func testFetchYoutubeData() {
+        let fetchYoutubeData = FetchDataModel()
+        Task.detached {
+            do {
+                try await self.youtubeDatas = fetchYoutubeData.fetchYoutubeData(searchTitle: "コーヒー")
+                XCTAssertEqual(self.youtubeDatas.count, 20, "not get 50items")
+            } catch {
+                throw APIClientError.noData
             }
         }
-        wait(for: [exp], timeout: 5)
     }
 }
