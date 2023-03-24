@@ -12,10 +12,10 @@ import FirebaseCore
 
 final class DrintoTests: XCTestCase {
 
-    var fetchYoutubeData: MockFetchDataModelInput!
+    var fetchYoutubeData: FetchDataModelInput!
 
-    override class func setUp() {
-        self.fetchYoutubeData = MockFetchDataModelInput()
+    override func setUp() {
+        fetchYoutubeData = MockFetchDataModelInput()
     }
 
     override func tearDown() {
@@ -32,22 +32,12 @@ final class DrintoTests: XCTestCase {
     }
 
     var youtubeDatas = [YoutubeDataModel]()
-    func testSuccessFetchYoutubeData() async throws {
-
-        do {
-            try await self.youtubeDatas = fetchYoutubeData.fetchYoutubeData(searchTitle: "コーヒー")
-            print(self.youtubeDatas)
-            print("do")
-            XCTAssertEqual(self.youtubeDatas.count, 20, "not get 50items")
-        }
-            throw APIClientError.noData
-        }
 
     func testFetchYoutubeData() async {
-        var mock = MockFetchDataModelInput()
         do {
-            mock.youtubeDataModels = try await  mock.fetchYoutubeData(searchTitle: "コーヒー")
-            XCTAssertEqual(mock.youtubeDataModels.count, 5)
+            youtubeDatas = try await  fetchYoutubeData.fetchYoutubeData(searchTitle: "コーヒー")
+            print(youtubeDatas)
+            XCTAssertEqual(youtubeDatas.count, 20)
         } catch {
             print(error.localizedDescription)
         }
@@ -55,8 +45,9 @@ final class DrintoTests: XCTestCase {
 }
 
 struct MockFetchDataModelInput: FetchDataModelInput {
-    var youtubeDataModels = [YoutubeDataModel] ()
+    var youtubeDataModels = [YoutubeDataModel]()
+    var youtubeFetchData = FetchDataModel()
     func fetchYoutubeData(searchTitle: String) async throws -> [Drinto.YoutubeDataModel] {
-        return youtubeDataModels
+        return try await youtubeFetchData.fetchYoutubeData(searchTitle: searchTitle)
     }
 }
