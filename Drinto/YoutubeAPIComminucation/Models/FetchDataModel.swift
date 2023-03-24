@@ -17,7 +17,11 @@ enum APIClientError: Error {
     case transRateDataError
 }
 
-final class FetchDataModel {
+protocol FetchDataModelInput {
+    func fetchYoutubeData(searchTitle: String) async throws -> [YoutubeDataModel]
+}
+
+final class FetchDataModel: FetchDataModelInput {
     var youtubeDatas = [YoutubeDataModel]()
 
     func fetchYoutubeData(searchTitle: String) async throws -> [YoutubeDataModel] {

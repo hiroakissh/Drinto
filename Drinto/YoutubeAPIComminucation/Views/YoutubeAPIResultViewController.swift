@@ -14,7 +14,6 @@ class YoutubeAPIResultViewController: UIViewController {
 
     private var youtubeResultDatas = [YoutubeDataModel]()
 
-    private var fetchYoutubeDataModel = FetchDataModel()
     private var youtubeAPIPresenter: YoutubeAPIPresenterInput!
 
     private var selectYoutubeData = YoutubeDataModel(
