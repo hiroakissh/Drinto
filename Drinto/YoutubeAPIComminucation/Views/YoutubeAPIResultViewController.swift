@@ -63,6 +63,19 @@ class YoutubeAPIResultViewController: UIViewController {
         youtubeResultDatas = []
     }
 
+    func loadErrorAlert() {
+        let errorAlert = UIAlertController(
+            title: "データ取得エラー",
+            message: "通信環境が良くありません。再度，読み込みを行なってください",
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.resultTableView.reloadData()
+        }
+        errorAlert.addAction(okAction)
+        present(errorAlert, animated: true)
+    }
+
     @IBAction private func selectCategory(_ sender: UISegmentedControl) {
         print(sender.selectedSegmentIndex)
         switch sender.selectedSegmentIndex {
@@ -155,7 +168,9 @@ extension YoutubeAPIResultViewController: YoutubeAPIPresenterOutput {
         Task.detached {
             guard let cell = await self.resultTableView.cellForRow(at: indexPath) as? YoutubeAPIResultTableViewCell
             else {
-                fatalError("Cellの取得に失敗")
+//                fatalError("Cellの取得に失敗")
+                await self.loadErrorAlert()
+                return
             }
             await self.setThumbnailImage(cell: cell, image: thumbnailImage)
         }

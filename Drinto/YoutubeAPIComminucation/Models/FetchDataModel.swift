@@ -15,6 +15,7 @@ enum APIClientError: Error {
     case noData
     case badStatus
     case transRateDataError
+    case timeOutError
 }
 
 protocol FetchDataModelInput {
@@ -32,8 +33,9 @@ final class FetchDataModel: FetchDataModelInput {
         guard let apiUrl = apiUrl else {
             throw APIClientError.invalidURL
         }
+        let urlRequest = URLRequest(url: apiUrl, timeoutInterval: 5)
         do {
-            let (data, response) = try await URLSession.shared.data(from: apiUrl)
+            let (data, response) = try await URLSession.shared.data(for: urlRequest)
             guard let httpStatus = response as? HTTPURLResponse else {
                 throw APIClientError.responseError
             }
@@ -52,7 +54,7 @@ final class FetchDataModel: FetchDataModelInput {
                         )
                         return youtubeData
                     })
-                } catch {
+                } catch let error {
                     print(error.localizedDescription)
                     throw APIClientError.transRateDataError
                 }
