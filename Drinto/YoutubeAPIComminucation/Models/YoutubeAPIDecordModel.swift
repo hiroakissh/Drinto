@@ -11,8 +11,14 @@ struct YoutubeAPIResult: Decodable {
     var items: [Items]
 }
 struct Items: Decodable {
+    var id: IdDatas
     var snippet: YoutubeDatas
 }
+
+struct IdDatas: Decodable {
+    var videoId: String?
+}
+
 struct YoutubeDatas: Decodable {
     var publishedAt: String?
     var channelId: String?

@@ -45,7 +45,7 @@ final class FetchDataModel: FetchDataModelInput {
                     let responseDatas = try JSONDecoder().decode(YoutubeAPIResult.self, from: data)
                     youtubeDatas = responseDatas.items.map({ item in
                         let youtubeData = YoutubeDataModel(
-                            videoId: item.snippet.channelId,
+                            videoId: item.id.videoId,
                             title: item.snippet.title,
                             description: item.snippet.description,
                             thumbnailImageURLString: item.snippet.thumbnails.medium.url,
