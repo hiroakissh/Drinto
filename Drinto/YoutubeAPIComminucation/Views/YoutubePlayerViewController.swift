@@ -12,7 +12,10 @@ import YouTubeiOSPlayerHelper
 
 class YoutubePlayerViewController: UIViewController {
     @IBOutlet private var playerView: YTPlayerView!
-    @IBOutlet private weak var youtubeTitle: UILabel!
+    @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var publishLabel: UILabel!
+    @IBOutlet private weak var channelLabel: UILabel!
+    @IBOutlet private weak var openYoutubeApp: UIButton!
 
     var youtubeData = YoutubeDataModel(
         videoId: nil,
@@ -32,19 +35,6 @@ class YoutubePlayerViewController: UIViewController {
               let publishTime = youtubeData.publishTime
         else { return }
         navigationItem.title = title
-        // ステータスバーの高さ取得
-        let statusBarHeight = UIApplication.shared.statusBarFrame.height
-
-        // ナビゲーションバーの高さ取得
-        let navBarHeight = self.navigationController?.navigationBar.frame.height
-        playerView = YTPlayerView(
-            frame: CGRect(
-                x: 0,
-                y: statusBarHeight + navBarHeight!,
-                width: view.frame.size.width,
-                height: 240
-            )
-        )
         playerView.delegate = self
         print(videoId)
         playerView.load(
@@ -53,9 +43,10 @@ class YoutubePlayerViewController: UIViewController {
         )
         view.addSubview(playerView)
         // Youtubeアプリに画面遷移するボタンなどの用意
-        // Youtubeの説明
-        // Youtubeチャンネル名
-        // 更新日を画面下側に表示
+        channelLabel.text = channelTitle
+        publishLabel.text = publishTime
+        guard let description = youtubeData.description else { return }
+        descriptionLabel.text = description
     }
 }
 
