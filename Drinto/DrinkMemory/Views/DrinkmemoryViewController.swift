@@ -63,11 +63,8 @@ extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch categoryType {
         case .all:
-            print("all count")
             return drinkMemoryPresenter?.numberOfDrinkMemory ?? 0
         case .category:
-            print("category count")
-            print(drinkMemoryPresenter.numberOfDrinkMemoryInCategory)
             return drinkMemoryPresenter.numberOfDrinkMemoryInCategory
         }
     }
@@ -111,8 +108,6 @@ extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate 
         }
         // TODO: Imagepathに関しての追記
         if indexDrinkMemory.imagePath != nil {
-            print(drinkCell.drinkImageView.frame.width)
-            print(drinkCell.drinkImageView.frame.height)
             drinkCell.drinkImageView.image = drinkImageModel.getImageData(imageUUID: indexDrinkMemory.uuidString)
         }
         return drinkCell

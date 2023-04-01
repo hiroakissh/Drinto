@@ -196,6 +196,15 @@
         "revision" : "01835dc202670b5bb90d07f3eae41867e9ed29f6",
         "version" : "5.0.1"
       }
+    },
+    {
+      "identity" : "youtube-ios-player-helper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/youtube/youtube-ios-player-helper.git",
+      "state" : {
+        "revision" : "f57129cd4380ec0a74dd3a59da3270a1d653d59b",
+        "version" : "1.0.4"
+      }
     }
   ],
   "version" : 2

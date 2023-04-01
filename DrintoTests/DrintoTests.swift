@@ -12,28 +12,42 @@ import FirebaseCore
 
 final class DrintoTests: XCTestCase {
 
+    var fetchYoutubeData: FetchDataModelInput!
+
+    override func setUp() {
+        fetchYoutubeData = MockFetchDataModelInput()
+    }
+
+    override func tearDown() {
+        self.fetchYoutubeData = nil
+    }
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+
     }
 
-    func testGetArticles() {
-        let fetchDrinkNewsData = FetchDrinkNewsData()
-        let exp: XCTestExpectation = expectation(description: "wait for finish")
-        fetchDrinkNewsData.fetchDrinkNewsData { result in
-            switch result {
-            case .failure(let error):
-                print("error")
-                print(error)
-            case .success(let loadedNewsData):
-                print("Succes")
-                print(loadedNewsData)
-                exp.fulfill()
-            }
+    var youtubeDatas = [YoutubeDataModel]()
+
+    func testFetchYoutubeData() async {
+        do {
+            youtubeDatas = try await  fetchYoutubeData.fetchYoutubeData(searchTitle: "コーヒー")
+            print(youtubeDatas)
+            XCTAssertEqual(youtubeDatas.count, 20)
+        } catch {
+            print(error.localizedDescription)
         }
-        wait(for: [exp], timeout: 5)
+    }
+}
+
+struct MockFetchDataModelInput: FetchDataModelInput {
+    var youtubeDataModels = [YoutubeDataModel]()
+    var youtubeFetchData = FetchDataModel()
+    func fetchYoutubeData(searchTitle: String) async throws -> [Drinto.YoutubeDataModel] {
+        return try await youtubeFetchData.fetchYoutubeData(searchTitle: searchTitle)
     }
 }
