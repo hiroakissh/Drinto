@@ -8,3 +8,4 @@
 import Foundation
 
 let youtubeAccessToken = "AIzaSyA0DaZX_i6fPHgxCBLPfkrWX9mN1sfAwXQ"
+let guruNaviAccessToken = "328365f6761180ee"
