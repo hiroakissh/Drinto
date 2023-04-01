@@ -33,7 +33,7 @@ final class FetchDataModel: FetchDataModelInput {
         guard let apiUrl = apiUrl else {
             throw APIClientError.invalidURL
         }
-        let urlRequest = URLRequest(url: apiUrl, timeoutInterval: 5)
+        let urlRequest = URLRequest(url: apiUrl, timeoutInterval: 10)
         do {
             let (data, response) = try await URLSession.shared.data(for: urlRequest)
             guard let httpStatus = response as? HTTPURLResponse else {
