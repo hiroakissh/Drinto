@@ -14,6 +14,8 @@
 		5313E50D2956AEDD0030570B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5313E50C2956AEDD0030570B /* FirebaseFirestore */; };
 		5313E50F2956AEDD0030570B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5313E50E2956AEDD0030570B /* FirebaseStorage */; };
 		5313E5132956B7C20030570B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5313E5122956B7C20030570B /* GoogleService-Info.plist */; };
+		531A20E029EB79C300E00A27 /* MapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A20DF29EB79C300E00A27 /* MapTest.swift */; };
+		531A20E229EB79E400E00A27 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A20E129EB79E400E00A27 /* MapPresenter.swift */; };
 		5320924E29CD92E4006045F7 /* DrinkFeatureCheckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5320924D29CD92E4006045F7 /* DrinkFeatureCheckModel.swift */; };
 		5324315D2839A07A005A8170 /* DrinkMemoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */; };
 		5324315E2839A07A005A8170 /* DrinkMemoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */; };
@@ -68,6 +70,8 @@
 
 /* Begin PBXFileReference section */
 		5313E5122956B7C20030570B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		531A20DF29EB79C300E00A27 /* MapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTest.swift; sourceTree = "<group>"; };
+		531A20E129EB79E400E00A27 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		5320924D29CD92E4006045F7 /* DrinkFeatureCheckModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkFeatureCheckModel.swift; sourceTree = "<group>"; };
 		5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryTableViewCell.swift; sourceTree = "<group>"; };
 		5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkMemoryTableViewCell.xib; sourceTree = "<group>"; };
@@ -143,6 +147,14 @@
 				5320924D29CD92E4006045F7 /* DrinkFeatureCheckModel.swift */,
 			);
 			path = DrinkFeature;
+			sourceTree = "<group>";
+		};
+		531A20DE29EB798E00E00A27 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				531A20DF29EB79C300E00A27 /* MapTest.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		5320923D29CD8C28006045F7 /* DrinkMemory */ = {
@@ -275,6 +287,7 @@
 		5320924B29CD8D9A006045F7 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				531A20E129EB79E400E00A27 /* MapPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -307,6 +320,7 @@
 		532D0F502945835D005ABF6B /* DrintoTests */ = {
 			isa = PBXGroup;
 			children = (
+				531A20DE29EB798E00E00A27 /* Map */,
 				532D0F512945835E005ABF6B /* DrintoTests.swift */,
 			);
 			path = DrintoTests;
@@ -571,6 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531A20E029EB79C300E00A27 /* MapTest.swift in Sources */,
 				532D0F522945835E005ABF6B /* DrintoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +613,7 @@
 				537789912851C6E90056576C /* DrinkMemoryRepository.swift in Sources */,
 				53D83FC9287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift in Sources */,
 				53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */,
+				531A20E229EB79E400E00A27 /* MapPresenter.swift in Sources */,
 				53B681DD29A2ED79003327B6 /* YoutubeAPIPresenter.swift in Sources */,
 				532D0F4829457C11005ABF6B /* DrinkImageModel.swift in Sources */,
 				537789932851C7170056576C /* DrinkMemoryFirebaseModel.swift in Sources */,
