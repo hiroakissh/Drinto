@@ -7,3 +7,16 @@
 
 import Foundation
 
+protocol MapPresenterInput {
+    func fetchLocationData() -> [Any]
+}
+
+protocol MapPresenterOutput {
+
+}
+
+class MapPresenter: MapPresenterInput {
+    func fetchLocationData() -> [Any] {
+        <#code#>
+    }
+}
