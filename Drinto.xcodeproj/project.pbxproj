@@ -206,6 +206,13 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		531A22492A023C0A00E00A27 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		5320923D29CD8C28006045F7 /* DrinkMemory */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,6 +422,7 @@
 		539DE6CD271FC9D800720AF7 /* Drinto */ = {
 			isa = PBXGroup;
 			children = (
+				531A22492A023C0A00E00A27 /* DI */,
 				5320924929CD8D88006045F7 /* Map */,
 				5320924529CD8D24006045F7 /* Login */,
 				5320924129CD8CFB006045F7 /* Account */,
