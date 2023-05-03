@@ -1,0 +1,207 @@
+
+/* Class = "UIButton"; configuration.title = "新規登録"; ObjectID = "3Lt-H7-vHo"; */
+"3Lt-H7-vHo.configuration.title" = "新規登録";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3Lt-H7-vHo"; */
+"3Lt-H7-vHo.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "新規登録"; ObjectID = "5Rs-AG-OBh"; */
+"5Rs-AG-OBh.configuration.title" = "新規登録";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5Rs-AG-OBh"; */
+"5Rs-AG-OBh.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "渋み"; ObjectID = "6uX-42-urt"; */
+"6uX-42-urt.text" = "渋み";
+
+/* Class = "UILabel"; text = "Channel名"; ObjectID = "ABW-3B-NrV"; */
+"ABW-3B-NrV.text" = "Channel名";
+
+/* Class = "UITextField"; text = "E-mail"; ObjectID = "Ao0-aS-u9c"; */
+"Ao0-aS-u9c.text" = "E-mail";
+
+/* Class = "UITabBarItem"; title = "Drinto"; ObjectID = "CJP-Ay-D3M"; */
+"CJP-Ay-D3M.title" = "Drinto";
+
+/* Class = "UITextField"; text = "E-mail"; ObjectID = "CMx-Nd-uNH"; */
+"CMx-Nd-uNH.text" = "E-mail";
+
+/* Class = "UILabel"; text = "並び替え"; ObjectID = "DGI-PO-zkd"; */
+"DGI-PO-zkd.text" = "並び替え";
+
+/* Class = "UILabel"; text = "Dink Infomation"; ObjectID = "EqH-f4-rvp"; */
+"EqH-f4-rvp.text" = "Dink Infomation";
+
+/* Class = "UITextField"; text = "Password"; ObjectID = "FhA-q6-832"; */
+"FhA-q6-832.text" = "Password";
+
+/* Class = "UILabel"; text = "商品名："; ObjectID = "IiO-kZ-MRj"; */
+"IiO-kZ-MRj.text" = "商品名：";
+
+/* Class = "UITextField"; text = "Password"; ObjectID = "KMD-a9-eYG"; */
+"KMD-a9-eYG.text" = "Password";
+
+/* Class = "UISegmentedControl"; N9s-Qp-Nk6.segmentTitles[0] = "全て"; ObjectID = "N9s-Qp-Nk6"; */
+"N9s-Qp-Nk6.segmentTitles[0]" = "全て";
+
+/* Class = "UISegmentedControl"; N9s-Qp-Nk6.segmentTitles[1] = "コーヒ"; ObjectID = "N9s-Qp-Nk6"; */
+"N9s-Qp-Nk6.segmentTitles[1]" = "コーヒ";
+
+/* Class = "UISegmentedControl"; N9s-Qp-Nk6.segmentTitles[2] = "紅茶"; ObjectID = "N9s-Qp-Nk6"; */
+"N9s-Qp-Nk6.segmentTitles[2]" = "紅茶";
+
+/* Class = "UISegmentedControl"; N9s-Qp-Nk6.segmentTitles[3] = "日本茶"; ObjectID = "N9s-Qp-Nk6"; */
+"N9s-Qp-Nk6.segmentTitles[3]" = "日本茶";
+
+/* Class = "UISegmentedControl"; N9s-Qp-Nk6.segmentTitles[4] = "中国茶"; ObjectID = "N9s-Qp-Nk6"; */
+"N9s-Qp-Nk6.segmentTitles[4]" = "中国茶";
+
+/* Class = "UISegmentedControl"; N9s-Qp-Nk6.segmentTitles[5] = "その他"; ObjectID = "N9s-Qp-Nk6"; */
+"N9s-Qp-Nk6.segmentTitles[5]" = "その他";
+
+/* Class = "UISegmentedControl"; Nwj-o6-Z5H.segmentTitles[0] = "全て"; ObjectID = "Nwj-o6-Z5H"; */
+"Nwj-o6-Z5H.segmentTitles[0]" = "全て";
+
+/* Class = "UISegmentedControl"; Nwj-o6-Z5H.segmentTitles[1] = "コーヒー"; ObjectID = "Nwj-o6-Z5H"; */
+"Nwj-o6-Z5H.segmentTitles[1]" = "コーヒー";
+
+/* Class = "UISegmentedControl"; Nwj-o6-Z5H.segmentTitles[2] = "紅茶"; ObjectID = "Nwj-o6-Z5H"; */
+"Nwj-o6-Z5H.segmentTitles[2]" = "紅茶";
+
+/* Class = "UISegmentedControl"; Nwj-o6-Z5H.segmentTitles[3] = "日本茶"; ObjectID = "Nwj-o6-Z5H"; */
+"Nwj-o6-Z5H.segmentTitles[3]" = "日本茶";
+
+/* Class = "UISegmentedControl"; Nwj-o6-Z5H.segmentTitles[4] = "中国茶"; ObjectID = "Nwj-o6-Z5H"; */
+"Nwj-o6-Z5H.segmentTitles[4]" = "中国茶";
+
+/* Class = "UISegmentedControl"; Nwj-o6-Z5H.segmentTitles[5] = "その他"; ObjectID = "Nwj-o6-Z5H"; */
+"Nwj-o6-Z5H.segmentTitles[5]" = "その他";
+
+/* Class = "UILabel"; text = "甘味"; ObjectID = "O0p-PK-vmR"; */
+"O0p-PK-vmR.text" = "甘味";
+
+/* Class = "UILabel"; text = "カテゴリー"; ObjectID = "P5J-dn-fio"; */
+"P5J-dn-fio.text" = "カテゴリー";
+
+/* Class = "UILabel"; text = "カテゴリー："; ObjectID = "StY-ds-uoR"; */
+"StY-ds-uoR.text" = "カテゴリー：";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "UDO-41-geZ"; */
+"UDO-41-geZ.title" = "Title";
+
+/* Class = "UITabBarItem"; title = "map"; ObjectID = "UPW-2m-XKe"; */
+"UPW-2m-XKe.title" = "map";
+
+/* Class = "UIButton"; configuration.title = "ゲストとして使用する"; ObjectID = "WD3-Ce-TGI"; */
+"WD3-Ce-TGI.configuration.title" = "ゲストとして使用する";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WD3-Ce-TGI"; */
+"WD3-Ce-TGI.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "香り"; ObjectID = "X52-BA-MGN"; */
+"X52-BA-MGN.text" = "香り";
+
+/* Class = "UILabel"; text = "甘味"; ObjectID = "ZcV-B9-RX7"; */
+"ZcV-B9-RX7.text" = "甘味";
+
+/* Class = "UIButton"; configuration.title = "追加"; ObjectID = "aLa-lC-Sje"; */
+"aLa-lC-Sje.configuration.title" = "追加";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aLa-lC-Sje"; */
+"aLa-lC-Sje.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "ログイン"; ObjectID = "bP0-KF-Rq9"; */
+"bP0-KF-Rq9.configuration.title" = "ログイン";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bP0-KF-Rq9"; */
+"bP0-KF-Rq9.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "ログイン"; ObjectID = "bd7-3Y-esK"; */
+"bd7-3Y-esK.configuration.title" = "ログイン";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bd7-3Y-esK"; */
+"bd7-3Y-esK.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Friend"; ObjectID = "blK-sS-Keq"; */
+"blK-sS-Keq.text" = "Friend";
+
+/* Class = "UILabel"; text = "説明"; ObjectID = "cI9-pa-uKj"; */
+"cI9-pa-uKj.text" = "説明";
+
+/* Class = "UIButton"; configuration.title = "ゲストとしてログイン"; ObjectID = "dcj-oB-aHo"; */
+"dcj-oB-aHo.configuration.title" = "ゲストとしてログイン";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dcj-oB-aHo"; */
+"dcj-oB-aHo.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "コスパ"; ObjectID = "djG-hd-ZWS"; */
+"djG-hd-ZWS.text" = "コスパ";
+
+/* Class = "UILabel"; text = "渋み"; ObjectID = "ePu-kE-rjh"; */
+"ePu-kE-rjh.text" = "渋み";
+
+/* Class = "UILabel"; text = "写真"; ObjectID = "fPE-fL-kkF"; */
+"fPE-fL-kkF.text" = "写真";
+
+/* Class = "UIButton"; configuration.title = "ログイン"; ObjectID = "fvQ-5Y-oqx"; */
+"fvQ-5Y-oqx.configuration.title" = "ログイン";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fvQ-5Y-oqx"; */
+"fvQ-5Y-oqx.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "ゲストとしてログイン"; ObjectID = "g0o-1g-wGZ"; */
+"g0o-1g-wGZ.configuration.title" = "ゲストとしてログイン";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "g0o-1g-wGZ"; */
+"g0o-1g-wGZ.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "movie"; ObjectID = "g3M-N3-ln9"; */
+"g3M-N3-ln9.title" = "movie";
+
+/* Class = "UILabel"; text = "名前"; ObjectID = "gNL-ov-cPt"; */
+"gNL-ov-cPt.text" = "名前";
+
+/* Class = "UITabBarItem"; title = "setting"; ObjectID = "hUG-cu-xt7"; */
+"hUG-cu-xt7.title" = "setting";
+
+/* Class = "UILabel"; text = "旨味"; ObjectID = "iPO-wo-bGJ"; */
+"iPO-wo-bGJ.text" = "旨味";
+
+/* Class = "UILabel"; text = "画像"; ObjectID = "irY-1q-2pc"; */
+"irY-1q-2pc.text" = "画像";
+
+/* Class = "UIButton"; configuration.title = "Youtubeアプリで見る"; ObjectID = "jWO-iS-JJC"; */
+"jWO-iS-JJC.configuration.title" = "Youtubeアプリで見る";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jWO-iS-JJC"; */
+"jWO-iS-JJC.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "mSl-tc-Oac"; */
+"mSl-tc-Oac.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "新規登録"; ObjectID = "n3j-Ez-8J0"; */
+"n3j-Ez-8J0.configuration.title" = "新規登録";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "n3j-Ez-8J0"; */
+"n3j-Ez-8J0.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pcw-Sm-UdB"; */
+"pcw-Sm-UdB.text" = "Label";
+
+/* Class = "UILabel"; text = "コク"; ObjectID = "sti-Sg-ppT"; */
+"sti-Sg-ppT.text" = "コク";
+
+/* Class = "UILabel"; text = "コスパ"; ObjectID = "tqE-6b-KLm"; */
+"tqE-6b-KLm.text" = "コスパ";
+
+/* Class = "UILabel"; text = "香り"; ObjectID = "uAQ-zc-eAU"; */
+"uAQ-zc-eAU.text" = "香り";
+
+/* Class = "UILabel"; text = "コク"; ObjectID = "uID-Qy-zX8"; */
+"uID-Qy-zX8.text" = "コク";
+
+/* Class = "UILabel"; text = "旨味"; ObjectID = "w1C-mD-HEk"; */
+"w1C-mD-HEk.text" = "旨味";
+
+/* Class = "UILabel"; text = "更新日"; ObjectID = "zpk-dX-wsg"; */
+"zpk-dX-wsg.text" = "更新日";
