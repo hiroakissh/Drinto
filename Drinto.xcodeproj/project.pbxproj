@@ -39,6 +39,7 @@
 		531A22482A02160800E00A27 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22472A02160800E00A27 /* SwiftDate */; };
 		531A224C2A023CEE00E00A27 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A224B2A023CEE00E00A27 /* UIViewExtension.swift */; };
 		531A224E2A023D7300E00A27 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A224D2A023D7300E00A27 /* UITextFieldExtension.swift */; };
+		531A22512A0241DF00E00A27 /* DrinkMemoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A22502A0241DF00E00A27 /* DrinkMemoryViewModel.swift */; };
 		5320924E29CD92E4006045F7 /* DrinkFeatureCheckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5320924D29CD92E4006045F7 /* DrinkFeatureCheckModel.swift */; };
 		5324315D2839A07A005A8170 /* DrinkMemoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */; };
 		5324315E2839A07A005A8170 /* DrinkMemoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */; };
@@ -96,6 +97,7 @@
 		531A20E129EB79E400E00A27 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		531A224B2A023CEE00E00A27 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		531A224D2A023D7300E00A27 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		531A22502A0241DF00E00A27 /* DrinkMemoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryViewModel.swift; sourceTree = "<group>"; };
 		5320924D29CD92E4006045F7 /* DrinkFeatureCheckModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkFeatureCheckModel.swift; sourceTree = "<group>"; };
 		5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryTableViewCell.swift; sourceTree = "<group>"; };
 		5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkMemoryTableViewCell.xib; sourceTree = "<group>"; };
@@ -224,9 +226,18 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		531A224F2A0241BE00E00A27 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				531A22502A0241DF00E00A27 /* DrinkMemoryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		5320923D29CD8C28006045F7 /* DrinkMemory */ = {
 			isa = PBXGroup;
 			children = (
+				531A224F2A0241BE00E00A27 /* ViewModels */,
 				5320924029CD8C73006045F7 /* Views */,
 				5320923F29CD8C6D006045F7 /* Models */,
 				5320923E29CD8C5E006045F7 /* Presenters */,
@@ -702,6 +713,7 @@
 				53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */,
 				531A224C2A023CEE00E00A27 /* UIViewExtension.swift in Sources */,
 				53726E2129AD7ECF00AD5636 /* FetchDataModel.swift in Sources */,
+				531A22512A0241DF00E00A27 /* DrinkMemoryViewModel.swift in Sources */,
 				5367DB8429BD824F008889E0 /* YoutubePlayerViewController.swift in Sources */,
 				539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */,
 				53726E1F29AD7E9400AD5636 /* YoutubeDataModel.swift in Sources */,
