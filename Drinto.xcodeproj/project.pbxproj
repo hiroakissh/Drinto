@@ -31,8 +31,7 @@
 		53267FD52A02AECC0090D8C1 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 53267FD42A02AECC0090D8C1 /* RxRelay */; };
 		53267FD72A02AECC0090D8C1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 53267FD62A02AECC0090D8C1 /* RxSwift */; };
 		53267FDC2A02AF0E0090D8C1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 53267FDB2A02AF0E0090D8C1 /* SnapKit */; };
-		53267FE02A02B0B60090D8C1 /* DisplayDrinkMemoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53267FDF2A02B0B60090D8C1 /* DisplayDrinkMemoryTest.swift */; };
-		53267FE22A02B0CE0090D8C1 /* EditDrinkMemoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53267FE12A02B0CE0090D8C1 /* EditDrinkMemoryTest.swift */; };
+		53267FFA2A02B27F0090D8C1 /* DrintoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53267FF92A02B27F0090D8C1 /* DrintoTests.swift */; };
 		53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */; };
 		53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9D2837750500C2B96D /* MyPageViewController.swift */; };
 		53287BA02837751400C2B96D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9F2837751400C2B96D /* MapViewController.swift */; };
@@ -69,6 +68,16 @@
 		53D83FC9287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		53267FFB2A02B27F0090D8C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 539DE6C3271FC9D800720AF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 539DE6CA271FC9D800720AF7;
+			remoteInfo = Drinto;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		5313E5122956B7C20030570B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		531A20E129EB79E400E00A27 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
@@ -80,8 +89,8 @@
 		5320924D29CD92E4006045F7 /* DrinkFeatureCheckModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkFeatureCheckModel.swift; sourceTree = "<group>"; };
 		5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryTableViewCell.swift; sourceTree = "<group>"; };
 		5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkMemoryTableViewCell.xib; sourceTree = "<group>"; };
-		53267FDF2A02B0B60090D8C1 /* DisplayDrinkMemoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDrinkMemoryTest.swift; sourceTree = "<group>"; };
-		53267FE12A02B0CE0090D8C1 /* EditDrinkMemoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDrinkMemoryTest.swift; sourceTree = "<group>"; };
+		53267FF72A02B27F0090D8C1 /* DrintoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrintoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53267FF92A02B27F0090D8C1 /* DrintoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrintoTests.swift; sourceTree = "<group>"; };
 		53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkmemoryViewController.swift; sourceTree = "<group>"; };
 		53287B9D2837750500C2B96D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		53287B9F2837751400C2B96D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +128,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		53267FF42A02B27F0090D8C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		539DE6C8271FC9D800720AF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,21 +372,12 @@
 			path = DrinkmemoryCell;
 			sourceTree = "<group>";
 		};
-		53267FDD2A02AFDD0090D8C1 /* DrintoTests */ = {
+		53267FF82A02B27F0090D8C1 /* DrintoTests */ = {
 			isa = PBXGroup;
 			children = (
-				53267FDE2A02B0830090D8C1 /* DrinkMemoryTests */,
+				53267FF92A02B27F0090D8C1 /* DrintoTests.swift */,
 			);
 			path = DrintoTests;
-			sourceTree = "<group>";
-		};
-		53267FDE2A02B0830090D8C1 /* DrinkMemoryTests */ = {
-			isa = PBXGroup;
-			children = (
-				53267FDF2A02B0B60090D8C1 /* DisplayDrinkMemoryTest.swift */,
-				53267FE12A02B0CE0090D8C1 /* EditDrinkMemoryTest.swift */,
-			);
-			path = DrinkMemoryTests;
 			sourceTree = "<group>";
 		};
 		532D0F4629457BEE005ABF6B /* DrinkImage */ = {
@@ -402,7 +409,7 @@
 			children = (
 				5367DB8A29C02A87008889E0 /* AccessToken.swift */,
 				539DE6CD271FC9D800720AF7 /* Drinto */,
-				53267FDD2A02AFDD0090D8C1 /* DrintoTests */,
+				53267FF82A02B27F0090D8C1 /* DrintoTests */,
 				539DE6CC271FC9D800720AF7 /* Products */,
 				532D0F5829458A7D005ABF6B /* Frameworks */,
 			);
@@ -412,6 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				539DE6CB271FC9D800720AF7 /* Drinto.app */,
+				53267FF72A02B27F0090D8C1 /* DrintoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -480,6 +488,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		53267FF62A02B27F0090D8C1 /* DrintoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53267FFD2A02B27F0090D8C1 /* Build configuration list for PBXNativeTarget "DrintoTests" */;
+			buildPhases = (
+				53267FF32A02B27F0090D8C1 /* Sources */,
+				53267FF42A02B27F0090D8C1 /* Frameworks */,
+				53267FF52A02B27F0090D8C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53267FFC2A02B27F0090D8C1 /* PBXTargetDependency */,
+			);
+			name = DrintoTests;
+			productName = DrintoTests;
+			productReference = 53267FF72A02B27F0090D8C1 /* DrintoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		539DE6CA271FC9D800720AF7 /* Drinto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 539DE6DF271FC9DA00720AF7 /* Build configuration list for PBXNativeTarget "Drinto" */;
@@ -526,9 +552,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					53267FF62A02B27F0090D8C1 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 539DE6CA271FC9D800720AF7;
+					};
 					539DE6CA271FC9D800720AF7 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -564,11 +594,19 @@
 			projectRoot = "";
 			targets = (
 				539DE6CA271FC9D800720AF7 /* Drinto */,
+				53267FF62A02B27F0090D8C1 /* DrintoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		53267FF52A02B27F0090D8C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		539DE6C9271FC9D800720AF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -625,6 +663,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		53267FF32A02B27F0090D8C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53267FFA2A02B27F0090D8C1 /* DrintoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		539DE6C7271FC9D800720AF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -643,7 +689,6 @@
 				53726E1F29AD7E9400AD5636 /* YoutubeDataModel.swift in Sources */,
 				53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */,
 				53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */,
-				53267FE02A02B0B60090D8C1 /* DisplayDrinkMemoryTest.swift in Sources */,
 				5377898F2851C6C40056576C /* DrinkMemoryRealmModel.swift in Sources */,
 				53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */,
 				5367DB8129B5658F008889E0 /* YoutubeAPIResultTableViewCell.swift in Sources */,
@@ -656,7 +701,6 @@
 				53B681DD29A2ED79003327B6 /* YoutubeAPIPresenter.swift in Sources */,
 				532D0F4829457C11005ABF6B /* DrinkImageModel.swift in Sources */,
 				537789932851C7170056576C /* DrinkMemoryFirebaseModel.swift in Sources */,
-				53267FE22A02B0CE0090D8C1 /* EditDrinkMemoryTest.swift in Sources */,
 				53287BB02837782000C2B96D /* LaunchViewController.swift in Sources */,
 				539DE6CF271FC9D800720AF7 /* AppDelegate.swift in Sources */,
 				539DE6D1271FC9D800720AF7 /* SceneDelegate.swift in Sources */,
@@ -669,6 +713,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53267FFC2A02B27F0090D8C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 539DE6CA271FC9D800720AF7 /* Drinto */;
+			targetProxy = 53267FFB2A02B27F0090D8C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		539DE6D4271FC9D800720AF7 /* Main.storyboard */ = {
@@ -692,6 +744,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		53267FFE2A02B27F0090D8C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X5LBWH4CYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiroakiapp.DrintoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drinto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Drinto";
+			};
+			name = Debug;
+		};
+		53267FFF2A02B27F0090D8C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X5LBWH4CYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiroakiapp.DrintoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drinto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Drinto";
+			};
+			name = Release;
+		};
 		539DE6DD271FC9DA00720AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -883,6 +975,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		53267FFD2A02B27F0090D8C1 /* Build configuration list for PBXNativeTarget "DrintoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53267FFE2A02B27F0090D8C1 /* Debug */,
+				53267FFF2A02B27F0090D8C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		539DE6C6271FC9D800720AF7 /* Build configuration list for PBXProject "Drinto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
