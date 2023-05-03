@@ -213,8 +213,6 @@
 		531A22492A023C0A00E00A27 /* DI */ = {
 			isa = PBXGroup;
 			children = (
-				531A224B2A023CEE00E00A27 /* UIViewExtension.swift */,
-				531A224D2A023D7300E00A27 /* UITextFieldExtension.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -222,6 +220,8 @@
 		531A224A2A023C9F00E00A27 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				531A224B2A023CEE00E00A27 /* UIViewExtension.swift */,
+				531A224D2A023D7300E00A27 /* UITextFieldExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
