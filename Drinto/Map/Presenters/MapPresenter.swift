@@ -17,6 +17,7 @@ protocol MapPresenterOutput {
 
 class MapPresenter: MapPresenterInput {
     func fetchLocationData() -> [Any] {
-        <#code#>
+        // 仮置き
+        return []
     }
 }
