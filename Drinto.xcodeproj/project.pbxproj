@@ -51,7 +51,6 @@
 		53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA7283775F900C2B96D /* TopPageViewController.swift */; };
 		53287BB02837782000C2B96D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BAF2837782000C2B96D /* LaunchViewController.swift */; };
 		532D0F4829457C11005ABF6B /* DrinkImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D0F4729457C11005ABF6B /* DrinkImageModel.swift */; };
-		532D0F522945835E005ABF6B /* DrintoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D0F512945835E005ABF6B /* DrintoTests.swift */; };
 		532D0F5A29458A7D005ABF6B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 532D0F5929458A7D005ABF6B /* RealmSwift */; };
 		533EEBC92880164D00E63F79 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EEBC82880164D00E63F79 /* ChartView.swift */; };
 		53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */; };
@@ -110,7 +109,6 @@
 		53287BAF2837782000C2B96D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		532D0F4729457C11005ABF6B /* DrinkImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkImageModel.swift; sourceTree = "<group>"; };
 		532D0F4F2945835D005ABF6B /* DrintoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrintoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		532D0F512945835E005ABF6B /* DrintoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrintoTests.swift; sourceTree = "<group>"; };
 		533EEBC82880164D00E63F79 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemorySwiftModel.swift; sourceTree = "<group>"; };
 		535B26AD298E47F6000DCBC5 /* DrinkCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCategoryModel.swift; sourceTree = "<group>"; };
@@ -391,7 +389,6 @@
 			isa = PBXGroup;
 			children = (
 				531A20DE29EB798E00E00A27 /* Map */,
-				532D0F512945835E005ABF6B /* DrintoTests.swift */,
 			);
 			path = DrintoTests;
 			sourceTree = "<group>";
@@ -690,7 +687,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				531A20E029EB79C300E00A27 /* MapTest.swift in Sources */,
-				532D0F522945835E005ABF6B /* DrintoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
