@@ -16,6 +16,27 @@
 		5313E5132956B7C20030570B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5313E5122956B7C20030570B /* GoogleService-Info.plist */; };
 		531A20E029EB79C300E00A27 /* MapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A20DF29EB79C300E00A27 /* MapTest.swift */; };
 		531A20E229EB79E400E00A27 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A20E129EB79E400E00A27 /* MapPresenter.swift */; };
+		531A22182A0212D300E00A27 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22172A0212D300E00A27 /* RxBlocking */; };
+		531A221A2A0212D300E00A27 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22192A0212D300E00A27 /* RxBlocking-Dynamic */; };
+		531A221C2A0212D300E00A27 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 531A221B2A0212D300E00A27 /* RxCocoa */; };
+		531A221E2A0212D300E00A27 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 531A221D2A0212D300E00A27 /* RxCocoa-Dynamic */; };
+		531A22202A0212D300E00A27 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 531A221F2A0212D300E00A27 /* RxRelay */; };
+		531A22222A0212D300E00A27 /* RxRelay-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22212A0212D300E00A27 /* RxRelay-Dynamic */; };
+		531A22242A0212D300E00A27 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22232A0212D300E00A27 /* RxSwift */; };
+		531A22262A0212D300E00A27 /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22252A0212D300E00A27 /* RxSwift-Dynamic */; };
+		531A22282A0212D300E00A27 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22272A0212D300E00A27 /* RxTest */; };
+		531A222A2A0212D300E00A27 /* RxTest-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22292A0212D300E00A27 /* RxTest-Dynamic */; };
+		531A222D2A02132E00E00A27 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 531A222C2A02132E00E00A27 /* SnapKit */; };
+		531A222F2A02132E00E00A27 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 531A222E2A02132E00E00A27 /* SnapKit-Dynamic */; };
+		531A22322A02138F00E00A27 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22312A02138F00E00A27 /* Alamofire */; };
+		531A22352A02140B00E00A27 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22342A02140B00E00A27 /* Kingfisher */; };
+		531A22382A02146500E00A27 /* ObjcExceptionBridging in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22372A02146500E00A27 /* ObjcExceptionBridging */; };
+		531A223A2A02146500E00A27 /* XCGLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22392A02146500E00A27 /* XCGLogger */; };
+		531A223D2A0214CE00E00A27 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 531A223C2A0214CE00E00A27 /* Swinject */; };
+		531A223F2A0214CE00E00A27 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 531A223E2A0214CE00E00A27 /* Swinject-Dynamic */; };
+		531A22422A02152900E00A27 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22412A02152900E00A27 /* SwinjectStoryboard */; };
+		531A22452A02158900E00A27 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22442A02158900E00A27 /* SkeletonView */; };
+		531A22482A02160800E00A27 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22472A02160800E00A27 /* SwiftDate */; };
 		5320924E29CD92E4006045F7 /* DrinkFeatureCheckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5320924D29CD92E4006045F7 /* DrinkFeatureCheckModel.swift */; };
 		5324315D2839A07A005A8170 /* DrinkMemoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */; };
 		5324315E2839A07A005A8170 /* DrinkMemoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */; };
@@ -130,11 +151,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531A22282A0212D300E00A27 /* RxTest in Frameworks */,
+				531A222D2A02132E00E00A27 /* SnapKit in Frameworks */,
+				531A223A2A02146500E00A27 /* XCGLogger in Frameworks */,
+				531A22202A0212D300E00A27 /* RxRelay in Frameworks */,
+				531A22452A02158900E00A27 /* SkeletonView in Frameworks */,
 				536839892940544E0078D81E /* RealmSwift in Frameworks */,
+				531A223F2A0214CE00E00A27 /* Swinject-Dynamic in Frameworks */,
+				531A223D2A0214CE00E00A27 /* Swinject in Frameworks */,
+				531A222A2A0212D300E00A27 /* RxTest-Dynamic in Frameworks */,
+				531A221A2A0212D300E00A27 /* RxBlocking-Dynamic in Frameworks */,
+				531A22482A02160800E00A27 /* SwiftDate in Frameworks */,
+				531A22222A0212D300E00A27 /* RxRelay-Dynamic in Frameworks */,
+				531A22422A02152900E00A27 /* SwinjectStoryboard in Frameworks */,
+				531A22182A0212D300E00A27 /* RxBlocking in Frameworks */,
 				5313E50F2956AEDD0030570B /* FirebaseStorage in Frameworks */,
+				531A22322A02138F00E00A27 /* Alamofire in Frameworks */,
+				531A22242A0212D300E00A27 /* RxSwift in Frameworks */,
+				531A221E2A0212D300E00A27 /* RxCocoa-Dynamic in Frameworks */,
+				531A22382A02146500E00A27 /* ObjcExceptionBridging in Frameworks */,
 				5313E50B2956AEDD0030570B /* FirebaseAuth in Frameworks */,
 				5313E50D2956AEDD0030570B /* FirebaseFirestore in Frameworks */,
+				531A221C2A0212D300E00A27 /* RxCocoa in Frameworks */,
 				5367DB8729BD8B66008889E0 /* YouTubeiOSPlayerHelper in Frameworks */,
+				531A222F2A02132E00E00A27 /* SnapKit-Dynamic in Frameworks */,
+				531A22352A02140B00E00A27 /* Kingfisher in Frameworks */,
+				531A22262A0212D300E00A27 /* RxSwift-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +520,27 @@
 				5313E50C2956AEDD0030570B /* FirebaseFirestore */,
 				5313E50E2956AEDD0030570B /* FirebaseStorage */,
 				5367DB8629BD8B66008889E0 /* YouTubeiOSPlayerHelper */,
+				531A22172A0212D300E00A27 /* RxBlocking */,
+				531A22192A0212D300E00A27 /* RxBlocking-Dynamic */,
+				531A221B2A0212D300E00A27 /* RxCocoa */,
+				531A221D2A0212D300E00A27 /* RxCocoa-Dynamic */,
+				531A221F2A0212D300E00A27 /* RxRelay */,
+				531A22212A0212D300E00A27 /* RxRelay-Dynamic */,
+				531A22232A0212D300E00A27 /* RxSwift */,
+				531A22252A0212D300E00A27 /* RxSwift-Dynamic */,
+				531A22272A0212D300E00A27 /* RxTest */,
+				531A22292A0212D300E00A27 /* RxTest-Dynamic */,
+				531A222C2A02132E00E00A27 /* SnapKit */,
+				531A222E2A02132E00E00A27 /* SnapKit-Dynamic */,
+				531A22312A02138F00E00A27 /* Alamofire */,
+				531A22342A02140B00E00A27 /* Kingfisher */,
+				531A22372A02146500E00A27 /* ObjcExceptionBridging */,
+				531A22392A02146500E00A27 /* XCGLogger */,
+				531A223C2A0214CE00E00A27 /* Swinject */,
+				531A223E2A0214CE00E00A27 /* Swinject-Dynamic */,
+				531A22412A02152900E00A27 /* SwinjectStoryboard */,
+				531A22442A02158900E00A27 /* SkeletonView */,
+				531A22472A02160800E00A27 /* SwiftDate */,
 			);
 			productName = Drinto;
 			productReference = 539DE6CB271FC9D800720AF7 /* Drinto.app */;
@@ -516,6 +579,15 @@
 				534DD9F529408EC800E0ACEE /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				5313E5092956AEDD0030570B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				5367DB8529BD8B66008889E0 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+				531A22162A0212D300E00A27 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				531A222B2A02132D00E00A27 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				531A22302A02138E00E00A27 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				531A22332A02140B00E00A27 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				531A22362A02146500E00A27 /* XCRemoteSwiftPackageReference "XCGLogger" */,
+				531A223B2A0214CD00E00A27 /* XCRemoteSwiftPackageReference "Swinject" */,
+				531A22402A02152900E00A27 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */,
+				531A22432A02158900E00A27 /* XCRemoteSwiftPackageReference "SkeletonView" */,
+				531A22462A02160800E00A27 /* XCRemoteSwiftPackageReference "SwiftDate" */,
 			);
 			productRefGroup = 539DE6CC271FC9D800720AF7 /* Products */;
 			projectDirPath = "";
@@ -948,6 +1020,78 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		531A22162A0212D300E00A27 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		531A222B2A02132D00E00A27 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		531A22302A02138E00E00A27 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		531A22332A02140B00E00A27 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		531A22362A02146500E00A27 /* XCRemoteSwiftPackageReference "XCGLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DaveWoodCom/XCGLogger.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		531A223B2A0214CD00E00A27 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		531A22402A02152900E00A27 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectStoryboard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		531A22432A02158900E00A27 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		531A22462A02160800E00A27 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		534DD9F529408EC800E0ACEE /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/SwiftLint.git";
@@ -1004,6 +1148,111 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5313E5092956AEDD0030570B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		531A22172A0212D300E00A27 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22162A0212D300E00A27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		531A22192A0212D300E00A27 /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22162A0212D300E00A27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		531A221B2A0212D300E00A27 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22162A0212D300E00A27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		531A221D2A0212D300E00A27 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22162A0212D300E00A27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		531A221F2A0212D300E00A27 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22162A0212D300E00A27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		531A22212A0212D300E00A27 /* RxRelay-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22162A0212D300E00A27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxRelay-Dynamic";
+		};
+		531A22232A0212D300E00A27 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22162A0212D300E00A27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		531A22252A0212D300E00A27 /* RxSwift-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22162A0212D300E00A27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxSwift-Dynamic";
+		};
+		531A22272A0212D300E00A27 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22162A0212D300E00A27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		531A22292A0212D300E00A27 /* RxTest-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22162A0212D300E00A27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxTest-Dynamic";
+		};
+		531A222C2A02132E00E00A27 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A222B2A02132D00E00A27 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		531A222E2A02132E00E00A27 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A222B2A02132D00E00A27 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		531A22312A02138F00E00A27 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22302A02138E00E00A27 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		531A22342A02140B00E00A27 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22332A02140B00E00A27 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		531A22372A02146500E00A27 /* ObjcExceptionBridging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22362A02146500E00A27 /* XCRemoteSwiftPackageReference "XCGLogger" */;
+			productName = ObjcExceptionBridging;
+		};
+		531A22392A02146500E00A27 /* XCGLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22362A02146500E00A27 /* XCRemoteSwiftPackageReference "XCGLogger" */;
+			productName = XCGLogger;
+		};
+		531A223C2A0214CE00E00A27 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A223B2A0214CD00E00A27 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		531A223E2A0214CE00E00A27 /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A223B2A0214CD00E00A27 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
+		};
+		531A22412A02152900E00A27 /* SwinjectStoryboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22402A02152900E00A27 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */;
+			productName = SwinjectStoryboard;
+		};
+		531A22442A02158900E00A27 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22432A02158900E00A27 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+		531A22472A02160800E00A27 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22462A02160800E00A27 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
 		};
 		532D0F5929458A7D005ABF6B /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
