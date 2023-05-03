@@ -234,9 +234,28 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		531A22522A02423000E00A27 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				537789902851C6E90056576C /* DrinkMemoryRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		531A22532A02425700E00A27 /* DrinkMemoryModels */ = {
+			isa = PBXGroup;
+			children = (
+				537789922851C7170056576C /* DrinkMemoryFirebaseModel.swift */,
+				5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */,
+				53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */,
+			);
+			path = DrinkMemoryModels;
+			sourceTree = "<group>";
+		};
 		5320923D29CD8C28006045F7 /* DrinkMemory */ = {
 			isa = PBXGroup;
 			children = (
+				531A22522A02423000E00A27 /* Repository */,
 				531A224F2A0241BE00E00A27 /* ViewModels */,
 				5320924029CD8C73006045F7 /* Views */,
 				5320923F29CD8C6D006045F7 /* Models */,
@@ -256,12 +275,9 @@
 		5320923F29CD8C6D006045F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				531A22532A02425700E00A27 /* DrinkMemoryModels */,
 				532D0F4629457BEE005ABF6B /* DrinkImage */,
 				530613E6295E81DA0079ECA2 /* DrinkFeature */,
-				537789902851C6E90056576C /* DrinkMemoryRepository.swift */,
-				5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */,
-				537789922851C7170056576C /* DrinkMemoryFirebaseModel.swift */,
-				53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */,
 				535B26AD298E47F6000DCBC5 /* DrinkCategoryModel.swift */,
 			);
 			path = Models;
