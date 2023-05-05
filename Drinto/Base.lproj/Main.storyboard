@@ -738,9 +738,6 @@
                                     <segment title="中国茶"/>
                                     <segment title="その他"/>
                                 </segments>
-                                <connections>
-                                    <action selector="switchCategoryAction:" destination="edf-hR-ShN" eventType="valueChanged" id="4hr-Uk-i70"/>
-                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ec5-po-xdY"/>

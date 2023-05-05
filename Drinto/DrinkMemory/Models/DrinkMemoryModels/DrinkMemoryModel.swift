@@ -25,7 +25,8 @@ class DrinkMemoryModel: DrinkMemoryModelProtocol {
             .create { observer in
                 do {
                     // TODO: Repositoryクラスとかの配置でデータ取得
-                    observer.onNext([])
+                    let items = DrinkMemoryRepository1().readDrinkMemoryData()
+                    observer.onNext(items)
                 } catch {
                     observer.onError(error)
                 }

@@ -22,16 +22,15 @@ protocol DrinkMemoryPresenterOutput {
 }
 
 class DrinkMemoryPresenter: DrinkMemoryPresenterInput {
-
     var drinkMemory = [DrinkMemorySwiftModel]()
     var drinkEachCategory = [DrinkMemorySwiftModel]()
 
     var view: DrinkMemoryPresenterOutput?
-    var model: DrinkMemoryRepository
+    var model: DrinkMemorySwiftModelInput
 
     init (with view: DrinkMemoryPresenterOutput) {
         self.view = view
-        self.model = DrinkMemoryRepository()
+        self.model = DrinkMemoryRepository1()
     }
 
     var numberOfDrinkMemory: Int {
@@ -46,10 +45,9 @@ class DrinkMemoryPresenter: DrinkMemoryPresenterInput {
         switch categoryType {
         case .all:
             drinkMemory = model.readDrinkMemoryData()
-            
             let indexDrinkMemory = drinkMemory[row]
             return indexDrinkMemory
-        case .category:
+        default:
             drinkEachCategory = model.readDrinkMemoryDataInCategory(category)
             let indexDrinkMemory = drinkEachCategory[row]
             return indexDrinkMemory
