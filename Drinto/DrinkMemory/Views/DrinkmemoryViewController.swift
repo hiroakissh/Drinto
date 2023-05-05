@@ -76,6 +76,15 @@ class DrinkMemoryViewController: UIViewController {
             return cell
         }
         .disposed(by: disposeBag)
+
+        tableView.rx.itemSelected
+            .subscribe { indexPath in
+                print(indexPath.row)
+                let storyBoard: UIStoryboard = UIStoryboard(name: "DetailDrinkMemoryStoryboard", bundle: nil)
+                if let vc = storyBoard.instantiateInitialViewController() {
+                    self.present(vc, animated: true)
+                }
+            }
     }
 
     func getImageData(imageUUID: String) -> UIImage? {
