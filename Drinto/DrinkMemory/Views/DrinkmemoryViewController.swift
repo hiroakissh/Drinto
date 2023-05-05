@@ -81,7 +81,9 @@ class DrinkMemoryViewController: UIViewController {
             .subscribe { indexPath in
                 print(indexPath.row)
                 let storyBoard: UIStoryboard = UIStoryboard(name: "DetailDrinkMemoryStoryboard", bundle: nil)
-                if let vc = storyBoard.instantiateInitialViewController() {
+                if let vc = storyBoard.instantiateInitialViewController(), let nextVc = vc as? DetailDrinkViewController {
+                    // NextViewControllerのメンバ変数valueに文字列を代入
+                    nextVc.detailDrinkMemory = self.viewModel.currentItems[indexPath.row]
                     self.present(vc, animated: true)
                 }
             }
