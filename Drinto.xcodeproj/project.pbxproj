@@ -287,6 +287,7 @@
 		5320924029CD8C73006045F7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				53DDC5072A0513ED00248327 /* DetailDrinkMemoryStoryboard.storyboard */,
 				53287BA12837757000C2B96D /* AddDrinkViewController.swift */,
 				53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */,
 				53DDC5092A05155A00248327 /* DetailDrinkViewController.swift */,
@@ -498,7 +499,6 @@
 				5320923D29CD8C28006045F7 /* DrinkMemory */,
 				53B681D629A2ED20003327B6 /* YoutubeAPIComminucation */,
 				539DE6D4271FC9D800720AF7 /* Main.storyboard */,
-				53DDC5072A0513ED00248327 /* DetailDrinkMemoryStoryboard.storyboard */,
 				539DE6D9271FC9DA00720AF7 /* LaunchScreen.storyboard */,
 				53287BAF2837782000C2B96D /* LaunchViewController.swift */,
 				539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */,
