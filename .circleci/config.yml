@@ -1,5 +1,8 @@
 # .circleci/config.yml
 version: 2.1
+orbs:
+    macos: circleci/slack@4.12.5
+    macos: circleci/macos@2
 jobs:
   build-and-test:
     macos:
@@ -18,6 +21,10 @@ jobs:
           path: output
       - store_test_results:
           path: output/scan
+      - slack/notify:
+          channel: D02B7BBGGJW
+          event: pass
+          template: basic_success_1
 
   adhoc:
     macos:
