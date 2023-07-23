@@ -50,6 +50,9 @@ workflows:
   build-test-adhoc:
     jobs:
       - build-and-test
+          context:
+            - SLACK_ACCESS_TOKEN
+            - SLACK_DEFAULT_CHANNEL
       - adhoc:
           filters:
             branches:
