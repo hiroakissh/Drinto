@@ -10,6 +10,8 @@ jobs:
     environment:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: test
+    setup:
+      executor: ios_builder
     steps:
       - checkout
       - run: bundle install
@@ -22,7 +24,7 @@ jobs:
       - store_test_results:
           path: output/scan
       - slack/notify:
-          channel: D02B7BBGGJW
+          channel: C05JPH36YQH
           event: pass
           template: basic_success_1
 
@@ -45,6 +47,7 @@ workflows:
   build-test-adhoc:
     jobs:
       - build-and-test
+         context: slack-secrets
       - adhoc:
           filters:
             branches:
