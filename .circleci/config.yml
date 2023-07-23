@@ -1,47 +1,64 @@
 # .circleci/config.yml
+orbs:
+    macos: circleci/macos@2
+    steps:
+    - macos/switch-ruby:
+        version: "3.1"
+
+commands:
+    prepare-build:
+      steps:
+       - restore_cache:
+            keys:
+              - v1-gems-{{ checksum "Gemfile.lock" }}
+       - save_cache:
+           key: v1-gems-{{ checksum "Gemfile.lock" }}
+           paths:
+            - vendor/bundle
+
 version: 2.1
 jobs:
-  build-and-test:
+    build-and-test:
     macos:
-      xcode: 14.3.1
+        xcode: 14.3.1
     environment:
-      FL_OUTPUT_DIR: output
-      FASTLANE_LANE: test
+        FL_OUTPUT_DIR: output
+        FASTLANE_LANE: test
     steps:
-      - checkout
-      - run: bundle install
-      - run: bundle update fastlane
-      - run:
-          name: Fastlane
-          command: bundle exec fastlane $FASTLANE_LANE
-      - store_artifacts:
-          path: output
-      - store_test_results:
-          path: output/scan
+        - checkout
+        - run: bundle install
+        - run: bundle update fastlane
+        - run:
+            name: Fastlane
+            command: bundle exec fastlane $FASTLANE_LANE
+        - store_artifacts:
+            path: output
+        - store_test_results:
+            path: output/scan
 
-  adhoc:
+    adhoc:
     macos:
-      xcode: 14.3.1
+        xcode: 14.3.1
     environment:
-      FL_OUTPUT_DIR: output
-      FASTLANE_LANE: adhoc
+        FL_OUTPUT_DIR: output
+        FASTLANE_LANE: adhoc
     steps:
-      - checkout
-      - run: bundle install
-      - run:
-          name: Fastlane
-          command: bundle exec fastlane $FASTLANE_LANE
-      - store_artifacts:
-          path: output
+        - checkout
+        - run: bundle install
+        - run:
+            name: Fastlane
+            command: bundle exec fastlane $FASTLANE_LANE
+        - store_artifacts:
+            path: output
 
 workflows:
-  build-test-adhoc:
+    build-test-adhoc:
     jobs:
-      - build-and-test
-      - adhoc:
-          filters:
+        - build-and-test
+        - adhoc:
+            filters:
             branches:
-              only: development
-          requires:
+                only: development
+            requires:
             - build-and-test
 
