@@ -18,7 +18,7 @@ commands:
 
 version: 2.1
 jobs:
-    build-and-test:
+build-and-test:
     macos:
         xcode: 14.3.1
     environment:
@@ -36,7 +36,7 @@ jobs:
         - store_test_results:
             path: output/scan
 
-    adhoc:
+adhoc:
     macos:
         xcode: 14.3.1
     environment:
