@@ -21,7 +21,7 @@ jobs:
 
   adhoc:
     macos:
-      xcode: 14.1.0
+      xcode: 14.3.1
     environment:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: adhoc
