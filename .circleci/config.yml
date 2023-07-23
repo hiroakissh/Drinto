@@ -52,7 +52,7 @@ adhoc:
             path: output
 
 workflows:
-    build-test-adhoc:
+build-test-adhoc:
     jobs:
         - build-and-test
         - adhoc:
@@ -61,5 +61,4 @@ workflows:
                 only: development
             requires:
             - build-and-test
-         - test
 
