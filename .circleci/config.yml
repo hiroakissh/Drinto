@@ -10,8 +10,7 @@ jobs:
     environment:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: test
-    setup:
-      executor: ios_builder
+    executor: ios_builder
     steps:
       - checkout
       - run: bundle install
