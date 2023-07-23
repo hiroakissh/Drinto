@@ -1,18 +1,7 @@
 # .circleci/config.yml
-commands:
-    prepare-build:
-      steps:
-       - restore_cache:
-            keys:
-              - v1-gems-{{ checksum "Gemfile.lock" }}
-       - save_cache:
-           key: v1-gems-{{ checksum "Gemfile.lock" }}
-           paths:
-            - vendor/bundle
-
 version: 2.1
 jobs:
-build-and-test:
+  build:
     macos:
         xcode: 14.3.1
     environment:
@@ -22,6 +11,7 @@ build-and-test:
         - checkout
         - run: bundle install
         - run: bundle update fastlane
+    test:
         - run:
             name: Fastlane
             command: bundle exec fastlane $FASTLANE_LANE
@@ -54,5 +44,6 @@ build-test-adhoc:
             branches:
                 only: development
             requires:
-            - build-and-test
+            - build
+        - test
 
