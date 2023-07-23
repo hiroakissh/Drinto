@@ -1,7 +1,7 @@
 # .circleci/config.yml
 version: 2.1
 orbs:
-    macos: circleci/slack@4.12.5
+    slack: circleci/slack@4.12.5
     macos: circleci/macos@2
 jobs:
   build-and-test:
