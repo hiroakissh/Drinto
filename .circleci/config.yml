@@ -3,13 +3,17 @@ version: 2.1
 orbs:
     slack: circleci/slack@4.12.5
     macos: circleci/macos@2
-jobs:
-  build-and-test:
+
+executors:
+  ios_builder:
     macos:
       xcode: 14.1.0
     environment:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: test
+
+jobs:
+  build-and-test:
     executor: ios_builder
     steps:
       - checkout
@@ -28,11 +32,6 @@ jobs:
           template: basic_success_1
 
   adhoc:
-    macos:
-      xcode: 14.1.0
-    environment:
-      FL_OUTPUT_DIR: output
-      FASTLANE_LANE: adhoc
     executor: ios_builder
     steps:
       - checkout
