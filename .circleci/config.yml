@@ -1,10 +1,4 @@
 # .circleci/config.yml
-orbs:
-    macos: circleci/macos@2
-    steps:
-    - macos/switch-ruby:
-        version: "3.1"
-
 commands:
     prepare-build:
       steps:
