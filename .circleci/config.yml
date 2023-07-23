@@ -27,9 +27,13 @@ jobs:
       - store_test_results:
           path: output/scan
       - slack/notify:
-          channel: C05JPH36YQH
           event: pass
+          channel: C05JPH36YQH
           template: basic_success_1
+      - slack/notify:
+          event: fail
+          channel: C05JPH36YQH
+          template: basic_fail_1
 
   adhoc:
     executor: ios_builder
