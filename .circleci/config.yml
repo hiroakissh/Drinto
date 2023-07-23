@@ -50,8 +50,7 @@ workflows:
   build-test-adhoc:
     jobs:
       - build-and-test
-          context: SLACK_ACCESS_TOKEN
-          context: SLACK_DEFAULT_CHANNEL
+          context: slack-secrets
       - adhoc:
           filters:
             branches:
