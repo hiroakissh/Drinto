@@ -6,132 +6,103 @@
 //
 
 import UIKit
-
-enum CategoryType {
-    case all
-    case category
-}
+import RxSwift
+import RxCocoa
 
 class DrinkMemoryViewController: UIViewController {
-
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var categorySegmentedControl: UISegmentedControl!
 
-    private var drinkMemory = DrinkMemoryRepository()
+    private let disposeBag = DisposeBag()
 
-    private var drinkImageModel = DrinkImageModel()
+// TODO: DIのことを考えて下記で起動できるようにしたい
+//    private let viewModel: DrinkMemoryViewModelProtocol
 
-    private var drinkMemoryPresenter: DrinkMemoryPresenterInput!
+//    init(viewModel: DrinkMemoryViewModelProtocol = DrinkMemoryViewModel()) {
+//        self.viewModel = viewModel
+//        super.init(nibName: nil, bundle: nil)
+//    }
 
-    private var categoryType: CategoryType = .all
-    private var categoryTitle: String = "全て"
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+
+    private let viewModel = DrinkMemoryViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        drinkMemoryPresenter = DrinkMemoryPresenter.init(with: self)
-        drinkMemoryPresenter.viewDidLoad()
 
-        tableView.dataSource = self
-        tableView.delegate = self
         tableView.register(
             UINib(nibName: "DrinkMemoryTableViewCell", bundle: nil),
             forCellReuseIdentifier: "DrinkMemoryCell"
         )
         tableView.layer.cornerRadius = 10.0
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        drinkMemoryPresenter.viewDidLoad()
-        tableView.reloadData()
-    }
 
-    // TODO: ジャンルごとに表示の切り替わり
-    @IBAction private func switchCategoryAction(_ sender: UISegmentedControl) {
-        guard let selectTitle = sender.titleForSegment(at: sender.selectedSegmentIndex) else  { return }
-        categoryTitle = selectTitle
-        if categoryTitle == "全て" {
-            categoryType = .all
-            drinkMemoryPresenter.viewDidLoad()
-        } else {
-            categoryType = .category
-            drinkMemoryPresenter.getDrinkMemoryInCategory(categoryTitle)
-        }
-        tableView.reloadData()
-    }
-}
-
-extension DrinkMemoryViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch categoryType {
-        case .all:
-            return drinkMemoryPresenter?.numberOfDrinkMemory ?? 0
-        case .category:
-            return drinkMemoryPresenter.numberOfDrinkMemoryInCategory
-        }
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let indexDrinkMemory = drinkMemoryPresenter.drinkMemory(forRow: indexPath.row, categoryType: categoryType, category: categoryTitle)
-
-        guard let indexDrinkMemory = indexDrinkMemory else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "DrinkMemoryCell", for: indexPath) as? DrinkMemoryTableViewCell
-            cell?.drinkNameLabel.text = "読み込めませんでした"
-            return cell!
-        }
-
-        let drinkCell = tableView.dequeueReusableCell(
-            withIdentifier: "DrinkMemoryCell",
-            for: indexPath
-            // swiftlint:disable:next force_cast
-        ) as! DrinkMemoryTableViewCell
-        drinkCell.drinkNameLabel.text = indexDrinkMemory.drinkName
-        drinkCell.categoryLabel.text = indexDrinkMemory.category
-        let feature = drinkMemoryPresenter.selectFuture(indexDrinkMemory)
-        switch feature {
-        case .aroma:
-            drinkCell.featureLabel.text = "香り重視"
-        case .sweet:
-            drinkCell.featureLabel.text = "甘味重視"
-        case .umami:
-            drinkCell.featureLabel.text = "旨味重視"
-        case .astringency:
-            drinkCell.featureLabel.text = "香重視"
-        case .kokou:
-            drinkCell.featureLabel.text = "コク重視"
-        case .coast:
-            drinkCell.featureLabel.text = "コスト重視"
-        case .balance:
-            drinkCell.featureLabel.text = "バランス型"
-        case .perfect:
-            drinkCell.featureLabel.text = "完璧な味わい"
-        case .none:
-            drinkCell.featureLabel.text = "特徴なし"
-        }
-        // TODO: Imagepathに関しての追記
-        if indexDrinkMemory.imagePath != nil {
-            drinkCell.drinkImageView.image = drinkImageModel.getImageData(imageUUID: indexDrinkMemory.uuidString)
-        }
-        return drinkCell
-    }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectDrinkMemory = drinkMemoryPresenter.drinkMemory(forRow: indexPath.row, categoryType: categoryType, category: categoryTitle)
-        performSegue(withIdentifier: "detailDrinkMemory", sender: selectDrinkMemory)
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "detailDrinkMemory" {
-            let detailDrinkMemoryVC = segue.destination as? DetailDrinkMemoryViewController
-            guard let sender = sender else {
-                return
+        viewModel.items.subscribe(
+            onNext: { [weak self] items in
+                self?.tableView.reloadData()
             }
+        )
+        .disposed(by: disposeBag)
+        setSegmentControl()
+        setTableView()
+        viewModel.refresh.accept(())
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.refresh.accept(())
+    }
+
+    func setSegmentControl() {
+        categorySegmentedControl.rx.selectedSegmentIndex
+            .bind(to: viewModel.selectSegmentControlIndex)
+            .disposed(by: disposeBag)
+        categorySegmentedControl.rx.controlEvent(.valueChanged)
+            .subscribe { [weak self] _ in
+                self?.viewModel.refresh.accept(())
+            }
+    }
+
+    func setTableView() {
+        viewModel.items.bind(to: tableView.rx.items) { tableView, row, element in
             // swiftlint:disable:next force_cast
-            detailDrinkMemoryVC?.detailDrinkMemory = sender as! DrinkMemorySwiftModel
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DrinkMemoryCell") as! DrinkMemoryTableViewCell
+            cell.drinkNameLabel.text = element.drinkName
+            cell.categoryLabel.text = element.category
+            cell.featureLabel.text = "特徴"
+            if element.imagePath != nil {
+                cell.drinkImageView.image = self.getImageData(imageUUID: element.uuidString)
+            }
+            return cell
+        }
+        .disposed(by: disposeBag)
+
+        tableView.rx.itemSelected
+            .subscribe { indexPath in
+                print(indexPath.row)
+                let storyBoard: UIStoryboard = UIStoryboard(name: "DetailDrinkMemoryStoryboard", bundle: nil)
+                if let vc = storyBoard.instantiateInitialViewController(), let nextVc = vc as? DetailDrinkViewController {
+                    // NextViewControllerのメンバ変数valueに文字列を代入
+                    nextVc.detailDrinkMemory = self.viewModel.currentItems[indexPath.row]
+                    self.present(vc, animated: true)
+                }
+            }
+    }
+
+    func getImageData(imageUUID: String) -> UIImage? {
+        let url = getFileURL(fileName: "\(imageUUID).jpg")
+        if FileManager.default.fileExists(atPath: url.path) {
+            return UIImage(contentsOfFile: url.path)
+        } else {
+            return nil
         }
     }
-}
 
-extension DrinkMemoryViewController: DrinkMemoryPresenterOutput {
-    func didFetch(_ drinkMemory: [DrinkMemorySwiftModel]) {
-        print("outputPresenter")
+    func getFileURL(fileName: String) -> URL {
+        let documentDir = FileManager.default.urls(
+            for: .documentDirectory,
+            in: .userDomainMask
+        ).first!
+        return documentDir.appendingPathComponent(fileName)
     }
 }

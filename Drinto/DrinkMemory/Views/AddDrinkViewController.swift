@@ -28,7 +28,7 @@ class AddDrinkViewController: UIViewController {
     private let point: [String] = ["0", "1", "2", "3", "4", "5"]
     private let category: [String] = ["コーヒー", "紅茶", "日本茶", "中国茶", "その他"]
 
-    var drinkMemoryRepository = DrinkMemoryRepository()
+    var drinkMemoryRepository = DrinkMemoryRepository1()
     var drinkMemorySwiftModel = DrinkMemorySwiftModel()
 
     private var drinkImageModel = DrinkImageModel()
@@ -63,7 +63,7 @@ class AddDrinkViewController: UIViewController {
         drinkMemorySwiftModel.category = categoryTextField.text
 
         // TODO: 情報の保存
-//        saveImage(drinkID: drinkUUID)
+//        saveImage(drinkxID: drinkUUID)
         drinkImageModel.saveImageData(imageUUID: drinkUUID, drinkImage: drinkImageView.image)
         print("保存時")
         print(drinkImageURL)

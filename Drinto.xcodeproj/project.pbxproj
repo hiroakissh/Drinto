@@ -7,16 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		530613DF295C44360079ECA2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 530613DE295C44360079ECA2 /* FirebaseStorage */; };
-		530613E1295C443A0079ECA2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 530613E0295C443A0079ECA2 /* FirebaseAuth */; };
-		530613E3295C44420079ECA2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 530613E2295C44420079ECA2 /* FirebaseFirestore */; };
 		5313E50B2956AEDD0030570B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5313E50A2956AEDD0030570B /* FirebaseAuth */; };
 		5313E50D2956AEDD0030570B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5313E50C2956AEDD0030570B /* FirebaseFirestore */; };
 		5313E50F2956AEDD0030570B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5313E50E2956AEDD0030570B /* FirebaseStorage */; };
 		5313E5132956B7C20030570B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5313E5122956B7C20030570B /* GoogleService-Info.plist */; };
+		531A20E229EB79E400E00A27 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A20E129EB79E400E00A27 /* MapPresenter.swift */; };
+		531A22322A02138F00E00A27 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22312A02138F00E00A27 /* Alamofire */; };
+		531A22352A02140B00E00A27 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22342A02140B00E00A27 /* Kingfisher */; };
+		531A22382A02146500E00A27 /* ObjcExceptionBridging in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22372A02146500E00A27 /* ObjcExceptionBridging */; };
+		531A223A2A02146500E00A27 /* XCGLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22392A02146500E00A27 /* XCGLogger */; };
+		531A223D2A0214CE00E00A27 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 531A223C2A0214CE00E00A27 /* Swinject */; };
+		531A22422A02152900E00A27 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22412A02152900E00A27 /* SwinjectStoryboard */; };
+		531A22452A02158900E00A27 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22442A02158900E00A27 /* SkeletonView */; };
+		531A22482A02160800E00A27 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 531A22472A02160800E00A27 /* SwiftDate */; };
+		531A224C2A023CEE00E00A27 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A224B2A023CEE00E00A27 /* UIViewExtension.swift */; };
+		531A224E2A023D7300E00A27 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A224D2A023D7300E00A27 /* UITextFieldExtension.swift */; };
+		531A22512A0241DF00E00A27 /* DrinkMemoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A22502A0241DF00E00A27 /* DrinkMemoryViewModel.swift */; };
 		5320924E29CD92E4006045F7 /* DrinkFeatureCheckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5320924D29CD92E4006045F7 /* DrinkFeatureCheckModel.swift */; };
 		5324315D2839A07A005A8170 /* DrinkMemoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */; };
 		5324315E2839A07A005A8170 /* DrinkMemoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */; };
+		53267FD12A02AECC0090D8C1 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 53267FD02A02AECC0090D8C1 /* RxBlocking */; };
+		53267FD32A02AECC0090D8C1 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 53267FD22A02AECC0090D8C1 /* RxCocoa */; };
+		53267FD52A02AECC0090D8C1 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 53267FD42A02AECC0090D8C1 /* RxRelay */; };
+		53267FD72A02AECC0090D8C1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 53267FD62A02AECC0090D8C1 /* RxSwift */; };
+		53267FDC2A02AF0E0090D8C1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 53267FDB2A02AF0E0090D8C1 /* SnapKit */; };
+		53267FFA2A02B27F0090D8C1 /* DrintoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53267FF92A02B27F0090D8C1 /* DrintoTests.swift */; };
+		532680072A02B3120090D8C1 /* DrintoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532680062A02B3120090D8C1 /* DrintoUITests.swift */; };
+		532680092A02B3120090D8C1 /* DrintoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532680082A02B3120090D8C1 /* DrintoUITestsLaunchTests.swift */; };
+		532680112A03466D0090D8C1 /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532680102A03466D0090D8C1 /* RemoteRepository.swift */; };
+		532680142A0347380090D8C1 /* DrinkMemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532680132A0347380090D8C1 /* DrinkMemoryRepository.swift */; };
+		532680162A0349D90090D8C1 /* CachedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532680152A0349D90090D8C1 /* CachedRepository.swift */; };
+		532680182A0352C30090D8C1 /* DrinkMemoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532680172A0352C30090D8C1 /* DrinkMemoryModel.swift */; };
 		53287B9A283774E300C2B96D /* DrinkmemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */; };
 		53287B9E2837750500C2B96D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9D2837750500C2B96D /* MyPageViewController.swift */; };
 		53287BA02837751400C2B96D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287B9F2837751400C2B96D /* MapViewController.swift */; };
@@ -26,8 +47,6 @@
 		53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BA7283775F900C2B96D /* TopPageViewController.swift */; };
 		53287BB02837782000C2B96D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53287BAF2837782000C2B96D /* LaunchViewController.swift */; };
 		532D0F4829457C11005ABF6B /* DrinkImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D0F4729457C11005ABF6B /* DrinkImageModel.swift */; };
-		532D0F522945835E005ABF6B /* DrintoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D0F512945835E005ABF6B /* DrintoTests.swift */; };
-		532D0F5A29458A7D005ABF6B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 532D0F5929458A7D005ABF6B /* RealmSwift */; };
 		533EEBC92880164D00E63F79 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EEBC82880164D00E63F79 /* ChartView.swift */; };
 		53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */; };
 		535B26AE298E47F6000DCBC5 /* DrinkCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535B26AD298E47F6000DCBC5 /* DrinkCategoryModel.swift */; };
@@ -37,12 +56,11 @@
 		5367DB8429BD824F008889E0 /* YoutubePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367DB8329BD824F008889E0 /* YoutubePlayerViewController.swift */; };
 		5367DB8729BD8B66008889E0 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 5367DB8629BD8B66008889E0 /* YouTubeiOSPlayerHelper */; };
 		5367DB8B29C02A87008889E0 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367DB8A29C02A87008889E0 /* AccessToken.swift */; };
-		5367DB8D29C170D3008889E0 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 5367DB8C29C170D3008889E0 /* YouTubeiOSPlayerHelper */; };
 		536839892940544E0078D81E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 536839882940544E0078D81E /* RealmSwift */; };
 		53726E1F29AD7E9400AD5636 /* YoutubeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53726E1E29AD7E9400AD5636 /* YoutubeDataModel.swift */; };
 		53726E2129AD7ECF00AD5636 /* FetchDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53726E2029AD7ECF00AD5636 /* FetchDataModel.swift */; };
 		5377898F2851C6C40056576C /* DrinkMemoryRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */; };
-		537789912851C6E90056576C /* DrinkMemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537789902851C6E90056576C /* DrinkMemoryRepository.swift */; };
+		537789912851C6E90056576C /* DrinkMemoryRepository1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537789902851C6E90056576C /* DrinkMemoryRepository1.swift */; };
 		537789932851C7170056576C /* DrinkMemoryFirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537789922851C7170056576C /* DrinkMemoryFirebaseModel.swift */; };
 		537789952851C7290056576C /* DrinkMemoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537789942851C7290056576C /* DrinkMemoryPresenter.swift */; };
 		539DE6CF271FC9D800720AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6CE271FC9D800720AF7 /* AppDelegate.swift */; };
@@ -53,11 +71,20 @@
 		539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */; };
 		53B681DD29A2ED79003327B6 /* YoutubeAPIPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B681DC29A2ED79003327B6 /* YoutubeAPIPresenter.swift */; };
 		53B681DF29A2ED9F003327B6 /* YoutubeAPIResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B681DE29A2ED9F003327B6 /* YoutubeAPIResultViewController.swift */; };
-		53D83FC9287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */; };
+		53DDC5082A0513ED00248327 /* DetailDrinkMemoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DDC5072A0513ED00248327 /* DetailDrinkMemoryStoryboard.storyboard */; };
+		53DDC50A2A05155A00248327 /* DetailDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DDC5092A05155A00248327 /* DetailDrinkViewController.swift */; };
+		53DDC50C2A051BBF00248327 /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DDC50B2A051BBF00248327 /* SwinjectStoryboard+Setup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		532D0F532945835E005ABF6B /* PBXContainerItemProxy */ = {
+		53267FFB2A02B27F0090D8C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 539DE6C3271FC9D800720AF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 539DE6CA271FC9D800720AF7;
+			remoteInfo = Drinto;
+		};
+		5326800A2A02B3120090D8C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 539DE6C3271FC9D800720AF7 /* Project object */;
 			proxyType = 1;
@@ -68,9 +95,24 @@
 
 /* Begin PBXFileReference section */
 		5313E5122956B7C20030570B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		531A20E129EB79E400E00A27 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		531A224B2A023CEE00E00A27 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		531A224D2A023D7300E00A27 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		531A22502A0241DF00E00A27 /* DrinkMemoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryViewModel.swift; sourceTree = "<group>"; };
+		531A22542A02AB6000E00A27 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		531A22552A02AB6000E00A27 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5320924D29CD92E4006045F7 /* DrinkFeatureCheckModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkFeatureCheckModel.swift; sourceTree = "<group>"; };
 		5324315B2839A07A005A8170 /* DrinkMemoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryTableViewCell.swift; sourceTree = "<group>"; };
 		5324315C2839A07A005A8170 /* DrinkMemoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkMemoryTableViewCell.xib; sourceTree = "<group>"; };
+		53267FF72A02B27F0090D8C1 /* DrintoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrintoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53267FF92A02B27F0090D8C1 /* DrintoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrintoTests.swift; sourceTree = "<group>"; };
+		532680042A02B3110090D8C1 /* DrintoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrintoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		532680062A02B3120090D8C1 /* DrintoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrintoUITests.swift; sourceTree = "<group>"; };
+		532680082A02B3120090D8C1 /* DrintoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrintoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		532680102A03466D0090D8C1 /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
+		532680132A0347380090D8C1 /* DrinkMemoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRepository.swift; sourceTree = "<group>"; };
+		532680152A0349D90090D8C1 /* CachedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedRepository.swift; sourceTree = "<group>"; };
+		532680172A0352C30090D8C1 /* DrinkMemoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryModel.swift; sourceTree = "<group>"; };
 		53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkmemoryViewController.swift; sourceTree = "<group>"; };
 		53287B9D2837750500C2B96D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		53287B9F2837751400C2B96D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -80,8 +122,6 @@
 		53287BA7283775F900C2B96D /* TopPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
 		53287BAF2837782000C2B96D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		532D0F4729457C11005ABF6B /* DrinkImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkImageModel.swift; sourceTree = "<group>"; };
-		532D0F4F2945835D005ABF6B /* DrintoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrintoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		532D0F512945835E005ABF6B /* DrintoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrintoTests.swift; sourceTree = "<group>"; };
 		533EEBC82880164D00E63F79 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemorySwiftModel.swift; sourceTree = "<group>"; };
 		535B26AD298E47F6000DCBC5 /* DrinkCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCategoryModel.swift; sourceTree = "<group>"; };
@@ -93,7 +133,7 @@
 		53726E1E29AD7E9400AD5636 /* YoutubeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeDataModel.swift; sourceTree = "<group>"; };
 		53726E2029AD7ECF00AD5636 /* FetchDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataModel.swift; sourceTree = "<group>"; };
 		5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRealmModel.swift; sourceTree = "<group>"; };
-		537789902851C6E90056576C /* DrinkMemoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRepository.swift; sourceTree = "<group>"; };
+		537789902851C6E90056576C /* DrinkMemoryRepository1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryRepository1.swift; sourceTree = "<group>"; };
 		537789922851C7170056576C /* DrinkMemoryFirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryFirebaseModel.swift; sourceTree = "<group>"; };
 		537789942851C7290056576C /* DrinkMemoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkMemoryPresenter.swift; sourceTree = "<group>"; };
 		539DE6CB271FC9D800720AF7 /* Drinto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drinto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,19 +146,23 @@
 		539DE6E5271FCD7900720AF7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		53B681DC29A2ED79003327B6 /* YoutubeAPIPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeAPIPresenter.swift; sourceTree = "<group>"; };
 		53B681DE29A2ED9F003327B6 /* YoutubeAPIResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeAPIResultViewController.swift; sourceTree = "<group>"; };
-		53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDrinkMemoryViewController.swift; sourceTree = "<group>"; };
+		53DDC5072A0513ED00248327 /* DetailDrinkMemoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailDrinkMemoryStoryboard.storyboard; sourceTree = "<group>"; };
+		53DDC5092A05155A00248327 /* DetailDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDrinkViewController.swift; sourceTree = "<group>"; };
+		53DDC50B2A051BBF00248327 /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		532D0F4C2945835D005ABF6B /* Frameworks */ = {
+		53267FF42A02B27F0090D8C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				532D0F5A29458A7D005ABF6B /* RealmSwift in Frameworks */,
-				530613E3295C44420079ECA2 /* FirebaseFirestore in Frameworks */,
-				530613E1295C443A0079ECA2 /* FirebaseAuth in Frameworks */,
-				530613DF295C44360079ECA2 /* FirebaseStorage in Frameworks */,
-				5367DB8D29C170D3008889E0 /* YouTubeiOSPlayerHelper in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532680012A02B3110090D8C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,11 +170,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531A223A2A02146500E00A27 /* XCGLogger in Frameworks */,
+				531A22452A02158900E00A27 /* SkeletonView in Frameworks */,
 				536839892940544E0078D81E /* RealmSwift in Frameworks */,
+				531A223D2A0214CE00E00A27 /* Swinject in Frameworks */,
+				531A22482A02160800E00A27 /* SwiftDate in Frameworks */,
+				531A22422A02152900E00A27 /* SwinjectStoryboard in Frameworks */,
 				5313E50F2956AEDD0030570B /* FirebaseStorage in Frameworks */,
+				531A22322A02138F00E00A27 /* Alamofire in Frameworks */,
+				53267FDC2A02AF0E0090D8C1 /* SnapKit in Frameworks */,
+				53267FD72A02AECC0090D8C1 /* RxSwift in Frameworks */,
+				531A22382A02146500E00A27 /* ObjcExceptionBridging in Frameworks */,
 				5313E50B2956AEDD0030570B /* FirebaseAuth in Frameworks */,
 				5313E50D2956AEDD0030570B /* FirebaseFirestore in Frameworks */,
 				5367DB8729BD8B66008889E0 /* YouTubeiOSPlayerHelper in Frameworks */,
+				53267FD32A02AECC0090D8C1 /* RxCocoa in Frameworks */,
+				531A22352A02140B00E00A27 /* Kingfisher in Frameworks */,
+				53267FD52A02AECC0090D8C1 /* RxRelay in Frameworks */,
+				53267FD12A02AECC0090D8C1 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,9 +202,62 @@
 			path = DrinkFeature;
 			sourceTree = "<group>";
 		};
+		531A20E329EB7AE600E00A27 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		531A22492A023C0A00E00A27 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		531A224A2A023C9F00E00A27 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				53DDC50B2A051BBF00248327 /* SwinjectStoryboard+Setup.swift */,
+				531A224B2A023CEE00E00A27 /* UIViewExtension.swift */,
+				531A224D2A023D7300E00A27 /* UITextFieldExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		531A224F2A0241BE00E00A27 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				531A22502A0241DF00E00A27 /* DrinkMemoryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		531A22522A02423000E00A27 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				537789902851C6E90056576C /* DrinkMemoryRepository1.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		531A22532A02425700E00A27 /* DrinkMemoryModels */ = {
+			isa = PBXGroup;
+			children = (
+				537789922851C7170056576C /* DrinkMemoryFirebaseModel.swift */,
+				5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */,
+				53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */,
+				532680172A0352C30090D8C1 /* DrinkMemoryModel.swift */,
+			);
+			path = DrinkMemoryModels;
+			sourceTree = "<group>";
+		};
 		5320923D29CD8C28006045F7 /* DrinkMemory */ = {
 			isa = PBXGroup;
 			children = (
+				531A22522A02423000E00A27 /* Repository */,
+				531A224F2A0241BE00E00A27 /* ViewModels */,
 				5320924029CD8C73006045F7 /* Views */,
 				5320923F29CD8C6D006045F7 /* Models */,
 				5320923E29CD8C5E006045F7 /* Presenters */,
@@ -166,12 +276,9 @@
 		5320923F29CD8C6D006045F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				531A22532A02425700E00A27 /* DrinkMemoryModels */,
 				532D0F4629457BEE005ABF6B /* DrinkImage */,
 				530613E6295E81DA0079ECA2 /* DrinkFeature */,
-				537789902851C6E90056576C /* DrinkMemoryRepository.swift */,
-				5377898E2851C6C40056576C /* DrinkMemoryRealmModel.swift */,
-				537789922851C7170056576C /* DrinkMemoryFirebaseModel.swift */,
-				53452DA928571247008F2444 /* DrinkMemorySwiftModel.swift */,
 				535B26AD298E47F6000DCBC5 /* DrinkCategoryModel.swift */,
 			);
 			path = Models;
@@ -180,10 +287,11 @@
 		5320924029CD8C73006045F7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				53DDC5072A0513ED00248327 /* DetailDrinkMemoryStoryboard.storyboard */,
 				53287BA12837757000C2B96D /* AddDrinkViewController.swift */,
 				53287B99283774E300C2B96D /* DrinkmemoryViewController.swift */,
+				53DDC5092A05155A00248327 /* DetailDrinkViewController.swift */,
 				5324315F2839A081005A8170 /* DrinkmemoryCell */,
-				53D83FC8287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift */,
 				533EEBC82880164D00E63F79 /* ChartView.swift */,
 			);
 			path = Views;
@@ -258,6 +366,7 @@
 		5320924929CD8D88006045F7 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				531A20E329EB7AE600E00A27 /* Repository */,
 				5320924C29CD8DA0006045F7 /* Views */,
 				5320924B29CD8D9A006045F7 /* Presenters */,
 				5320924A29CD8D94006045F7 /* Models */,
@@ -275,6 +384,7 @@
 		5320924B29CD8D9A006045F7 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				531A20E129EB79E400E00A27 /* MapPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -296,20 +406,47 @@
 			path = DrinkmemoryCell;
 			sourceTree = "<group>";
 		};
+		53267FF82A02B27F0090D8C1 /* DrintoTests */ = {
+			isa = PBXGroup;
+			children = (
+				53267FF92A02B27F0090D8C1 /* DrintoTests.swift */,
+			);
+			path = DrintoTests;
+			sourceTree = "<group>";
+		};
+		532680052A02B3120090D8C1 /* DrintoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				532680062A02B3120090D8C1 /* DrintoUITests.swift */,
+				532680082A02B3120090D8C1 /* DrintoUITestsLaunchTests.swift */,
+			);
+			path = DrintoUITests;
+			sourceTree = "<group>";
+		};
+		5326800F2A03463C0090D8C1 /* ApplicationModel */ = {
+			isa = PBXGroup;
+			children = (
+				532680152A0349D90090D8C1 /* CachedRepository.swift */,
+				532680102A03466D0090D8C1 /* RemoteRepository.swift */,
+				532680122A0347130090D8C1 /* DrinkMemory */,
+			);
+			path = ApplicationModel;
+			sourceTree = "<group>";
+		};
+		532680122A0347130090D8C1 /* DrinkMemory */ = {
+			isa = PBXGroup;
+			children = (
+				532680132A0347380090D8C1 /* DrinkMemoryRepository.swift */,
+			);
+			path = DrinkMemory;
+			sourceTree = "<group>";
+		};
 		532D0F4629457BEE005ABF6B /* DrinkImage */ = {
 			isa = PBXGroup;
 			children = (
 				532D0F4729457C11005ABF6B /* DrinkImageModel.swift */,
 			);
 			path = DrinkImage;
-			sourceTree = "<group>";
-		};
-		532D0F502945835D005ABF6B /* DrintoTests */ = {
-			isa = PBXGroup;
-			children = (
-				532D0F512945835E005ABF6B /* DrintoTests.swift */,
-			);
-			path = DrintoTests;
 			sourceTree = "<group>";
 		};
 		532D0F5829458A7D005ABF6B /* Frameworks */ = {
@@ -333,7 +470,8 @@
 			children = (
 				5367DB8A29C02A87008889E0 /* AccessToken.swift */,
 				539DE6CD271FC9D800720AF7 /* Drinto */,
-				532D0F502945835D005ABF6B /* DrintoTests */,
+				53267FF82A02B27F0090D8C1 /* DrintoTests */,
+				532680052A02B3120090D8C1 /* DrintoUITests */,
 				539DE6CC271FC9D800720AF7 /* Products */,
 				532D0F5829458A7D005ABF6B /* Frameworks */,
 			);
@@ -343,7 +481,8 @@
 			isa = PBXGroup;
 			children = (
 				539DE6CB271FC9D800720AF7 /* Drinto.app */,
-				532D0F4F2945835D005ABF6B /* DrintoTests.xctest */,
+				53267FF72A02B27F0090D8C1 /* DrintoTests.xctest */,
+				532680042A02B3110090D8C1 /* DrintoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -351,6 +490,9 @@
 		539DE6CD271FC9D800720AF7 /* Drinto */ = {
 			isa = PBXGroup;
 			children = (
+				5326800F2A03463C0090D8C1 /* ApplicationModel */,
+				531A224A2A023C9F00E00A27 /* Extension */,
+				531A22492A023C0A00E00A27 /* DI */,
 				5320924929CD8D88006045F7 /* Map */,
 				5320924529CD8D24006045F7 /* Login */,
 				5320924129CD8CFB006045F7 /* Account */,
@@ -410,30 +552,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		532D0F4E2945835D005ABF6B /* DrintoTests */ = {
+		53267FF62A02B27F0090D8C1 /* DrintoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 532D0F552945835E005ABF6B /* Build configuration list for PBXNativeTarget "DrintoTests" */;
+			buildConfigurationList = 53267FFD2A02B27F0090D8C1 /* Build configuration list for PBXNativeTarget "DrintoTests" */;
 			buildPhases = (
-				532D0F4B2945835D005ABF6B /* Sources */,
-				532D0F4C2945835D005ABF6B /* Frameworks */,
-				532D0F4D2945835D005ABF6B /* Resources */,
+				53267FF32A02B27F0090D8C1 /* Sources */,
+				53267FF42A02B27F0090D8C1 /* Frameworks */,
+				53267FF52A02B27F0090D8C1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				532D0F542945835E005ABF6B /* PBXTargetDependency */,
+				53267FFC2A02B27F0090D8C1 /* PBXTargetDependency */,
 			);
 			name = DrintoTests;
-			packageProductDependencies = (
-				532D0F5929458A7D005ABF6B /* RealmSwift */,
-				530613DE295C44360079ECA2 /* FirebaseStorage */,
-				530613E0295C443A0079ECA2 /* FirebaseAuth */,
-				530613E2295C44420079ECA2 /* FirebaseFirestore */,
-				5367DB8C29C170D3008889E0 /* YouTubeiOSPlayerHelper */,
-			);
 			productName = DrintoTests;
-			productReference = 532D0F4F2945835D005ABF6B /* DrintoTests.xctest */;
+			productReference = 53267FF72A02B27F0090D8C1 /* DrintoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		532680032A02B3110090D8C1 /* DrintoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5326800C2A02B3120090D8C1 /* Build configuration list for PBXNativeTarget "DrintoUITests" */;
+			buildPhases = (
+				532680002A02B3110090D8C1 /* Sources */,
+				532680012A02B3110090D8C1 /* Frameworks */,
+				532680022A02B3110090D8C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5326800B2A02B3120090D8C1 /* PBXTargetDependency */,
+			);
+			name = DrintoUITests;
+			productName = DrintoUITests;
+			productReference = 532680042A02B3110090D8C1 /* DrintoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		539DE6CA271FC9D800720AF7 /* Drinto */ = {
 			isa = PBXNativeTarget;
@@ -456,6 +609,19 @@
 				5313E50C2956AEDD0030570B /* FirebaseFirestore */,
 				5313E50E2956AEDD0030570B /* FirebaseStorage */,
 				5367DB8629BD8B66008889E0 /* YouTubeiOSPlayerHelper */,
+				531A22312A02138F00E00A27 /* Alamofire */,
+				531A22342A02140B00E00A27 /* Kingfisher */,
+				531A22372A02146500E00A27 /* ObjcExceptionBridging */,
+				531A22392A02146500E00A27 /* XCGLogger */,
+				531A223C2A0214CE00E00A27 /* Swinject */,
+				531A22412A02152900E00A27 /* SwinjectStoryboard */,
+				531A22442A02158900E00A27 /* SkeletonView */,
+				531A22472A02160800E00A27 /* SwiftDate */,
+				53267FD02A02AECC0090D8C1 /* RxBlocking */,
+				53267FD22A02AECC0090D8C1 /* RxCocoa */,
+				53267FD42A02AECC0090D8C1 /* RxRelay */,
+				53267FD62A02AECC0090D8C1 /* RxSwift */,
+				53267FDB2A02AF0E0090D8C1 /* SnapKit */,
 			);
 			productName = Drinto;
 			productReference = 539DE6CB271FC9D800720AF7 /* Drinto.app */;
@@ -468,11 +634,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					532D0F4E2945835D005ABF6B = {
-						CreatedOnToolsVersion = 14.1;
+					53267FF62A02B27F0090D8C1 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 539DE6CA271FC9D800720AF7;
+					};
+					532680032A02B3110090D8C1 = {
+						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 539DE6CA271FC9D800720AF7;
 					};
 					539DE6CA271FC9D800720AF7 = {
@@ -487,6 +657,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 539DE6C2271FC9D800720AF7;
 			packageReferences = (
@@ -494,19 +665,36 @@
 				534DD9F529408EC800E0ACEE /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				5313E5092956AEDD0030570B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				5367DB8529BD8B66008889E0 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+				531A22302A02138E00E00A27 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				531A22332A02140B00E00A27 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				531A22362A02146500E00A27 /* XCRemoteSwiftPackageReference "XCGLogger" */,
+				531A223B2A0214CD00E00A27 /* XCRemoteSwiftPackageReference "Swinject" */,
+				531A22402A02152900E00A27 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */,
+				531A22432A02158900E00A27 /* XCRemoteSwiftPackageReference "SkeletonView" */,
+				531A22462A02160800E00A27 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				53267FCF2A02AECC0090D8C1 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				53267FDA2A02AF0E0090D8C1 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 539DE6CC271FC9D800720AF7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				539DE6CA271FC9D800720AF7 /* Drinto */,
-				532D0F4E2945835D005ABF6B /* DrintoTests */,
+				53267FF62A02B27F0090D8C1 /* DrintoTests */,
+				532680032A02B3110090D8C1 /* DrintoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		532D0F4D2945835D005ABF6B /* Resources */ = {
+		53267FF52A02B27F0090D8C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532680022A02B3110090D8C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -520,6 +708,7 @@
 				539DE6DB271FC9DA00720AF7 /* LaunchScreen.storyboard in Resources */,
 				5324315E2839A07A005A8170 /* DrinkMemoryTableViewCell.xib in Resources */,
 				539DE6D8271FC9DA00720AF7 /* Assets.xcassets in Resources */,
+				53DDC5082A0513ED00248327 /* DetailDrinkMemoryStoryboard.storyboard in Resources */,
 				539DE6D6271FC9D800720AF7 /* Main.storyboard in Resources */,
 				5367DB8229B5658F008889E0 /* YoutubeAPIResultTableViewCell.xib in Resources */,
 				5313E5132956B7C20030570B /* GoogleService-Info.plist in Resources */,
@@ -531,6 +720,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		5313E5142956D4E20030570B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -548,6 +738,7 @@
 		};
 		53DAECD5283784EE0069D744 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -567,11 +758,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		532D0F4B2945835D005ABF6B /* Sources */ = {
+		53267FF32A02B27F0090D8C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				532D0F522945835E005ABF6B /* DrintoTests.swift in Sources */,
+				53267FFA2A02B27F0090D8C1 /* DrintoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532680002A02B3110090D8C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532680092A02B3120090D8C1 /* DrintoUITestsLaunchTests.swift in Sources */,
+				532680072A02B3120090D8C1 /* DrintoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,13 +779,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53DDC50A2A05155A00248327 /* DetailDrinkViewController.swift in Sources */,
 				53B681DF29A2ED9F003327B6 /* YoutubeAPIResultViewController.swift in Sources */,
 				5320924E29CD92E4006045F7 /* DrinkFeatureCheckModel.swift in Sources */,
 				5324315D2839A07A005A8170 /* DrinkMemoryTableViewCell.swift in Sources */,
+				532680142A0347380090D8C1 /* DrinkMemoryRepository.swift in Sources */,
 				533EEBC92880164D00E63F79 /* ChartView.swift in Sources */,
 				53287BA42837758B00C2B96D /* SignInViewController.swift in Sources */,
 				53287BA8283775F900C2B96D /* TopPageViewController.swift in Sources */,
+				531A224C2A023CEE00E00A27 /* UIViewExtension.swift in Sources */,
 				53726E2129AD7ECF00AD5636 /* FetchDataModel.swift in Sources */,
+				532680182A0352C30090D8C1 /* DrinkMemoryModel.swift in Sources */,
+				531A22512A0241DF00E00A27 /* DrinkMemoryViewModel.swift in Sources */,
 				5367DB8429BD824F008889E0 /* YoutubePlayerViewController.swift in Sources */,
 				539DE6E6271FCD7900720AF7 /* TabBarViewController.swift in Sources */,
 				53726E1F29AD7E9400AD5636 /* YoutubeDataModel.swift in Sources */,
@@ -594,20 +799,24 @@
 				5377898F2851C6C40056576C /* DrinkMemoryRealmModel.swift in Sources */,
 				53287BA62837759E00C2B96D /* SignUpViewController.swift in Sources */,
 				5367DB8129B5658F008889E0 /* YoutubeAPIResultTableViewCell.swift in Sources */,
+				531A224E2A023D7300E00A27 /* UITextFieldExtension.swift in Sources */,
+				53DDC50C2A051BBF00248327 /* SwinjectStoryboard+Setup.swift in Sources */,
 				5367DB7D29B09EBE008889E0 /* YoutubeAPIDecordModel.swift in Sources */,
-				537789912851C6E90056576C /* DrinkMemoryRepository.swift in Sources */,
-				53D83FC9287F05B400CFC7EF /* DetailDrinkMemoryViewController.swift in Sources */,
+				537789912851C6E90056576C /* DrinkMemoryRepository1.swift in Sources */,
 				53452DAA28571247008F2444 /* DrinkMemorySwiftModel.swift in Sources */,
+				531A20E229EB79E400E00A27 /* MapPresenter.swift in Sources */,
 				53B681DD29A2ED79003327B6 /* YoutubeAPIPresenter.swift in Sources */,
 				532D0F4829457C11005ABF6B /* DrinkImageModel.swift in Sources */,
 				537789932851C7170056576C /* DrinkMemoryFirebaseModel.swift in Sources */,
 				53287BB02837782000C2B96D /* LaunchViewController.swift in Sources */,
+				532680112A03466D0090D8C1 /* RemoteRepository.swift in Sources */,
 				539DE6CF271FC9D800720AF7 /* AppDelegate.swift in Sources */,
 				539DE6D1271FC9D800720AF7 /* SceneDelegate.swift in Sources */,
 				535B26AE298E47F6000DCBC5 /* DrinkCategoryModel.swift in Sources */,
 				53287BA02837751400C2B96D /* MapViewController.swift in Sources */,
 				537789952851C7290056576C /* DrinkMemoryPresenter.swift in Sources */,
 				53287BA22837757000C2B96D /* AddDrinkViewController.swift in Sources */,
+				532680162A0349D90090D8C1 /* CachedRepository.swift in Sources */,
 				5367DB8B29C02A87008889E0 /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,10 +824,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		532D0F542945835E005ABF6B /* PBXTargetDependency */ = {
+		53267FFC2A02B27F0090D8C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 539DE6CA271FC9D800720AF7 /* Drinto */;
-			targetProxy = 532D0F532945835E005ABF6B /* PBXContainerItemProxy */;
+			targetProxy = 53267FFB2A02B27F0090D8C1 /* PBXContainerItemProxy */;
+		};
+		5326800B2A02B3120090D8C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 539DE6CA271FC9D800720AF7 /* Drinto */;
+			targetProxy = 5326800A2A02B3120090D8C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -627,6 +841,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				539DE6D5271FC9D800720AF7 /* Base */,
+				531A22542A02AB6000E00A27 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -635,6 +850,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				539DE6DA271FC9DA00720AF7 /* Base */,
+				531A22552A02AB6000E00A27 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -642,28 +858,19 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		532D0F562945835E005ABF6B /* Debug */ = {
+		53267FFE2A02B27F0090D8C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X5LBWH4CYQ;
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = X5LBWH4CYQ;
+				DEVELOPMENT_TEAM = X5LBWH4CYQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MACOSX_DEPLOYMENT_TARGET = 12.5.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiroakiapp.DrintoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -671,27 +878,19 @@
 			};
 			name = Debug;
 		};
-		532D0F572945835E005ABF6B /* Release */ = {
+		53267FFF2A02B27F0090D8C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X5LBWH4CYQ;
+				DEVELOPMENT_TEAM = X5LBWH4CYQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MACOSX_DEPLOYMENT_TARGET = 12.5.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiroakiapp.DrintoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -699,10 +898,49 @@
 			};
 			name = Release;
 		};
+		5326800D2A02B3120090D8C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X5LBWH4CYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiroakiapp.DrintoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Drinto;
+			};
+			name = Debug;
+		};
+		5326800E2A02B3120090D8C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X5LBWH4CYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiroakiapp.DrintoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Drinto;
+			};
+			name = Release;
+		};
 		539DE6DD271FC9DA00720AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -766,6 +1004,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -830,6 +1069,7 @@
 				DEVELOPMENT_TEAM = X5LBWH4CYQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Drinto/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -862,6 +1102,7 @@
 				DEVELOPMENT_TEAM = X5LBWH4CYQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Drinto/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -886,11 +1127,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		532D0F552945835E005ABF6B /* Build configuration list for PBXNativeTarget "DrintoTests" */ = {
+		53267FFD2A02B27F0090D8C1 /* Build configuration list for PBXNativeTarget "DrintoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				532D0F562945835E005ABF6B /* Debug */,
-				532D0F572945835E005ABF6B /* Release */,
+				53267FFE2A02B27F0090D8C1 /* Debug */,
+				53267FFF2A02B27F0090D8C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5326800C2A02B3120090D8C1 /* Build configuration list for PBXNativeTarget "DrintoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5326800D2A02B3120090D8C1 /* Debug */,
+				5326800E2A02B3120090D8C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -924,6 +1174,78 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		531A22302A02138E00E00A27 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		531A22332A02140B00E00A27 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		531A22362A02146500E00A27 /* XCRemoteSwiftPackageReference "XCGLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DaveWoodCom/XCGLogger.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		531A223B2A0214CD00E00A27 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		531A22402A02152900E00A27 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectStoryboard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		531A22432A02158900E00A27 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		531A22462A02160800E00A27 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		53267FCF2A02AECC0090D8C1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		53267FDA2A02AF0E0090D8C1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		534DD9F529408EC800E0ACEE /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/SwiftLint.git";
@@ -951,21 +1273,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		530613DE295C44360079ECA2 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5313E5092956AEDD0030570B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-		530613E0295C443A0079ECA2 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5313E5092956AEDD0030570B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		530613E2295C44420079ECA2 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5313E5092956AEDD0030570B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
 		5313E50A2956AEDD0030570B /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5313E5092956AEDD0030570B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -981,17 +1288,72 @@
 			package = 5313E5092956AEDD0030570B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
 		};
-		532D0F5929458A7D005ABF6B /* RealmSwift */ = {
+		531A22312A02138F00E00A27 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 536839872940544E0078D81E /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
+			package = 531A22302A02138E00E00A27 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		531A22342A02140B00E00A27 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22332A02140B00E00A27 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		531A22372A02146500E00A27 /* ObjcExceptionBridging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22362A02146500E00A27 /* XCRemoteSwiftPackageReference "XCGLogger" */;
+			productName = ObjcExceptionBridging;
+		};
+		531A22392A02146500E00A27 /* XCGLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22362A02146500E00A27 /* XCRemoteSwiftPackageReference "XCGLogger" */;
+			productName = XCGLogger;
+		};
+		531A223C2A0214CE00E00A27 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A223B2A0214CD00E00A27 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		531A22412A02152900E00A27 /* SwinjectStoryboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22402A02152900E00A27 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */;
+			productName = SwinjectStoryboard;
+		};
+		531A22442A02158900E00A27 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22432A02158900E00A27 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+		531A22472A02160800E00A27 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531A22462A02160800E00A27 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		53267FD02A02AECC0090D8C1 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53267FCF2A02AECC0090D8C1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		53267FD22A02AECC0090D8C1 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53267FCF2A02AECC0090D8C1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		53267FD42A02AECC0090D8C1 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53267FCF2A02AECC0090D8C1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		53267FD62A02AECC0090D8C1 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53267FCF2A02AECC0090D8C1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		53267FDB2A02AF0E0090D8C1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53267FDA2A02AF0E0090D8C1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 		5367DB8629BD8B66008889E0 /* YouTubeiOSPlayerHelper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5367DB8529BD8B66008889E0 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
-			productName = YouTubeiOSPlayerHelper;
-		};
-		5367DB8C29C170D3008889E0 /* YouTubeiOSPlayerHelper */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5367DB8529BD8B66008889E0 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
 			productName = YouTubeiOSPlayerHelper;

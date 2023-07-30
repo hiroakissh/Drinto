@@ -1,13 +1,13 @@
 //
-//  DetailDrinkMemoryViewController.swift
+//  DetailDrinkViewController.swift
 //  Drinto
 //
-//  Created by HiroakiSaito on 2022/07/13.
+//  Created by HiroakiSaito on 2023/05/05.
 //
 
 import UIKit
 
-class DetailDrinkMemoryViewController: UIViewController {
+class DetailDrinkViewController: UIViewController {
     @IBOutlet private weak var drinkNameLabel: UILabel!
     @IBOutlet private weak var drinkCategoryLabel: UILabel!
     @IBOutlet private weak var drinkImageView: UIImageView!
@@ -23,7 +23,6 @@ class DetailDrinkMemoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         drinkNameLabel.text = detailDrinkMemory.drinkName
         drinkCategoryLabel.text = detailDrinkMemory.category
 

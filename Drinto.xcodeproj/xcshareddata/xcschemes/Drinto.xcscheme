@@ -33,9 +33,20 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "532D0F4E2945835D005ABF6B"
+               BlueprintIdentifier = "53267FF62A02B27F0090D8C1"
                BuildableName = "DrintoTests.xctest"
                BlueprintName = "DrintoTests"
+               ReferencedContainer = "container:Drinto.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "532680032A02B3110090D8C1"
+               BuildableName = "DrintoUITests.xctest"
+               BlueprintName = "DrintoUITests"
                ReferencedContainer = "container:Drinto.xcodeproj">
             </BuildableReference>
          </TestableReference>

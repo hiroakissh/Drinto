@@ -16,7 +16,7 @@ protocol DrinkMemorySwiftModelInput {
     func updateDrinkMemoryData(at index: Int)
 }
 
-class DrinkMemoryRepository: DrinkMemorySwiftModelInput {
+class DrinkMemoryRepository1: DrinkMemorySwiftModelInput {
     // swiftlint:disable:next force_try
     private let realm = try! Realm()
 
