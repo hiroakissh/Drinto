@@ -1,0 +1,72 @@
+name: Drintos
+packages:
+  XCGLogger:
+    url: https://github.com/DaveWoodCom/XCGLogger.git
+    from: 7.0.1
+  SkeletonView:
+    url: https://github.com/Juanpe/SkeletonView.git
+    from: 1.30.4
+  realm-swift:
+    url: https://github.com/realm/realm-swift.git
+    from: 10.39.0
+  Swinject:
+    url: https://github.com/Swinject/Swinject.git
+    from: 2.8.3
+  SwiftDate:
+    url: https://github.com/malcommac/SwiftDate.git
+    from: 7.0.0
+  SwinjectStoryboard:
+    url: https://github.com/jpsim/Yams
+    from: 2.2.2
+  firebase-ios-sdk:
+    url: https://github.com/firebase/firebase-ios-sdk.git
+    from: 9.6.0
+  Alamofire:
+    url: https://github.com/Alamofire/Alamofire.git
+    from: 5.6.4
+  SnapKit:
+    url: https://github.com/SnapKit/SnapKit.git
+    from: 5.6.0
+  RxSwift:
+    url: https://github.com/ReactiveX/RxSwift.git
+    from: 6.5.0
+  youtube-ios-player-helpers:
+    url: https://github.com/youtube/youtube-ios-player-helper.git
+    from: 1.0.4
+  Kingfisher:
+    url: https://github.com/onevcat/Kingfisher.git
+    from: 7.6.2
+targets:
+  Drinto:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.5"
+    sources: Drinto
+    settings:
+      configs:
+        debug: debug
+        release: release
+    dependencies:
+        - package: XCGLogger
+        - package: SkeletonView
+        - package: realm-swift
+        - package: SwiftDate
+        - package: SwinjectStoryboard
+        - package: firebase-ios-sdk
+        - package: Alamofire
+        - package: SnapKit
+        - package: RxSwift
+        - package: youtube-ios-player-helpers
+        - package: Kingfisher
+  DrintoTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: DrintoTests
+    dependencies:
+      - target: Drinto
+  DrintoUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: DrintoUITests
+    dependencies:
+      - target: Drinto
