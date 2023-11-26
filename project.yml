@@ -1,0 +1,94 @@
+name: Drinto
+packages:
+  XCGLogger:
+    url: https://github.com/DaveWoodCom/XCGLogger.git
+    from: 7.0.1
+  SkeletonView:
+    url: https://github.com/Juanpe/SkeletonView.git
+    from: 1.30.4
+  realm-cocoa:
+    url: https://github.com/realm/realm-cocoa.git
+    majorVersion: 10.39.0
+  Swinject:
+    url: https://github.com/Swinject/Swinject.git
+    from: 2.8.3
+  SwiftDate:
+    url: https://github.com/malcommac/SwiftDate.git
+    from: 7.0.0
+  SwinjectStoryboard:
+    url: https://github.com/Swinject/SwinjectStoryboard.git
+    from: 2.2.2
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk.git
+    from: 10.18.0
+  Alamofire:
+    url: https://github.com/Alamofire/Alamofire.git
+    from: 5.6.4
+  SnapKit:
+    url: https://github.com/SnapKit/SnapKit.git
+    from: 5.6.0
+  RxSwift:
+    url: https://github.com/ReactiveX/RxSwift.git
+    from: 6.5.0
+  youtube-ios-player-helpers:
+    url: https://github.com/youtube/youtube-ios-player-helper.git
+    from: 1.0.4
+  Kingfisher:
+    url: https://github.com/onevcat/Kingfisher.git
+    from: 7.6.2
+targets:
+  Drinto:
+    settings:
+      base:
+        OTHER_LDFLAGS: $(inherited) $(OTHER_LDFLAGS) -ObjC
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources: Drinto
+    settings:
+      configs:
+        debug: debug
+        release: release
+    dependencies:
+        - package: SkeletonView
+          product: SkeletonView
+        - package: realm-cocoa
+          product: Realm
+        - package: realm-cocoa
+          product: RealmSwift
+        - package: SwinjectStoryboard
+          product: SwinjectStoryboard
+        - package: Firebase
+          product: FirebaseCrashlytics
+        - package: Firebase
+          product: FirebaseAnalytics
+        - package: Firebase
+          product: FirebaseAuth
+        - package: Firebase
+          product: FirebaseFirestore
+        - package: Alamofire
+          product: Alamofire
+        - package: SnapKit
+          product: SnapKit
+        - package: RxSwift
+          product: RxSwift
+        - package: RxSwift
+          product: RxCocoa
+        - package: RxSwift
+          product: RxRelay
+        - package: youtube-ios-player-helpers
+          product: YouTubeiOSPlayerHelper
+        - package: Kingfisher
+          product: Kingfisher
+  DrintoTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: DrintoTests
+    dependencies:
+      - target: Drinto
+  DrintoUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: DrintoUITests
+    dependencies:
+      - target: Drinto
