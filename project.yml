@@ -49,10 +49,10 @@ targets:
       configs:
         debug:
             PRODUCT_BUNDLE_IDENTIFIER: com.hiroakiapp.Drinto
-            INFOPLIST_FILE: Drinto/info.plist
+            INFOPLIST_FILE: Drinto/info-debug.plist
         release:
             PRODUCT_BUNDLE_IDENTIFIER: com.hiroakiapp.Drinto
-            INFOPLIST_FILE: Drinto/info.plist
+            INFOPLIST_FILE: Drinto/info-release.plist
     dependencies:
         - package: SkeletonView
           product: SkeletonView
