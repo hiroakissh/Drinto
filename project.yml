@@ -47,8 +47,12 @@ targets:
     sources: Drinto
     settings:
       configs:
-        debug: debug
-        release: release
+        debug:
+            PRODUCT_BUNDLE_IDENTIFIER: com.hiroakiapp.Drinto
+            INFOPLIST_FILE: Drinto/info.plist
+        release:
+            PRODUCT_BUNDLE_IDENTIFIER: com.hiroakiapp.Drinto
+            INFOPLIST_FILE: Drinto/info.plist
     dependencies:
         - package: SkeletonView
           product: SkeletonView
