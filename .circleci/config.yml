@@ -1,13 +1,15 @@
 # .circleci/config.yml
 version: 2.1
 orbs:
-    slack: circleci/slack@4.12.5
+    slack: circleci/slack@4.4.4
     macos: circleci/macos@2
 
 executors:
   ios_builder:
     macos:
-      xcode: 14.1.0
+      xcode: 15.0.1
+    resource_class: macos.x86.medium.gen2
+    working_directory: ~/project
     environment:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: test
