@@ -277,13 +277,58 @@
                         <segue destination="SwZ-xz-Q91" kind="relationship" relationship="viewControllers" id="96A-T1-i7m"/>
                         <segue destination="avl-Pc-Zp4" kind="relationship" relationship="viewControllers" id="E68-6z-4s9"/>
                         <segue destination="HiM-rL-dcE" kind="relationship" relationship="viewControllers" id="PwH-qs-DCn"/>
-                        <segue destination="9bP-rd-XYX" kind="relationship" relationship="viewControllers" id="hKn-I5-csH"/>
-                        <segue destination="Sem-C5-bdP" kind="relationship" relationship="viewControllers" id="gTS-4T-QA9"/>
+                        <segue destination="aYY-O7-oSL" kind="relationship" relationship="viewControllers" id="hKn-I5-csH"/>
+                        <segue destination="CTT-cu-Vbe" kind="relationship" relationship="viewControllers" id="gTS-4T-QA9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uo8-DW-vZc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-467" y="1203"/>
+        </scene>
+        <!--map-->
+        <scene sceneID="dpW-iy-l84">
+            <objects>
+                <viewController id="aYY-O7-oSL" customClass="MapViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DuH-eJ-M0K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="24x-du-jId">
+                                <rect key="frame" x="0.0" y="112" width="414" height="701"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fpc-p1-xxe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="map" id="UPW-2m-XKe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WfN-kS-39C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="611.59420289855075" y="1878.3482142857142"/>
+        </scene>
+        <!--setting-->
+        <scene sceneID="kMN-SR-XA9">
+            <objects>
+                <viewController id="CTT-cu-Vbe" customClass="MyPageViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oNC-eJ-XsP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ULZ-WM-K8F">
+                                <rect key="frame" x="0.0" y="149" width="414" height="436"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7k3-2J-Z8v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="setting" id="hUG-cu-xt7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Up3-bd-aEo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="611.59420289855075" y="2565.4017857142858"/>
         </scene>
         <!--DrinkMemoryView-->
         <scene sceneID="rTQ-1c-Qho">
@@ -314,26 +359,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gqC-rO-MWy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="611.59420289855075" y="1202.6785714285713"/>
-        </scene>
-        <!--MapView-->
-        <scene sceneID="GT7-uH-Eqo">
-            <objects>
-                <viewControllerPlaceholder storyboardName="MapView" id="9bP-rd-XYX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="bdE-TM-tqi"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ADw-zm-3SD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="611.59420289855075" y="1878.3482142857142"/>
-        </scene>
-        <!--AccountView-->
-        <scene sceneID="KjZ-mn-I8X">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AccountView" id="Sem-C5-bdP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="pYa-T0-GfP"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j8F-Kg-VRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="611.59420289855075" y="2565.4017857142858"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="edf-hR-ShN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drinto-->
+        <scene sceneID="GYh-Hf-Xjp">
+            <objects>
+                <viewController id="edf-hR-ShN" customClass="DrinkMemoryViewController" customModule="Drinto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wa9-Tz-o3I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blK-sS-Keq">
+                                <rect key="frame" x="35" y="74" width="48" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="並び替え" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGI-PO-zkd">
+                                <rect key="frame" x="330" y="74" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="EWq-cv-JKM">
+                                <rect key="frame" x="-305" y="36" width="1024" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="00T-tx-sFy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="83" id="7B8-Pr-8zF"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vIF-5x-tUA">
+                                <rect key="frame" x="15" y="188" width="384" height="649"/>
+                                <color key="backgroundColor" name="MainColor1"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DrinkCell" rowHeight="128" id="G08-rv-6M0">
+                                        <rect key="frame" x="0.0" y="50" width="384" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G08-rv-6M0" id="juy-O0-Udz">
+                                            <rect key="frame" x="0.0" y="0.0" width="384" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-o6-Z5H">
+                                <rect key="frame" x="15" y="127" width="384" height="32"/>
+                                <color key="backgroundColor" name="MainColor1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="03F-Lx-Ca7"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="全て"/>
+                                    <segment title="コーヒー"/>
+                                    <segment title="紅茶"/>
+                                    <segment title="日本茶"/>
+                                    <segment title="中国茶"/>
+                                    <segment title="その他"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ec5-po-xdY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nwj-o6-Z5H" firstAttribute="top" secondItem="EWq-cv-JKM" secondAttribute="bottom" constant="8" symbolic="YES" id="7tU-TT-ZOW"/>
+                            <constraint firstItem="EWq-cv-JKM" firstAttribute="top" secondItem="wa9-Tz-o3I" secondAttribute="top" constant="36" id="9yh-48-EwG"/>
+                            <constraint firstItem="ec5-po-xdY" firstAttribute="trailing" secondItem="Nwj-o6-Z5H" secondAttribute="trailing" constant="15" id="EX7-VX-may"/>
+                            <constraint firstItem="vIF-5x-tUA" firstAttribute="top" secondItem="Nwj-o6-Z5H" secondAttribute="bottom" constant="30" id="JG1-TT-9nz"/>
+                            <constraint firstItem="ec5-po-xdY" firstAttribute="bottom" secondItem="vIF-5x-tUA" secondAttribute="bottom" constant="10" id="V0b-Vb-gOr"/>
+                            <constraint firstItem="vIF-5x-tUA" firstAttribute="leading" secondItem="ec5-po-xdY" secondAttribute="leading" constant="15" id="fPI-5A-Viq"/>
+                            <constraint firstItem="ec5-po-xdY" firstAttribute="trailing" secondItem="vIF-5x-tUA" secondAttribute="trailing" constant="15" id="laO-O7-QVv"/>
+                            <constraint firstItem="EWq-cv-JKM" firstAttribute="centerX" secondItem="wa9-Tz-o3I" secondAttribute="centerX" id="pN9-l1-lG7"/>
+                            <constraint firstItem="Nwj-o6-Z5H" firstAttribute="leading" secondItem="ec5-po-xdY" secondAttribute="leading" constant="15" id="pbh-u2-LuL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Drinto" id="CJP-Ay-D3M"/>
+                    <connections>
+                        <outlet property="categorySegmentedControl" destination="Nwj-o6-Z5H" id="m7X-Nc-Hy3"/>
+                        <outlet property="tableView" destination="vIF-5x-tUA" id="Ycs-ET-mgI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ak6-U9-pwC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647.82608695652175" y="-135.26785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon" width="1024" height="1024"/>
+        <namedColor name="MainColor1">
+            <color red="0.67799997329711914" green="0.74500000476837158" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
